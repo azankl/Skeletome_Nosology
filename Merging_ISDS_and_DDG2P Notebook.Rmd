@@ -1,0 +1,62 @@
+---
+title: "Merging the ISDS Nosology and DDG2P"
+output:
+  html_document:
+    code_folding: hide
+---
+
+In this Notebook, I am trying to merge the ISDSnosology.csv with the DDG2P.csv mostly using 'join'
+
+```{r, message=FALSE}
+library(readr)
+library(here)
+library (dplyr)
+library (tidyr)
+library (magrittr)
+library (purrr)
+library(kableExtra)
+```
+
+## The ISDS Nosology Dataset
+
+First we import and clean the ISDS dataset
+
+```{r message=FALSE, results='asis'}
+nosology_raw<-read_csv(here("ISDS2019nosology.csv"), col_names = TRUE)
+
+nosology <- nosology_raw %>%
+  select(-c(1,2)) %>% #remove unnecessary columns
+  drop_na(GroupN) %>% #removes headers in table that contain no useful data
+  rename(DMIM = Omim, GENE = Gene, Name = Group) #unify names for join
+
+nosology[1:10,] %>%
+  #select(Name, GENE, DMIM) %>%
+  kbl(caption = "first 10 lines...") %>%
+  kable_styling()
+```
+
+Note that some disorders have AD and AR on the same line, this will cause problems. SEDC even has a \* in this column, this needs cleaning up.
+
+## The DDG2P Dataset
+
+Using the DDG2P data export of 15-11-2021 here. Newer versions use the GenCC terminology, which I dont like.
+
+```{r, message=FALSE, results='asis'}
+ddg2p<-read_csv(here("DDG2P_15_11_2021.csv"), col_names = TRUE) %>%
+  rename(DMIM = "disease mim", GENE = "gene symbol")
+
+ddg2p[1:10,] %>%
+  select(GENE, "disease name", DMIM, "allelic requirement", "mutation consequence") %>%
+  kbl(caption = "first 10 lines, not all columns shown") %>%
+  kable_styling()
+```
+Let's create an inner join based on DMIM:
+```{r}
+innerjoin_byDMIM <-inner_join(nosology,ddg2p, by = "DMIM")
+
+innerjoin_byDMIM [1:10,] %>%
+  select(Name, inheri, GENE.x, DMIM, GENE.y, "disease name", "allelic requirement", "mutation consequence") %>%
+  kbl(caption = "first 10 lines, not all columns shown") %>%
+  kable_styling()
+```
+

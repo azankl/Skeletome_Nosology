@@ -1,0 +1,297 @@
+Group,inheri,GENE,DMIM,Orph,GroupN
+Thanatophoric dysplasia type 1,AD,FGFR3,187600,18060,1
+Thanatophoric dysplasia type 2,AD,FGFR3,187601,93274,1
+Achondroplasia,AD,FGFR3,100800,15,1
+Hypochondroplasia,AD,FGFR3,146000,427,1
+"Camptodactyly, tall stature and hearing loss syndrome (CATSHL)","AD, AR",FGFR3,610474,85164,1
+Achondrogenesis type 2 (Langer-Saldino),AD,COL2A1,200610,93296,2
+Hypochondrogenesis,AD,COL2A1,200610,93297,2
+Spondyloepiphyseal dysplasia congenita (SEDC),"AD, AR*",COL2A1,183900,94068,2
+Spondyloepiphyseal dysplasia with marked metaphyseal changes (SEMD),AD,COL2A1,184250,93346,2
+NA,NA,NA,184255,93315,2
+Kniest dysplasia,AD,COL2A1,156550,485,2
+Stickler syndrome type 2,AD,COL11A1,604841,90654,3
+Stickler syndrome type 3 (non-ocular),AD,COL11A2,184840,166100,3
+Fibrochondrogenesis,"AR, AD",COL11A1,228520,2021,3
+"Otospondylomegaepiphyseal dysplasia (OSMED), recessive type",AR,COL11A2,215150,1427,3
+"Otospondylomegaepiphyseal dysplasia (OSMED), dominant type (Weissenbacher-Zweymüller syndrome, Stickler syndrome type 3)",AD,COL11A2,184840,3450,3
+Achondrogenesis type 1B (ACG1B),AR,SLC26A2,600972,93298,4
+"MED, autosomal recessive type",AR,SLC26A2,226900,93307,4
+"SEMD, PAPSS2 type",AR,PAPSS2,612847,93282,4
+"Brachyolmia, recessive type",AR,PAPSS2,612847,448242,4
+Chondrodysplasia gPAPP type (includes Catel-Manzke-like syndrome),AR,IMPAD1,614078,280586,4
+"Chondrodysplasia with congenital joint dislocations, CHST3 type (recessive Larsen syndrome)",AR,CHST3,143095,263463,4
+"Ehlers-Danlos syndrome, musculocontractural type",AR,CHST14,601776,2953,4
+NA,AR,DSE,615539,NA,4
+"Dyssegmental dysplasia, Silverman-Handmaker and Rolland-Desbuquois types",AR,HSPG2,224410,1865,5
+"SED, Kimberley type",AD,ACAN,608361,253,6
+"SEMD, Aggrecan type",AR,ACAN,612813,171866,6
+Frontometaphyseal dysplasia,XL,FLNA,305620,1826,7
+NA,AD,MAP3K7,617137,NA,7
+Melnick-Needles syndrome,XL,FLNA,309350,2484,7
+Terminal osseous dysplasia (TOD),XL,FLNA,300244,88630,7
+Atelosteogenesis type 1 (AO1),AD,FLNB,108720,1190,7
+Atelosteogenesis type 3 (AO3),AD,FLNB,108721,56305,7
+Larsen syndrome (dominant),AD,FLNB,150250,503,7
+Spondylocarpotarsal synostosis syndrome,AR,FLNB,272460,3275,7
+Frank-ter Haar syndrome,AR,SH3PXD2B,249420,137834,7
+Metatropic dysplasia,AD,TRPV4,156530,2635,8
+"Spondylometaphyseal dysplasia, Kozlowski type",AD,TRPV4,184252,93314,8
+Short rib__olydactyly syndrome (SRPS) type 1/3 (Saldino-Noonan/Verma-Naumoff),AR,DYNC2H1,613091,93270,9
+Asphyxiating thoracic dysplasia (ATD; Jeune),AR,DYNC2H1,613091,474,9
+SRPS type 2 (Majewski),AR,DYNC2H1,263520,93269,9
+Orofaciodigital syndrome type 4 (Mohr-Majewski),AR,TCTN3,258860,2753,9
+"Cranioectodermal dysplasia (Levin-Sensenbrenner) type 1, 2",AR,IFT122,218330,1515,9
+Mainzer-Saldino syndrome,AR,IFT140,266920,140969,9
+Axial spondylometaphyseal dysplasia,AR,CFAP410,602271,168549,9
+Multiple epiphyseal dysplasia (MED),AD,COMP,132400,93308,10
+NA,AD,COL9A2,600204,166002,10
+NA,AD,COL9A3,600969,166002,10
+NA,AD,MATN3,607078,93311,10
+NA,AD,COL9A1,614135,166002,10
+"Stickler syndrome, recessive type",AR,COL9A1,614134,250984,10
+NA,AR,COL9A2,614284,NA,10
+"Metaphyseal dysplasia, Schmid type (MCS)",AD,COL10A1,156500,174,11
+"Cartilage-hair hypoplasia (CHH; metaphyseal dysplasia, McKusick type)",AR,RMRP,250250,175,11
+"Metaphyseal dysplasia, Jansen type",AD,PTHR1,156400,33067,11
+"Metaphyseal dysplasia with pancreatic insufficiency and cyclic neutropenia (Shwachman-Bodian-Diamond syndrome, SBDS)",AR,SBDS,260400,811,11
+Metaphyseal anadysplasia type 1,"AD, AR",MMP13,602111,1040,11
+"SMD, Sutcliffe type or corner fractures type",AD,FN1,184255,93315,12
+SMD with cone-rod dystrophy,AR,PCYT1A,608940,85167,12
+Dyggve-Melchior-Clausen dysplasia (DMC),AR,DYM,223800,239,13
+Immuno-osseous dysplasia (Schimke),AR,SMARCAL1,242900,1830,13
+"SED with diabetes mellitus, Wolcott-Rallison type",AR,EIF2AK3,226980,1667,13
+"SEMD, TMEM165 type",AR,TMEM165,614727,314667,13
+"SEMD, short limb__bnormal calcification type _",AR,DDR2,271665,93358,13
+"SED tarda, X-linked (SED-XL)",XL,TRAPPC2,313400,93284,13
+"Ehlers-Danlos syndrome, spondylodysplastic type",AR,SLC39A13,612350,157965,13
+Platyspondyly (brachyolmia) with amelogenesis imperfecta,AR,LTBP3,601216,2899,13
+CODAS syndrome,AR,LONP1,600373,1458,13
+CAGSSS syndrome,AR,IARS2,616007,436174,13
+Achondrogenesis type 1A (ACG1A),AR,TRIP11,200600,93299,14
+Schneckenbecken dysplasia,AR,SLC35D1,269250,3144,14
+"Spondylometaphyseal dysplasia, Sedaghatian type",AR,GPX4,250220,93317,14
+Opsismodysplasia,AR,INPPL1,258480,2746,14
+Trichorhinophalangeal dysplasia types 1/3,AD,TRPS1,190350,77258,15
+Acrocapitofemoral dysplasia,AR,IHH,607778,63446,15
+Weill-Marchesani syndrome,AD,FBN1,608328,3449,15
+Myhre dysplasia,AD,SMAD4,139210,2588,15
+NA,AD,PRKAR1A,101800,NA,15
+Acromesomelic dysplasia type Maroteaux (AMDM),AR,NPR_2,602875,40,16
+Grebe dysplasia,AR,GDF5,200700,2098,16
+Dyschondrosteosis (Leri- Weill),Pseudo-AD,SHOX,127300,240,17
+"Mesomelic dysplasia, Langer type",Pseudo-AR,SHOX,249700,2632,17
+"Omodysplasia, recessive type",AR,GPC6,258315,93329,17
+"Robinow syndrome, recessive type",AR,ROR2,268310,1507,17
+"Robinow syndrome, dominant type",AD,WNT5A,180700,3107,17
+NA,AD,DVL1,616331,NA,17
+Campomelic dysplasia (CD),AD,SOX9,114290,140,18
+Stüve-Wiedemann dysplasia,AR,LIFR,601559,3206,18
+3-M syndrome,AR,CUL7,273750,2616,19
+NA,AR,OBSL1,612921,NA,19
+NA,AR,CCDC8,614205,NA,19
+Sanjad-Sakati syndrome,AR,TBCE,241410,93324,19
+Kenny-Caffey syndrome,AD,FAM111A,127000,93325,19
+Microcephalic osteodysplastic primordial dwarfism type 1/3 (MOPD1),AR,RNU4ATAC,210710,2636,19
+Microcephalic osteodysplastic primordial dwarfism type 2 (MOPD2; Majewski type),AR,PCNT2,210720,2637,19
+Microcephalic osteodysplastic primordial dwarfism (other types),AR,ATR,210600,NA,19
+NA,AR,DNA2,615807,NA,19
+NA,AR,CRIPT,615789,NA,19
+"IMAGE syndrome (intrauterine growth retardation, metaphyseal dysplasia, adrenal hypoplasia, and genital anomalies)",AD,CDKN1C,614732,85173,19
+Hallermann-Streiff syndrome,AR,NA,234100,2108,19
+Saul-Wilson syndrome,AD,COG4,618150,85172,19
+Desbuquois dysplasia type 1 (with accessory ossification center in index finger),AR,CANT1,251450,1425,20
+Desbuquois dysplasia with short metacarpals and elongated phalanges (Kim type),AR,CANT1,251450,1425,20
+Desbuquois dysplasia type 2 (Baratela-Scott syndrome),AR,XYLT1,615777,1425,20
+"SEMD with joint laxity (SEMD-JL), leptodactylic or Hall type",AD,KIF22,603546,93360,20
+"SEMD with joint laxity (SEMD-JL), Beighton type",AR,B3GALT6,271640,93359,20
+B3GAT3 deficiency,AR,B3GAT3,245600,284139,20
+Short stature with joint laxity and myopia,AR,GZF1,617662,527450,20
+"Ehlers-Danlos syndrome, kyphoscoliotic type 1",AR,PLOD1,225400,1900,20
+"Ehlers-Danlos syndrome, kyphoscoliotic type 2",AR,FKBP14,614557,300179,20
+"CDP, X-linked dominant, Conradi-Hünermann type (CDPX2)",XL,EBP,302960,35173,21
+"CDP, X-linked recessive, brachytelephalangic type (CDPX1)",XL,ARSE,302950,79345,21
+"CHILD (congenital hemidysplasia, ichthyosis, limb defects)",XL,NSDHL,308050,139,21
+Keutel syndrome,AR,MGP,245150,85202,21
+Greenberg dysplasia,AR,LBR,215140,1426,21
+NA,AR,DHPAT,222765,NA,21
+NA,AR,AGPS,600121,NA,21
+Blomstrand dysplasia,AR,PTHR1,215045,50945,22
+Desmosterolosis,AR,DHCR24,602398,35107,22
+"Caffey disease (including prenatal, infantile and attenuated forms)",AD,COL1A1,114000,1310,22
+Caffey dysplasia (severe variants with prenatal onset),AR,NA,114000,1310,22
+Raine dysplasia (lethal and non-lethal forms),AR,FAM20C,259775,1832,22
+NA,AR,CLCN7,611490,NA,23
+Osteopetrosis with renal tubular acidosis (OPTB3),AR,CA2,259730,2785,23
+Pycnodysostosis,AR,CTSK,265800,763,23
+Osteopoikilosis,AD,LEMD3,166700,166119,24
+Melorheostosis with osteopoikilosis,AD,LEMD3,166700,1879,24
+Osteopathia striata with cranial sclerosis (OSCS),XL,AMER1,300373,2780,24
+Craniometaphyseal dysplasia,AD,ANKH,123000,1522,24
+Diaphyseal dysplasia Camurati-Engelmann,AD,TGFB1,131300,1328,24
+Hematodiaphyseal dysplasia Ghosal,AR,TBXAS1,231095,1802,24
+Hypertrophic osteoarthropathy,AR,HPGD,259100,248095,24
+Oculodentoosseous dysplasia (ODOD) mild type,AD,GJA1,164200,2710,24
+Oculodentoosseous dysplasia (ODOD) severe type,AR,GJA1,257850,2710,24
+Osteosclerosis,AD,LRP5,144750,2790,24
+Lenz-Majewski hyperostotic dysplasia,AD,PTDSS1,151050,2658,24
+"Osteogenesis imperfecta, non-deforming with persistently blue sclerae (OI type 1)",AD,COL1A1,166200,216796,25
+NA,AR,LEPRE1,610915,216804,25
+NA,AD,SERPINF1,610967,216812,25
+NA,AR,PPIB,610915,216812,25
+NA,AR,TENT5A,616507,216812,25
+NA,AD,PPIB,610967,216820,25
+Osteogenesis imperfecta with calcification of the interosseous membranes and/or hypertrophic callus (OI type 5),AD,IFITM5,610967,216828,25
+Bruck syndrome type 2 (BS2),AR,PLOD2,609220,2771,25
+Osteoporosis-pseudoglioma syndrome,AR,LRP5,259770,2788,25
+Cole-Carpenter dysplasia (bone fragility with craniosynostosis),AD,P4HB,112240,2050,25
+Spondylo-ocular dysplasia,AR,XYLT2,605822,85194,25
+Gnathodiaphyseal dysplasia,AD,ANO5,166260,53697,25
+"Ehlers-Danlos syndrome, spondylodysplastic type",AR,B4GALT7,130070,75497,25
+Geroderma osteodysplasticum,AR,GORAB,231070,2078,25
+"Cutis laxa, autosomal recessive form, type 2B (ARCL2B)",AR,PYCR1,612940,90350,25
+Singleton-Merten dysplasia type 1,AD,IFIH1,182250,85191,25
+"Hypophosphatasia, perinatal lethal, infantile and juvenile forms",AR,ALPL,241500,436,26
+"Hypophosphatemic rickets, autosomal recessive, type 1 (ARHR1)",AR,DMP1,241520,289176,26
+"Vitamin D-dependent rickets, type 2A",AR,VDR,277440,93160,26
+Calcium pyrophosphate deposition disease (familial chondrocalcinosis) type 2,AD,ANKH,118600,1416,26
+NA,NA,NA,607016,NA,27
+Mucopolysaccharidosis type 2,XL,IDS,309900,580,27
+Mucopolysaccharidosis type 3A,AR,SGSH,252900,79269,27
+Mucopolysaccharidosis type 3B,AR,"NAGLU",252920,79270,27
+Mucopolysaccharidosis type 3C,AR,HSGNAT,252930,79271,27
+Mucopolysaccharidosis type 3D,AR,GNS,252940,79272,27
+Mucopolysaccharidosis type 4A,AR,GALNS,253000,309297,27
+Mucopolysaccharidosis type 6,AR,ARSB,253200,583,27
+Mucopolysaccharidosis type 7,AR,GUSB,253220,584,27
+Fucosidosis,AR,FUCA,230000,349,27
+alpha-Mannosidosis,AR,MAN2B1,248500,61,27
+beta-Mannosidosis _,AR,MANBA,248510,118,27
+Aspartylglucosaminuria,AR,AGA,208400,93,27
+"Sialidosis, several forms",AR,NEU1,256550,812,27
+"Galactosialidosis, several forms",AR _,PPGB,256540,351,27
+Multiple sulfatase deficiency,AR,SUMF1,272200,585,27
+"Mucolipidosis III (Pseudo-Hurler polydystrophy), alpha/beta type",AR,GNPTAB,252600,423461,27
+"Mucolipidosis III (Pseudo-Hurler polydystrophy), gamma type",AR,GNPTG,252605,423470,27
+"Progeria, Hutchinson-Gilford type",AD,LMNA,176670,740,28
+NA,AR,MMP14,277950,NA,28
+Hajdu-Cheney syndrome,AD,NOTCH2,102500,955,28
+Multicentric carpal-tarsal osteolysis with and without nephropathy,AD,MAFB,166300,2774,28
+Multiple cartilaginous exostoses (osteochondromas)_,AD,EXT1,133700,321,29
+NA,AD,EXT2,133700,321,29
+Cherubism,AD,SH3BP2,118400,184,29
+"Fibrous dysplasia, polyostotic form (McCune-Albright)",SP,GNAS,174800,562,29
+Osteoglophonic dysplasia,AD,FGFR1,166250,2645,29
+Fibrodysplasia ossificans progressiva (FOP),AD,ACVR1,135100,337,29
+Neurofibromatosis type 1 (NF1),AD,NF1,162200,363700,29
+Sotos syndrome,AD,NSD1,117550,821,30
+Marshall-Smith syndrome,AD,NFIX,602535,561,30
+Proteus syndrome,SP,AKT1,176920,744,30
+CLOVES,SP,PIK3CA,612918,140944,30
+Marfan syndrome,AD,FBN1,154700,558,30
+Congenital contractural arachnodactyly,AD,FBN2,121050,115,30
+NA,AD,SMAD3,614816,NA,30
+NA,AD,TGFB2,615582,NA,30
+Cleidocranial dysplasia,AD,RUNX2,119600,1452,32
+Yunis-Varon dysplasia,AR,FIG4,216340,3472,32
+Parietal foramina (isolated),AD,ALX4,609597,60015,32
+Parietal foramina with cleidocranial dysplasia,AD,MSX2,168550,251290,32
+Pfeiffer syndrome,AD,FGFR1,101600,93258,33
+NA,AD,FGFR2,101600,710,33
+Apert syndrome,AD,FGFR2,101200,87,33
+Craniosynostosis with cutis gyrata (Beare-Stevenson),AD,FGFR2,123790,1555,33
+Crouzon syndrome,AD,FGFR2,123500,207,33
+Crouzon-like craniosynostosis with acanthosis nigricans (Crouzonodermoskeletal syndrome),AD,FGFR3,612247,93262,33
+"Craniosynostosis, Muenke type",AD,FGFR3,602849,53271,33
+Craniosynostosis Boston type,AD,MSX2,604757,1541,33
+Saethre-Chotzen syndrome,AD,TWIST1,101400,794,33
+Shprintzen-Goldberg syndrome,AD,SKI,182212,2462,33
+Baller-Gerold syndrome,AR,RECQL4,218600,1225,33
+Carpenter syndrome,AR,RAB23,201000,65759,33
+"Mandibulofacial dysostosis (Treacher Collins, Franceschetti-Klein)",AD,TCOF1,154500,861,34
+NA,"AD, AR",POLR1D,613717,NA,34
+Mandibulofacial dysostosis with microcephaly,AD,EFTUD2,610536,79113,34
+Mandibulofacial dysostosis with alopecia,AD,EDNRA,616367,443995,34
+Miller syndrome (postaxial acrofacial dysostosis),AR,DHODH,263750,246,34
+"Acrofacial dysostosis, Nager type","AD, AR",SF3B4,154400,245,34
+"Acrofacial dysostosis, Cincinnati type",AD,POLR1A,616462,1200,34
+"Frontonasal dysplasia, type 1",AR,ALX3,136760,391474,34
+"Frontonasal dysplasia, type 2",AR,ALX4,613451,228390,34
+"Frontonasal dysplasia, type 3",AR,ALX1,613456,306542,34
+Craniofrontonasal syndrome,XL,EFNB1,304110,1520,34
+Acromelic frontonasal dysostosis,AD,ZSWIM6,603671,1827,34
+Richieri-Costa-Pereira syndrome,AR,EIF4A3,268305,3102,34
+"Auriculocondylar syndrome, type 1",AD,GNAI3,602483,137888,34
+Orofaciodigital syndrome type I (OFD1),XL,OFD1,311200,2750,34
+Weyers acrofacial (acrodental) dysostosis,AD,EVC1,193530,952,34
+Currarino syndrome,AD,MNX1,176450,1552,35
+Spondylocostal dysostosis,AR,DLL3,277300,2311,35
+NA,AR,MESP2,608681,2311,35
+NA,AR,LFNG,609813,2311,35
+Vertebral segmentation defect (congenital scoliosis) with variable penetrance,AD,MESP2,608681,2311,35
+Klippel-Feil syndrome,AD,GDF6,118100,2345,35
+NA,AD,GDF3,613702,2345,35
+NA,AR,MYO18B,616549,447974,35
+Diaphanospondylodysostosis,AR,BMPER,608022,66637,35
+Spondylo-megaepiphyseal-metaphyseal dysplasia (SMMD),AR,NKX3-2,613330,228387,35
+Ischiopatellar dysplasia (small patella syndrome),AD,TBX4,147891,1509,36
+Nail-patella syndrome,AD,LMX1B,161200,2614,36
+Genitopatellar syndrome,AD,KAT6B,606170,85201,36
+Ear-patella-short stature syndrome (Meier-Gorlin),AR,ORC1,224690,2554,36
+NA,AR,ORC4,613800,2554,36
+NA,AR,ORC6,613803,2554,36
+NA,AR,CDT1,613804,2554,36
+NA,AR,CDC6,613805,2554,36
+Brachydactyly type A1,AD,IHH,112500,93388,37
+Brachydactyly type A2,AD,BMPR1B,112600,93396,37
+NA,AD,BMP2,112600,NA,37
+NA,AD,GDF5,112600,NA,37
+Brachydactyly type B,AD,ROR2,113000,93383,37
+Brachydactyly type E,AD,PTHLH,613382,93387,37
+Brachydactyly - mental retardation syndrome,AD,HDAC4,600430,1001,38
+"Hyperphosphatasia with mental retardation, brachytelephalangy, and distinct face",AR,PIGV,239300,247262,38
+Microcephaly-oculo-digito-esophageal-duodenal syndrome (Feingold syndrome),AD,MYCN,164280,1305,38
+Hand-foot-genital syndrome,AD,HOXA13,140000,2438,38
+Rubinstein-Taybi syndrome,AD,CREBBP,180849,783,38
+NA,AD,EP300,613684,353284,38
+"Brachydactyly, Temtamy type",AR,CHSY1,605282,363417,38
+Coffin-Siris syndrome1,AD,ARID1B,135900,1465,38
+Catel-Manzke syndrome,AR,TGDS,616145,1388,38
+Pseudohypoparathyroidism type IA,AD,GNAS,103580,79443,38
+Ulnar-mammary syndrome,AD,TBX3,181450,3138,39
+de Lange syndrome,AD,NIPBL,122470,199,39
+NA,XL,SMC1A,300590,NA,39
+NA,AD,SMC3,610759,NA,39
+NA,AD,RAD21,614701,NA,39
+Fanconi anemia (see note below),AR,several,227650,84,39
+Thrombocytopenia-absent radius (TAR),AR,RBM8A,274000,3320,39
+Holt-Oram syndrome,AD,TBX5,142900,392,39
+Okihiro syndrome (Duane _ radial ray anomaly),AD,SALL4,607323,93293,39
+Cousin syndrome,AR,TBX15,260660,93333,39
+Roberts syndrome,AR,ESCO2,268300,3103,39
+Fuhrmann syndrome,AR,WNT7A,228930,2854,39
+Adams-Oliver syndrome,AD,ARHGAP31,100300,974,39
+NA,AR,DOCK6,614219,NA,39
+NA,AD,DLL4,616589,NA,39
+Clubfoot with or without deficiency of long bones and/or mirrorimage polydactyly,AD,PITX1,119800,199315,39
+Ankyloblepharon-ectodermal dysplasia-cleft palate (AEC),AD,TP63,106260,1071,40
+Ectrodactyly-ectodermal dysplasia-macular dystrophy syndrome (EEM),AR,CDH3,225280,1897,40
+Limb-mammary syndrome (including ADULT syndrome),AD,TP63,603543,69085,40
+"Split hand-foot malformation, isolated form, type 1 (SHFM1)",AD,DLX5,220600,2440,40
+"Split hand-foot malformation, isolated form, type 3 (SHFM3)",AD,10q24,246560,2440,40
+"Split hand-foot malformation, isolated form, type 6 (SHFM6)",AR,WNT10B,225300,2440,40
+Hartsfield syndrome,AD,FGFR1,615465,2117,40
+Preaxial polydactyly type 2 (PPD2)/ Triphalangeal thumb (TPT),AD,SHH,174500,93336,41
+Greig cephalopolysyndactyly syndrome,AD,GLI3,175700,380,41
+Pallister-Hall syndrome,AD,GLI3,146510,672,41
+"Synpolydactyly (complex, fibulin1 - associated)",AD,FBLN1,608180,93403,41
+Townes-Brocks syndrome (Renal-Ear-Anal-Radial syndrome),AD,SALL1,107480,857,41
+Lacrimo-auriculo-dento-digital syndrome (LADD),AD,FGFR2,149730,2363,41
+Acrocallosal syndrome,AR,KIF7,200990,36,41
+Cenani-Lenz syndactyly,AR,LRP4,212780,3258,41
+"STAR syndrome (syndactyly of toes, telecanthus, ano- and renal malformations)",XL,FAM58A,300707,140952,41
+Syndactyly type 3 (IV-V),AD,GJA1,186100,93404,41
+Syndactyly with microcephaly and mental retardation (Filippi syndrome),AR,CKAP2L,272440,3255,41
+NA,AR,RPGRIP1L,611561,NA,41
+Multiple synostoses syndrome,AD,NOG,186500,3237,42
+NA,AD,FGF9,612961,NA,42
