@@ -39,10 +39,10 @@ Note that some disorders have AD and AR on the same line, this will cause proble
 
 ## The DDG2P Dataset
 
-Using the DDG2P data export of 15-11-2021 here. Newer versions use the GenCC terminology, which I dont like.
+Using the DDG2P data export of 1-12-2021 here. Newer versions use the GenCC terminology, which I dont like.
 
 ```{r, message=FALSE, results='asis'}
-ddg2p<-read_csv(here("DDG2P_15_11_2021.csv"), col_names = TRUE) %>%
+ddg2p<-read_csv(here("DDG2P_1_12_2021.csv"), col_names = TRUE) %>%
   rename(DMIM = "disease mim", GENE = "gene symbol")
 
 ddg2p[1:10,] %>%
