@@ -13,15 +13,14 @@ library(here)
 library (dplyr)
 library (tidyr)
 library (magrittr)
-library (purrr)
-library(kableExtra)
+library (gt)
 ```
 
 ## The ISDS Nosology Dataset
 
 First we import and clean the ISDS dataset
 
-```{r message=FALSE, results='asis'}
+```{r message=FALSE}
 nosology_raw<-read_csv(here("ISDS2019nosology.csv"), col_names = TRUE)
 
 nosology <- nosology_raw %>%
@@ -29,26 +28,46 @@ nosology <- nosology_raw %>%
   drop_na(GroupN) %>% #removes headers in table that contain no useful data
   rename(DMIM = Omim, GENE = Gene, Name = Group) #unify names for join
 
-nosology[1:10,] %>%
-  #select(Name, GENE, DMIM) %>%
-  kbl(caption = "first 10 lines...") %>%
-  kable_styling()
+nosology[1:20,] %>%
+  gt() %>%
+   tab_header(
+    title = md("**ISDS 2019 Nosology**"),
+    subtitle = md("first 20 lines only")
+  )
+  
 ```
 
 Note that some disorders have AD and AR on the same line, this will cause problems. SEDC even has a \* in this column, this needs cleaning up.
+Also there are some rows with NA in various columns, that could cause problems. 
+
+Lets filter for all rows that have an NA in any:
+
+```{r}
+nosology %>%
+ filter_at(vars(all_of(colnames(nosology))), any_vars(is.na(.))) %>%
+  gt() %>%
+   tab_header(
+    title = md("**ISDS 2019 Nosology**"),
+    subtitle = md("rows with NA in them")
+   )
+```
+
 
 ## The DDG2P Dataset
 
 Using the DDG2P data export of 1-12-2021 here. Newer versions use the GenCC terminology, which I dont like.
 
-```{r, message=FALSE, results='asis'}
+```{r, message=FALSE}
 ddg2p<-read_csv(here("DDG2P_1_12_2021.csv"), col_names = TRUE) %>%
   rename(DMIM = "disease mim", GENE = "gene symbol")
 
 ddg2p[1:10,] %>%
   select(GENE, "disease name", DMIM, "allelic requirement", "mutation consequence") %>%
-  kbl(caption = "first 10 lines, not all columns shown") %>%
-  kable_styling()
+  gt() %>%
+   tab_header(
+    title = md("**DDG2P (old format)**"),
+    subtitle = md("first 10 lines only")
+  )
 ```
 Let's create an inner join based on DMIM:
 ```{r}
@@ -56,7 +75,40 @@ innerjoin_byDMIM <-inner_join(nosology,ddg2p, by = "DMIM")
 
 innerjoin_byDMIM [1:10,] %>%
   select(Name, inheri, GENE.x, DMIM, GENE.y, "disease name", "allelic requirement", "mutation consequence") %>%
-  kbl(caption = "first 10 lines, not all columns shown") %>%
-  kable_styling()
+  gt() %>%
+   tab_header(
+    title = md("**Inner Join ISDS-DDG2P by DMIM**"),
+    subtitle = md("first 10 lines only")
+   ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "lightcyan"),
+      cell_text(weight = "bold")
+      ),
+    locations = cells_body(
+      rows = is.na(Name)
+    )
+  )
+```
+
+This creates some rows with NAs. The code above highlights NAs in the Name column. Could not figure out how to highlight all the cells with NA in it. Instead, the code below makes a table with all the rows that have NA in it somewhere.
+
+```{r}
+
+#first select the columns of interest
+innerjoin_byDMIM_short <- innerjoin_byDMIM %>%
+  select(Name, inheri, GENE.x, DMIM, GENE.y, "disease name", "allelic requirement", "mutation consequence") 
+
+#the filter for any row that contains NA in any column
+#from: https://stackoverflow.com/questions/17013227/select-only-rows-if-its-value-in-a-particular-column-is-na-in-r
+innerjoin_byDMIM_short %>%
+  filter_at(vars(all_of(colnames(innerjoin_byDMIM_short))), any_vars(is.na(.))) %>%
+
+#then create the table  
+  gt() %>%
+   tab_header(
+    title = md("**Inner Join ISDS-DDG2P by DMIM**"),
+    subtitle = md("first 10 lines only")
+  )
 ```
 

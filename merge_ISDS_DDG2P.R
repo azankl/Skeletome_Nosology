@@ -16,11 +16,8 @@ nosology <- nosology_raw %>%
   rename(DMIM = Omim, GENE = Gene) #unify names for join
 
 
-# using the old DDG2P list here:
-ddg2p_old<-read_csv(here("DDG2P_14_3_2022.csv"), col_names = TRUE) %>%
-  rename(DMIM = "disease mim", GENE = "gene symbol")
 
-#try using the new DDG2P list:
+#read the DDG2P list:
 ddg2p<-read_csv(here("DDG2P_21_7_2022.csv"), col_names = TRUE) %>%
   rename(DMIM = "disease mim", GENE = "gene symbol")
 
