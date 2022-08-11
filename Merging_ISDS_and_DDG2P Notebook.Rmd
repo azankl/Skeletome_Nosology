@@ -3,6 +3,7 @@ title: "Merging the ISDS Nosology and DDG2P"
 output:
   html_document:
     code_folding: hide
+    df_print: paged #probably not needed if only showing gt tables
 ---
 
 In this Notebook, I am trying to merge the ISDSnosology.csv with the DDG2P.csv mostly using 'join'
@@ -110,5 +111,38 @@ innerjoin_byDMIM_short %>%
     title = md("**Inner Join ISDS-DDG2P by DMIM**"),
     subtitle = md("first 10 lines only")
   )
+```
+
+Another attempt at highlight all NAs:
+```{r}
+# #with reactable
+# #see: https://glin.github.io/reactable/articles/cookbook/cookbook.html#highlight-cells
+# 
+# library(reactable)
+# data <- MASS::road[11:17, ]
+# 
+# reactable(
+#   data,
+#   defaultColDef = colDef(
+#     style = function(value, index, name) {
+#       if (is.numeric(value) && value == max(data[[name]])) {
+#         list(fontWeight = "bold")
+#       }
+#     }
+#   )
+# )
+# 
+# #the below does not work, probably because missing values are ignored by reactable, need to recode them first
+# #should probably recode them already earlier, as NAs are often handled differently from other cell content
+# reactable(
+#   innerjoin_byDMIM_short,
+#   defaultColDef = colDef(
+#     style = function (value, index, name) {
+#       if (is.na(value)) {
+#         list(fontWeight = "bold")
+#       }
+#     }
+#   )
+# )
 ```
 

@@ -7,8 +7,16 @@ library (dplyr)
 library (tidyr)
 library (magrittr)
 library (purrr)
+library(readxl)
 
-nosology_raw<-read_csv(here("ISDS2019nosology.csv"), col_names = TRUE)
+#Import the ISDS 2019 Table
+ISDS_2019_Table <- read_excel("ISDS 2019 Table.xlsx")
+
+reformat_ISDS <-function(df) {
+  df %>% rowwise(mutate())
+}
+
+ISDS<- reformat(ISDS_2019_Table )
 
 nosology <- nosology_raw %>%
   select(-c(1,2)) %>% #remove unnecessary columns
@@ -104,6 +112,9 @@ joined_diffGene <- leftjoinedByDMIM %>%
 
 #fixing errors seen in joined_diffGene Table
 
+#error in DDG2P data, emailed to David Fitzpatrick:
+#The disease MIM for MAP3K7-associated Frontometaphyseal Dysplasia should be 617137, not 305620 (the latter is for FLNA-associated FMD).
+
 #wrong gene name in ISDS
 leftjoinedByDMIM_updated[leftjoinedByDMIM_updated$DMIM=="614078","GENE.x"] <- leftjoinedByDMIM_updated[leftjoinedByDMIM_updated$DMIM=="614078","GENE.y"]
 #wrong DMIM and name in G2P (this fixes it in the joined table, but better to correct in DDG2P and then reimport)
@@ -114,6 +125,8 @@ leftjoinedByDMIM_updated <- leftjoinedByDMIM_updated %>%
 
 
 
+#trying to create a clean ISDS list from original ISDS table
+ISDS2019nosology <- read_csv("ISDS2019nosology.csv")
 
 
 #Use RNotebook to document the merging process, will help with future publication
