@@ -13,10 +13,11 @@ library(readxl)
 ISDS_2019_Table <- read_excel("ISDS 2019 Table.xlsx")
 
 reformat_ISDS <-function(df) {
+  pattern <- "[1-9]("
   df %>% rowwise(mutate())
 }
 
-ISDS<- reformat(ISDS_2019_Table )
+ISDS<- reformat(ISDS_2019_Table)
 
 nosology <- nosology_raw %>%
   select(-c(1,2)) %>% #remove unnecessary columns
