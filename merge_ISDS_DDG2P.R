@@ -13,7 +13,7 @@ library(readxl)
 ISDS_2019_Table <- read_excel("ISDS 2019 Table.xlsx")
 
 reformat_ISDS <-function(df) {
-  pattern <- "[1-9]("
+  pattern <- "^[1-9]{1,2}\\.\\s(.*$)"
   df %>% rowwise(mutate())
 }
 

@@ -18,7 +18,7 @@ nosology <- nosology_raw %>%
 
 
 #read the DDG2P list:
-ddg2p<-read_csv(here("DDG2P_21_7_2022.csv"), col_names = TRUE) %>%
+ddg2p<-read_csv(here("DDG2P_1_12_2021.csv"), col_names = TRUE) %>%
   rename(DMIM = "disease mim", GENE = "gene symbol")
 
 #creating an inner_join shows where ISDS and DDG2P match on DMIM
@@ -56,6 +56,15 @@ nosology_named <- nosology %>%
 n_distinct(nosology$GENE)
 #the result is 438 while the paper says 437
 
+#find number of disease-gene assocations in the nosology:
+#(ie.fnd all rows where the GENE column is not empty)
+nosology %>% filter(!(is.na(GENE)))
+#the result is 615
+
+#number of nosology entities without DMIM
+nosology_noDMIM <- nosology %>%
+  filter ((is.na(DMIM)))
+          
 #find number of Orphanet only entities in ISDS
 nosology_orphaonly <- nosology %>%
   filter ((is.na(DMIM) & !is.na(Orph)))
@@ -63,6 +72,9 @@ nosology_orphaonly <- nosology %>%
 #find disorders without a gene in ISDS (has a name but no gene)
 nosology_nogene <- nosology %>%
   filter((is.na(GENE) & !is.na(Group)))
+
+#find number of disease-gene assocations in the nosology:
+#ie. find all rows that have a gene entry
 
 #creating a left join, which keeps all ISDS entries
 leftjoinedByDMIM <- left_join(nosology, ddg2p, by = "DMIM")
@@ -101,6 +113,11 @@ write_csv(leftjoinedByDMIM,here("leftjoinedByDMIM.csv"), col_names = TRUE)
 joined_diffGene <- leftjoinedByDMIM %>%
   filter(GENE.x != GENE.y) %>%
   select(-c(5,6)) #drop Orpha and GroupN
+
+joined_diffGene2 <- leftjoinedByDMIM %>%
+  filter(is.na(GENE.x) & !is.na(GENE.y)) %>%
+  select(-c(5,6)) #drop Orpha and GroupN
+
 
 #fixing errors seen in joined_diffGene Table
 
