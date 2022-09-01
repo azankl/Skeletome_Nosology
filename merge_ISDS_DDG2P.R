@@ -8,16 +8,29 @@ library (tidyr)
 library (magrittr)
 library (purrr)
 library(readxl)
+library(stringr)
 
 #Import the ISDS 2019 Table
-ISDS_2019_Table <- read_excel("ISDS 2019 Table.xlsx")
+ISDS_2019_Table <- read_excel("ISDS 2019 Table.xlsx", col_names = c("Name", "MOI","Gene", "OMIM", "ORPHA","Notes"), skip=1)
 
-reformat_ISDS <-function(df) {
-  pattern <- "^[1-9]{1,2}\\.\\s(.*$)"
-  df %>% rowwise(mutate())
+#extract the Group name and Group Number from the table:
+#find rows that start with a number and dot in the Name column, indicating a group heading.
+#Then extract group name and number from this row 
+pattern <- "^([1-9]+)\\.\\s(.*$)"
+grouphits<-unlist(ISDS_2019_Table[,"Name"]) %>%
+  str_match(pattern)
+colnames(grouphits) <- c("Match","Number","Name")
+#rows that did not match the group pattern above (ie. are disease rows) will return NA in grouphits
+#fill those rows with the group name and number extracted previously
+for (i in seq_along(grouphits[,'Match'])) {
+  groupName = ifelse(!is.na(grouphits[i,'Match']), grouphits[i,'Name'], groupName)
+  groupNumber = ifelse(!is.na(grouphits[i,'Match']), grouphits[i,'Number'], groupNumber)
+  grouphits[i,2:3] = c(groupNumber, groupName)
 }
+#add new column to ISDS table with group number and group name                      
+ISDS <- cbind(ISDS_2019_Table, grouphits[,c('Number','Name')])
 
-ISDS<- reformat(ISDS_2019_Table)
+
 
 nosology <- nosology_raw %>%
   select(-c(1,2)) %>% #remove unnecessary columns
