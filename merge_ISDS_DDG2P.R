@@ -31,7 +31,7 @@ for (i in seq_along(grouphits[,'Match'])) {
 ISDS <- cbind(ISDS_2019_Table, grouphits[,c('Number','Name')])
 
 #still need to clean up the table a bit, eg remove rows with Group names in it
-#this is unfinished
+#this is unfinished, plan to start new project with 2023Nosology instead
 
 
 #the parts below seem to come from mere_ISDS_DDG2P_old and make use of "ISDS2019nosology.csv"
