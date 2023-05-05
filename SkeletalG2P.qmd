@@ -1,0 +1,77 @@
+---
+title: "SkeletalG2P"
+format: html
+editor: visual
+---
+
+## Skeletal G2P
+
+In this project I am trying to combine the data from the 2023 ISDS Nosology with the DDG2P project.
+
+Steps required:
+
+Step 1: Get the 2023 ISDS Nosology into R using rvest.
+
+The 2023 Nosology is published in the AJMG here: https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.63132
+
+I could not read from this URL directly using `read_html`, probably because of some paywall issue. I therefore opened the URL in Chrome, and saved the page as "AJMG.html" using Chrome \> File \> Save Page As... with Format "Web Page, HTML Only".
+
+I then opened `AJMG.html` with Chrome and used the [rvest SelectorGadget](https://rvest.tidyverse.org/articles/selectorgadget.html) to identify the selector for the table (which turned out to be called `".article-section__table"`).
+
+I then extracted the table from AJMG.html with the code below.
+
+Note that some quotation marks in the Notes column got garbled. Probably not worth fixing as they are just Notes, but need to check nothing else got garbled.
+
+::: callout-note
+Selecting the xpath as described [here](https://www.r-bloggers.com/2015/01/using-rvest-to-scrape-an-html-table/) also works, but some of the code in the blog post does not work, must be an older version of rvest.
+:::
+
+```{r}
+library(tidyverse)
+library(here)
+library(rvest)
+AJMG_table<- read_html (here("AJMG.html")) %>%
+  html_element(".article-section__table") %>%
+  html_table()
+
+```
+
+Step 2: remove ISDS Group Headings from table and add as extra column instead
+
+```{r}
+#extract rows where Group Number/Disorder Number column contains "Group'
+pattern <- "Group\\s([1-9]+)"
+grouplist<- AJMG_table %>%
+  filter(str_detect(unlist(AJMG_table[,1]), pattern))
+
+#convert Group number to simple number (eg. "Group 1" -> 1)
+
+#keep only Group number and Name of group columns
+#save as new dataframe containing all groupings
+
+
+#extract group number from NOS-number
+#use that to find group name in group name table created above
+#add group name to a new column
+#drop rows that dont have a NOS number, they only contain comments?
+
+  
+
+##this code worked with 2019 table, needs modifying:
+#extract the Group name and Group Number from the table:
+#find rows that start with a number and dot in the Name column, indicating a group heading.
+#Then extract group name and number from this row 
+pattern <- "^([1-9]+)\\.\\s(.*$)"
+grouphits<-unlist(ISDS_2019_Table[,"Name"]) %>%
+  str_match(pattern)
+colnames(grouphits) <- c("Match","Number","Name")
+#rows that did not match the group pattern above (ie. are disease rows) will return NA in grouphits
+#fill those rows with the group name and number extracted previously
+for (i in seq_along(grouphits[,'Match'])) {
+  groupName = ifelse(!is.na(grouphits[i,'Match']), grouphits[i,'Name'], groupName)
+  groupNumber = ifelse(!is.na(grouphits[i,'Match']), grouphits[i,'Number'], groupNumber)
+  grouphits[i,2:3] = c(groupNumber, groupName)
+}
+#add new column to ISDS table with group number and group name                      
+ISDS <- cbind(ISDS_2019_Table, grouphits[,c('Number','Name')])
+```
