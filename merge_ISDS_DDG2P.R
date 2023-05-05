@@ -30,8 +30,12 @@ for (i in seq_along(grouphits[,'Match'])) {
 #add new column to ISDS table with group number and group name                      
 ISDS <- cbind(ISDS_2019_Table, grouphits[,c('Number','Name')])
 
+#still need to clean up the table a bit, eg remove rows with Group names in it
+#this is unfinished
 
 
+#the parts below seem to come from mere_ISDS_DDG2P_old and make use of "ISDS2019nosology.csv"
+#the below wont work
 nosology <- nosology_raw %>%
   select(-c(1,2)) %>% #remove unnecessary columns
   drop_na(GroupN) %>% #removes headers in table that contain no useful data
