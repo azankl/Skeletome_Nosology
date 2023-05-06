@@ -36,42 +36,28 @@ AJMG_table<- read_html (here("AJMG.html")) %>%
 
 ```
 
-Step 2: remove ISDS Group Headings from table and add as extra column instead
+Step 2: add ISDS Group-Number and Group-Name as extra columns to each disease and then remove the Group headings
 
 ```{r}
-#extract rows where Group Number/Disorder Number column contains "Group'
+#this regex pattern matches rows that start with "Group", followed by whitespace and a number, and captures this number
 pattern <- "Group\\s([1-9]+)"
-grouplist<- AJMG_table %>%
-  filter(str_detect(unlist(AJMG_table[,1]), pattern))
-
-#convert Group number to simple number (eg. "Group 1" -> 1)
-
-#keep only Group number and Name of group columns
-#save as new dataframe containing all groupings
-
-
-#extract group number from NOS-number
-#use that to find group name in group name table created above
-#add group name to a new column
-#drop rows that dont have a NOS number, they only contain comments?
-
-  
-
-##this code worked with 2019 table, needs modifying:
-#extract the Group name and Group Number from the table:
-#find rows that start with a number and dot in the Name column, indicating a group heading.
-#Then extract group name and number from this row 
-pattern <- "^([1-9]+)\\.\\s(.*$)"
-grouphits<-unlist(ISDS_2019_Table[,"Name"]) %>%
-  str_match(pattern)
-colnames(grouphits) <- c("Match","Number","Name")
-#rows that did not match the group pattern above (ie. are disease rows) will return NA in grouphits
-#fill those rows with the group name and number extracted previously
-for (i in seq_along(grouphits[,'Match'])) {
-  groupName = ifelse(!is.na(grouphits[i,'Match']), grouphits[i,'Name'], groupName)
-  groupNumber = ifelse(!is.na(grouphits[i,'Match']), grouphits[i,'Number'], groupNumber)
-  grouphits[i,2:3] = c(groupNumber, groupName)
+#extract rows where Group Number/Disorder Number column matches this pattern
+grouphits<- str_match(unlist(AJMG_table[,1]), pattern)
+colnames(grouphits)<-c("Match","GroupNumber")
+#add new column to AJMG_table with group number                      
+AJMG_table <- add_column(AJMG_table,ISDS_Group_No = grouphits[,'GroupNumber'])
+#add new column for ISDS_Group_Name (empty for now)
+AJMG_table <- add_column(AJMG_table, ISDS_Group_Name = NA)
+#rows that did not match the group pattern above (ie. are disease rows) will have NA in ISDS_Group_No
+#fill those rows with the group number extracted previously and
+#fill ISDS_Group_Name with Names from 'Name of Group/Disorder'
+for (i in seq_along(unlist(AJMG_table[,"ISDS_Group_No"]))) {
+  groupNumber = ifelse(!is.na(AJMG_table[i,"ISDS_Group_No"]), AJMG_table[i,"ISDS_Group_No"], groupNumber)
+  groupName = ifelse(!is.na(AJMG_table[i,"ISDS_Group_No"]), AJMG_table[i,2], groupName)
+  AJMG_table[i,c("ISDS_Group_No","ISDS_Group_Name")] = c(groupNumber,groupName)
 }
-#add new column to ISDS table with group number and group name                      
-ISDS <- cbind(ISDS_2019_Table, grouphits[,c('Number','Name')])
+#now some clean up:
+#remove rows that match the 'Group' finding pattern above
+AJMG_table <- AJMG_table %>%
+  filter(str_detect(unlist(AJMG_table[,1]), pattern, negate = TRUE))
 ```
