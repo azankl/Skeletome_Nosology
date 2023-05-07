@@ -125,9 +125,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="skeletal-g2p" class="level2">
 <h2 class="anchored" data-anchor-id="skeletal-g2p">Skeletal G2P</h2>
-<p>In this project I am trying to combine the data from the 2023 ISDS Nosology with the DDG2P project.</p>
+<p>In this project I am trying to combine the data from the 2023 Skeletal Dysplasia Nosology with the DDG2P project.</p>
 <p>Steps required:</p>
-<p>Step 1: Get the 2023 ISDS Nosology into R using rvest.</p>
+<p>Step 1: Get the 2023 Nosology into R. ASF provided the “Nosology 2023 table Revised Jan 31.xls’ document stored in this project, but as he was not sure if this was the final version, I decided to scrape the table straight from the published version using rvest.</p>
 <p>The 2023 Nosology is published in the AJMG here: https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.63132</p>
 <p>I could not read from this URL directly using <code>read_html</code>, probably because of some paywall issue. I therefore opened the URL in Chrome, and saved the page as “AJMG.html” using Chrome &gt; File &gt; Save Page As… with Format “Web Page, HTML Only”.</p>
 <p>I then opened <code>AJMG.html</code> with Chrome and used the <a href="https://rvest.tidyverse.org/articles/selectorgadget.html">rvest SelectorGadget</a> to identify the selector for the table (which turned out to be called <code>".article-section__table"</code>).</p>
@@ -177,7 +177,7 @@ The following object is masked from 'package:readr':
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_element</span>(<span class="st">".article-section__table"</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_table</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Step 2: add ISDS Group-Number and Group-Name as extra columns to each disease and then remove the Group headings</p>
+<p>Step 2: add Nosology Group-Number and Group-Name as extra columns to each disease and then remove the Group headings, NOS-numbers and comments</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#this regex pattern matches rows that start with "Group", followed by whitespace and a number, and captures this number</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>pattern <span class="ot">&lt;-</span> <span class="st">"Group</span><span class="sc">\\</span><span class="st">s([1-9]+)"</span></span>
@@ -185,21 +185,50 @@ The following object is masked from 'package:readr':
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>grouphits<span class="ot">&lt;-</span> <span class="fu">str_match</span>(<span class="fu">unlist</span>(AJMG_table[,<span class="dv">1</span>]), pattern)</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(grouphits)<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"Match"</span>,<span class="st">"GroupNumber"</span>)</span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">#add new column to AJMG_table with group number                      </span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>AJMG_table <span class="ot">&lt;-</span> <span class="fu">add_column</span>(AJMG_table,<span class="at">ISDS_Group_No =</span> grouphits[,<span class="st">'GroupNumber'</span>])</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">#add new column for ISDS_Group_Name (empty for now)</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>AJMG_table <span class="ot">&lt;-</span> <span class="fu">add_column</span>(AJMG_table, <span class="at">ISDS_Group_Name =</span> <span class="cn">NA</span>)</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co">#rows that did not match the group pattern above (ie. are disease rows) will have NA in ISDS_Group_No</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>AJMG_table <span class="ot">&lt;-</span> <span class="fu">add_column</span>(AJMG_table,<span class="at">NOS_Group_No =</span> grouphits[,<span class="st">'GroupNumber'</span>])</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">#add new column for NOS_Group_Name (empty for now)</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>AJMG_table <span class="ot">&lt;-</span> <span class="fu">add_column</span>(AJMG_table, <span class="at">NOS_Group_Name =</span> <span class="cn">NA</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co">#rows that did not match the group pattern above (ie. are disease rows) will have NA in NOS_Group_No</span></span>
 <span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co">#fill those rows with the group number extracted previously and</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co">#fill ISDS_Group_Name with Names from 'Name of Group/Disorder'</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(<span class="fu">unlist</span>(AJMG_table[,<span class="st">"ISDS_Group_No"</span>]))) {</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  groupNumber <span class="ot">=</span> <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.na</span>(AJMG_table[i,<span class="st">"ISDS_Group_No"</span>]), AJMG_table[i,<span class="st">"ISDS_Group_No"</span>], groupNumber)</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  groupName <span class="ot">=</span> <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.na</span>(AJMG_table[i,<span class="st">"ISDS_Group_No"</span>]), AJMG_table[i,<span class="dv">2</span>], groupName)</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  AJMG_table[i,<span class="fu">c</span>(<span class="st">"ISDS_Group_No"</span>,<span class="st">"ISDS_Group_Name"</span>)] <span class="ot">=</span> <span class="fu">c</span>(groupNumber,groupName)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co">#fill NOS_Group_Name with Names from 'Name of Group/Disorder'</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(<span class="fu">unlist</span>(AJMG_table[,<span class="st">"NOS_Group_No"</span>]))) {</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  groupNumber <span class="ot">=</span> <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.na</span>(AJMG_table[i,<span class="st">"NOS_Group_No"</span>]), AJMG_table[i,<span class="st">"NOS_Group_No"</span>], groupNumber)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  groupName <span class="ot">=</span> <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.na</span>(AJMG_table[i,<span class="st">"NOS_Group_No"</span>]), AJMG_table[i,<span class="dv">2</span>], groupName)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  AJMG_table[i,<span class="fu">c</span>(<span class="st">"NOS_Group_No"</span>,<span class="st">"NOS_Group_Name"</span>)] <span class="ot">=</span> <span class="fu">c</span>(groupNumber,groupName)</span>
 <span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="co">#now some clean up:</span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="co">#remove rows that match the 'Group' finding pattern above</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="co">#remove rows without NOS-number (ie Group Headings and Group Comments)</span></span>
 <span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>AJMG_table <span class="ot">&lt;-</span> AJMG_table <span class="sc">%&gt;%</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(<span class="fu">unlist</span>(AJMG_table[,<span class="dv">1</span>]), pattern, <span class="at">negate =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span> (<span class="fu">str_detect</span>(<span class="st">`</span><span class="at">Group number/number of disorder</span><span class="st">`</span>,<span class="st">"NOS"</span>))</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co">#decided to keep the NOS-numbers column for now, as it allows easy sorting according to Nosology Groups</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="co">#rearrange an rename columns</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>Nosology_2023 <span class="ot">&lt;-</span> AJMG_table <span class="sc">%&gt;%</span> </span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span> (</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">"NOS_ID"</span> <span class="ot">=</span> <span class="st">`</span><span class="at">Group number/number of disorder</span><span class="st">`</span>,</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">"NOS_Name"</span> <span class="ot">=</span> <span class="st">`</span><span class="at">Name of group/name of disorder</span><span class="st">`</span>,</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">"NOS_MOI"</span> <span class="ot">=</span> <span class="st">`</span><span class="at">Inheritance</span><span class="st">`</span>,</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">"NOS_Gene"</span> <span class="ot">=</span> <span class="st">`</span><span class="at">Gene or locus</span><span class="st">`</span>,</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">"NOS_OMIM"</span> <span class="ot">=</span> <span class="st">`</span><span class="at">MIM No.</span><span class="st">`</span>,</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">"NOS_Notes"</span> <span class="ot">=</span> <span class="st">`</span><span class="at">Notes</span><span class="st">`</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="co">#use save_rds() to save the Nosology_2023 object to file (as a serialised object).</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="co">#read back in with read_rds</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a><span class="co">#could also use write_tsv to store in a format that can be used in other tools</span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="co">#avoid write_csv as table currently contains many commas</span></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="co">#decide on final file output once I have more clarity what should be included in the file</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Develop further analyses as R Scripts first, as it allows better debugging in RStudio. Only create the Quarto document when everything works, to document how it was done.</p>
+</div>
 </div>
 </section>
 
