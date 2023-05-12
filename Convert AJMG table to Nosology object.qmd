@@ -1,16 +1,14 @@
 ---
-title: "SkeletalG2P"
+title: "Convert AJMG Table to Nosology Object"
 format: html
 editor: visual
 ---
 
-## Skeletal G2P
+## Convert AJMG Table to Nosology Object
 
-In this project I am trying to combine the data from the 2023 Skeletal Dysplasia Nosology with the DDG2P project.
+This document deals with converting the Nosology table published in AJMG into an R tibble (dataframe).
 
-Steps required:
-
-Step 1: Get the 2023 Nosology into R. ASF provided the "Nosology 2023 table Revised Jan 31.xls' document stored in this project, but as he was not sure if this was the final version, I decided to scrape the table straight from the published version using rvest.
+ASF provided the "Nosology 2023 table Revised Jan 31.xls' document stored in this project, but as he was not sure if this was the final version, I decided to scrape the table straight from the published version using rvest.
 
 The 2023 Nosology is published in the AJMG here: https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.63132
 
@@ -71,14 +69,19 @@ Nosology_2023 <- AJMG_table %>%
     "NOS_OMIM" = `MIM No.`,
     "NOS_Notes" = `Notes`
   )
-#use save_rds() to save the Nosology_2023 object to file (as a serialised object).
+
+#save the Nosology_2023 object to file (as a serialised RDS object).
 #read back in with read_rds
-#could also use write_tsv to store in a format that can be used in other tools
-#avoid write_csv as table currently contains many commas
-#decide on final file output once I have more clarity what should be included in the file
+write_rds (Nosology_2023, here("Nosology_2023.rds"))
+
+##csv is easier to view in RStudio, as the text includes commas, write_csv puts quotation marks around those fields, which might add complexity in downstream applications.
+#tsv does not need to work around commas in the text, but cannot be imported directly into RStudio Viewer.
+#both csv and tsv versions display correctly in Easy CSV Editor app.
+write_tsv(Nosology_2023, here("Nosology_2023.tsv"))
+write_csv(Nosology_2023, here("Nosology_2023.csv"))
+
 ```
 
 ::: callout-note
 Develop further analyses as R Scripts first, as it allows better debugging in RStudio. Only create the Quarto document when everything works, to document how it was done.
 :::
-

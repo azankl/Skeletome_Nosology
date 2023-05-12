@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SkeletalG2P</title>
+<title>Convert AJMG Table to Nosology Object</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,16 +86,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 
-<script src="SkeletalG2P_files/libs/clipboard/clipboard.min.js"></script>
-<script src="SkeletalG2P_files/libs/quarto-html/quarto.js"></script>
-<script src="SkeletalG2P_files/libs/quarto-html/popper.min.js"></script>
-<script src="SkeletalG2P_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="SkeletalG2P_files/libs/quarto-html/anchor.min.js"></script>
-<link href="SkeletalG2P_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="SkeletalG2P_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="SkeletalG2P_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="SkeletalG2P_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="SkeletalG2P_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Convert AJMG table to Nosology object_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Convert AJMG table to Nosology object_files/libs/quarto-html/quarto.js"></script>
+<script src="Convert AJMG table to Nosology object_files/libs/quarto-html/popper.min.js"></script>
+<script src="Convert AJMG table to Nosology object_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Convert AJMG table to Nosology object_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Convert AJMG table to Nosology object_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Convert AJMG table to Nosology object_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Convert AJMG table to Nosology object_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Convert AJMG table to Nosology object_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Convert AJMG table to Nosology object_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -108,7 +108,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SkeletalG2P</h1>
+<h1 class="title">Convert AJMG Table to Nosology Object</h1>
 </div>
 
 
@@ -123,11 +123,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="skeletal-g2p" class="level2">
-<h2 class="anchored" data-anchor-id="skeletal-g2p">Skeletal G2P</h2>
-<p>In this project I am trying to combine the data from the 2023 Skeletal Dysplasia Nosology with the DDG2P project.</p>
-<p>Steps required:</p>
-<p>Step 1: Get the 2023 Nosology into R. ASF provided the “Nosology 2023 table Revised Jan 31.xls’ document stored in this project, but as he was not sure if this was the final version, I decided to scrape the table straight from the published version using rvest.</p>
+<section id="convert-ajmg-table-to-nosology-object" class="level2">
+<h2 class="anchored" data-anchor-id="convert-ajmg-table-to-nosology-object">Convert AJMG Table to Nosology Object</h2>
+<p>This document deals with converting the Nosology table published in AJMG into an R tibble (dataframe).</p>
+<p>ASF provided the “Nosology 2023 table Revised Jan 31.xls’ document stored in this project, but as he was not sure if this was the final version, I decided to scrape the table straight from the published version using rvest.</p>
 <p>The 2023 Nosology is published in the AJMG here: https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.63132</p>
 <p>I could not read from this URL directly using <code>read_html</code>, probably because of some paywall issue. I therefore opened the URL in Chrome, and saved the page as “AJMG.html” using Chrome &gt; File &gt; Save Page As… with Format “Web Page, HTML Only”.</p>
 <p>I then opened <code>AJMG.html</code> with Chrome and used the <a href="https://rvest.tidyverse.org/articles/selectorgadget.html">rvest SelectorGadget</a> to identify the selector for the table (which turned out to be called <code>".article-section__table"</code>).</p>
@@ -211,11 +210,16 @@ The following object is masked from 'package:readr':
 <span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">"NOS_OMIM"</span> <span class="ot">=</span> <span class="st">`</span><span class="at">MIM No.</span><span class="st">`</span>,</span>
 <span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">"NOS_Notes"</span> <span class="ot">=</span> <span class="st">`</span><span class="at">Notes</span><span class="st">`</span></span>
 <span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="co">#use save_rds() to save the Nosology_2023 object to file (as a serialised object).</span></span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="co">#read back in with read_rds</span></span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a><span class="co">#could also use write_tsv to store in a format that can be used in other tools</span></span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="co">#avoid write_csv as table currently contains many commas</span></span>
-<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="co">#decide on final file output once I have more clarity what should be included in the file</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="co">#save the Nosology_2023 object to file (as a serialised RDS object).</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a><span class="co">#read back in with read_rds</span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="fu">write_rds</span> (Nosology_2023, <span class="fu">here</span>(<span class="st">"Nosology_2023.rds"</span>))</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a><span class="do">##csv is easier to view in RStudio, as the text includes commas, write_csv puts quotation marks around those fields, which might add complexity in downstream applications.</span></span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a><span class="co">#tsv does not need to work around commas in the text, but cannot be imported directly into RStudio Viewer.</span></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a><span class="co">#both csv and tsv versions display correctly in Easy CSV Editor app.</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a><span class="fu">write_tsv</span>(Nosology_2023, <span class="fu">here</span>(<span class="st">"Nosology_2023.tsv"</span>))</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(Nosology_2023, <span class="fu">here</span>(<span class="st">"Nosology_2023.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
