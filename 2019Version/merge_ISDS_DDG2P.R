@@ -1,17 +1,18 @@
 #Trying to combine the ISDSnosology.csv with the DDG2P.csv
 #using 'join'
 
+here::i_am("2019Version/Merge_ISDS_DDG2P.R")
+
 library(readr)
 library(here)
 library (dplyr)
 library (tidyr)
 library (magrittr)
 library (purrr)
-library(readxl)
-library(stringr)
 
-#Import the ISDS 2019 Table
-ISDS_2019_Table <- read_excel("ISDS 2019 Table.xlsx", col_names = c("Name", "MOI","Gene", "OMIM", "ORPHA","Notes"), skip=1)
+
+#Trying to import the ISDS 2019 Table
+ISDS_2019_Table <- read_excel(here("2019Version/ISDS 2019 Table.xlsx"), col_names = c("Name", "MOI","Gene", "OMIM", "ORPHA","Notes"), skip=1)
 
 #extract the Group name and Group Number from the table:
 #find rows that start with a number and dot in the Name column, indicating a group heading.
@@ -34,8 +35,10 @@ ISDS <- cbind(ISDS_2019_Table, grouphits[,c('Number','Name')])
 #this is unfinished, plan to start new project with 2023Nosology instead
 
 
-#the parts below seem to come from mere_ISDS_DDG2P_old and make use of "ISDS2019nosology.csv"
-#the below wont work
+#Below is the old analysis that used the ISDS2019nosology.csv file instead
+
+nosology_raw<-read_csv(here("2019Version","ISDS2019nosology.csv"), col_names = TRUE)
+
 nosology <- nosology_raw %>%
   select(-c(1,2)) %>% #remove unnecessary columns
   drop_na(GroupN) %>% #removes headers in table that contain no useful data
@@ -44,7 +47,7 @@ nosology <- nosology_raw %>%
 
 
 #read the DDG2P list:
-ddg2p<-read_csv(here("DDG2P_21_7_2022.csv"), col_names = TRUE) %>%
+ddg2p<-read_csv(here("2019Version","DDG2P_1_12_2021.csv"), col_names = TRUE) %>%
   rename(DMIM = "disease mim", GENE = "gene symbol")
 
 #creating an inner_join shows where ISDS and DDG2P match on DMIM
@@ -52,19 +55,19 @@ ddg2p<-read_csv(here("DDG2P_21_7_2022.csv"), col_names = TRUE) %>%
 #for example DMIM 184255 is associated with Gene FN1 in DDG2P, but not in ISDS
 #can be a useful view to identify these discrepancies
 innerjoin_byDMIM <-inner_join(nosology,ddg2p, by = "DMIM")
-write_csv(innerjoin_byDMIM,here("innerjoinByDMIM.csv"), col_names = TRUE)
+write_csv(innerjoin_byDMIM,here("2019Version","innerjoinByDMIM.csv"), col_names = TRUE)
 
 #tried some other joins to explore how ISDS and DDG2P differ:
 
 #creating a semi_join to see how many entries in ISDS have a match in DDG2P (based on DMIM)
 #more on joins here: https://r4ds.had.co.nz/relational-data.html
 semijoin_byDMIM <-semi_join(nosology,ddg2p, by = "DMIM")
-write_csv(semijoin_byDMIM,here("semijoinByDMIM.csv"), col_names = TRUE)
+write_csv(semijoin_byDMIM,here("2019Version","semijoinByDMIM.csv"), col_names = TRUE)
 
 #creating an anti_join to see how many entries in ISDS are NOT in DDG2P 
 #more on joins here: https://r4ds.had.co.nz/relational-data.html
 antijoin_byDMIM <-anti_join(nosology,ddg2p, by = "DMIM")
-write_csv(antijoin_byDMIM,here("antijoinByDMIM.csv"), col_names = TRUE)
+write_csv(antijoin_byDMIM,here("2019Version","antijoinByDMIM.csv"), col_names = TRUE)
 
 #see which ISDS entries are not in DDG2P, but their gene is in DDG2P (suggests mapping errors based on DMIM)
 noDMIM_butGene<- inner_join(antijoin_byDMIM, ddg2p, by = "GENE")
@@ -82,6 +85,15 @@ nosology_named <- nosology %>%
 n_distinct(nosology$GENE)
 #the result is 438 while the paper says 437
 
+#find number of disease-gene assocations in the nosology:
+#(ie.fnd all rows where the GENE column is not empty)
+nosology %>% filter(!(is.na(GENE)))
+#the result is 615
+
+#number of nosology entities without DMIM
+nosology_noDMIM <- nosology %>%
+  filter ((is.na(DMIM)))
+          
 #find number of Orphanet only entities in ISDS
 nosology_orphaonly <- nosology %>%
   filter ((is.na(DMIM) & !is.na(Orph)))
@@ -90,12 +102,15 @@ nosology_orphaonly <- nosology %>%
 nosology_nogene <- nosology %>%
   filter((is.na(GENE) & !is.na(Group)))
 
+#find number of disease-gene assocations in the nosology:
+#ie. find all rows that have a gene entry
+
 #creating a left join, which keeps all ISDS entries
 leftjoinedByDMIM <- left_join(nosology, ddg2p, by = "DMIM")
 #differences found
 #48 FMD: wrong DMIM in DDG2P
 #60 Larsen:
-write_csv(leftjoinedByDMIM,here("leftjoinedByDMIM.csv"), col_names = TRUE)
+write_csv(leftjoinedByDMIM,here("2019Version","leftjoinedByDMIM.csv"), col_names = TRUE)
 
 
 
@@ -128,6 +143,11 @@ joined_diffGene <- leftjoinedByDMIM %>%
   filter(GENE.x != GENE.y) %>%
   select(-c(5,6)) #drop Orpha and GroupN
 
+joined_diffGene2 <- leftjoinedByDMIM %>%
+  filter(is.na(GENE.x) & !is.na(GENE.y)) %>%
+  select(-c(5,6)) #drop Orpha and GroupN
+
+
 #fixing errors seen in joined_diffGene Table
 
 #error in DDG2P data, emailed to David Fitzpatrick:
@@ -144,7 +164,7 @@ leftjoinedByDMIM_updated <- leftjoinedByDMIM_updated %>%
 
 
 #trying to create a clean ISDS list from original ISDS table
-ISDS2019nosology <- read_csv("ISDS2019nosology.csv")
+ISDS2019nosology <- read_csv(here("2019Version","ISDS2019nosology.csv"))
 
 
 #Use RNotebook to document the merging process, will help with future publication
