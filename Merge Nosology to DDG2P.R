@@ -27,5 +27,12 @@ skg2p_semiJoin <- semi_join(ddg2p, nosology, by = join_by ('disease mim' == 'NOS
 #use mutate with replace to correct errors in the table
 #as described here: https://stackoverflow.com/questions/36924911/how-to-assign-a-value-to-a-data-frame-filtered-by-dplyr
 #need to decide if better to correct errors before of after joining (I think better before) 
+#the below does not work, not sure why, works if setting NOS_ID to NOS 01-0010 for example
+#maybe something to do with brackets in the name of this particular disorder?
+nosology %>%
+  mutate(NOS_OMIM = replace(NOS_OMIM, NOS_ID=="NOS 40-0170", "620193"))
+
+#this works, as described here: https://sparkbyexamples.com/r-programming/replace-values-in-r/
+nosology$NOS_OMIM[nosology$NOS_ID=="NOS 40-0170"] <- "620193"
 
 #also do join by DMIM and check for rows where genes dont match, that must be an error
