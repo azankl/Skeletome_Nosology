@@ -28,9 +28,13 @@ Selecting the xpath as described [here](https://www.r-bloggers.com/2015/01/using
 library(tidyverse)
 library(here)
 library(rvest)
-AJMG_table<- read_html (here("AJMG.html")) %>%
+
+AJMG_table<- read_html (here("AJMG.html"), encoding = "UTF-8") %>%
   html_element(".article-section__table") %>%
   html_table()
+
+#Below helped to find the correct encoding. Using the default (no encoding specified) created some weird characters.
+html_encoding_guess(AJMG_table)
 
 ```
 
