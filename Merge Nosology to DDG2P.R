@@ -20,6 +20,20 @@ nosology <- read_rds("Nosology_2023.rds")
 nosology <- nosology %>%
   separate_rows(NOS_OMIM, sep=",\\s+")
 
+#then fix errors:
+#could use mutate with replace to correct errors in the table
+#as described here: https://stackoverflow.com/questions/36924911/how-to-assign-a-value-to-a-data-frame-filtered-by-dplyr
+#need to decide if better to correct errors before of after joining (I think better before) 
+
+#Error to fix: NOS 40-0170 is LADD syndrome 3 (FGF10 associated), but the nosology gives the DMIM number for LADD syndrome 1 (FGFR3 associated)
+nosology <- nosology %>%
+  mutate(NOS_OMIM = replace(NOS_OMIM, NOS_ID=="NOS 40-0170", "620193"))
+
+#alternatively, replace directly using base R syntax as described here: https://sparkbyexamples.com/r-programming/replace-values-in-r/
+#nosology$NOS_OMIM[nosology$NOS_ID=="NOS 40-0170"] <- "620193"
+
+
+
 #download latest version of DDG2P or use a stored snapshot
 #use snapshots for development as new data might be brake things
 #but try with latest version from time to time
@@ -31,7 +45,8 @@ problems(ddg2p)
 
 #filter ddg2p for entries that have a matching DMIM number in Nosology
 skg2p_semiJoin_byDMIM <- semi_join(ddg2p, nosology, by = join_by ('disease mim' == 'NOS_OMIM'))
-#this might already be the first version of skg2p to publish online.
+#save as the first version of skg2p to publish online:
+write_csv(skg2p_semiJoin_byDMIM,here("skg2p_v1.csv"), col_names = TRUE)
 
 #creating an anti_join to see which entries in nosology are NOT in DDG2P
 nosology_antijoin_byDMIM <- anti_join(nosology, ddg2p, by = join_by ('NOS_OMIM' == 'disease mim'))
