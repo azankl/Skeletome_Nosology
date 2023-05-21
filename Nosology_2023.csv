@@ -1,5 +1,5 @@
 NOS_ID,NOS_Name,NOS_MOI,NOS_Gene,NOS_OMIM,NOS_Notes,NOS_Group_No,NOS_Group_Name
-NOS 01-0010,"Thanatophoric dysplasia (type 1), FGFR3-related",AD,FGFR3,187600,Includes previous âplatyspondylyic dysplasia type San Diegoâ,1,FGFR3 chondrodysplasias
+NOS 01-0010,"Thanatophoric dysplasia (type 1), FGFR3-related",AD,FGFR3,187600,Includes previous “platyspondylyic dysplasia type San Diego”,1,FGFR3 chondrodysplasias
 NOS 01-0020,"Thanatophoric dysplasia (type 2), FGFR3-related",AD,FGFR3,187601,Radiographic differences between types 1 and 2 are correlated to specific FGFR3 variants,1,FGFR3 chondrodysplasias
 NOS 01-0030,"Severe achondroplasia with developmental delay and acanthosis nigricans (SADDAN), FGFR3-related",AD,FGFR3,616482,,1,FGFR3 chondrodysplasias
 NOS 01-0040,"Achondroplasia, FGFR3-related",AD,FGFR3,100800,,1,FGFR3 chondrodysplasias
@@ -8,24 +8,24 @@ NOS 02-0010,"Achondrogenesis, COL2A1-related (formerly type 2, type Langer-Saldi
 NOS 02-0020,"Hypochondrogenesis, COL2A1-related",AD,COL2A1,200610,Achondrogenesis type 2 and hypochondrogenesis form one phenotypic continuum,2,Type 2 collagen disorders
 NOS 02-0030,"Platyspondylic dysplasia, type Torrance, COL2A1-related",AD,COL2A1,151210,Often variants in the C-propeptide of collagen 2,2,Type 2 collagen disorders
 NOS 02-0040,"Spondyloepiphyseal dysplasia congenita (SEDC), COL2A1-related","AD, AR*",COL2A1,"183900, 604864","Includes mild SED with premature onset arthrosis, also known as osteoarthrosis with mild chondrodysplasia; includes Namaqualand type hip dysplasia. Mild SED cases may resemble MED (see note). AR*: very rare SED cases with biallelic COL2A1 variants have been reported",2,Type 2 collagen disorders
-NOS 02-0050,"Spondyloepimetaphyseal dysplasia, COL2A1-related",AD,COL2A1,"184250, 184253, 184255, 616583","Also known as âSED with marked metaphyseal changesâ. Includes SEMD type Strudwick, SMD type Algerian, SED type Stanescu, dysspondyloenchondromatosis, and some cases of SMD âcorner fractureâ type",2,Type 2 collagen disorders
+NOS 02-0050,"Spondyloepimetaphyseal dysplasia, COL2A1-related",AD,COL2A1,"184250, 184253, 184255, 616583","Also known as “SED with marked metaphyseal changes”. Includes SEMD type Strudwick, SMD type Algerian, SED type Stanescu, dysspondyloenchondromatosis, and some cases of SMD “corner fracture” type",2,Type 2 collagen disorders
 NOS 02-0060,"Kniest dysplasia, COL2A1-related",AD,COL2A1,156550,,2,Type 2 collagen disorders
 NOS 02-0070,"Spondyloperipheral dysplasia, COL2A1-related",AD,COL2A1,271700,"Like Torrance dysplasia, often variants in the C-propeptide of collagen 2",2,Type 2 collagen disorders
-NOS 02-0080,"SED with metatarsal shortening, COL2A1-related",AD,COL2A1,609162,Often associated with the p.R275C variant; formerly âCzech dysplasiaâ,2,Type 2 collagen disorders
+NOS 02-0080,"SED with metatarsal shortening, COL2A1-related",AD,COL2A1,609162,Often associated with the p.R275C variant; formerly “Czech dysplasia”,2,Type 2 collagen disorders
 NOS 02-0090,"Stickler syndrome, COL2A1-related",AD,COL2A1,108300,"Monoallelic loss-of-function variants; see also COL11A1, COL11A2, COL9A1, COL9A2, COL9A3",2,Type 2 collagen disorders
-NOS 02-0100,"Dysplasia of the proximal femoral epiphyses, COL2A1-related",AD,COL2A1,"150600, 608805","Heterogeneous condition, not all cases are due to COL2A1 variants (usually p.G393S; p.G717S; p.G1170S). The condition called âMeyer dysplasia of the hipâ is not associated with COL2A1 variants",2,Type 2 collagen disorders
+NOS 02-0100,"Dysplasia of the proximal femoral epiphyses, COL2A1-related",AD,COL2A1,"150600, 608805","Heterogeneous condition, not all cases are due to COL2A1 variants (usually p.G393S; p.G717S; p.G1170S). The condition called “Meyer dysplasia of the hip” is not associated with COL2A1 variants",2,Type 2 collagen disorders
 NOS 03-0010,"Stickler syndrome, COL11A1-related","AD, MOS",COL11A1,604841,Can also result from somatic mosaicism for a COL11A1 variant,3,Type 11 collagen disorders
 NOS 03-0020,"Marshall syndrome, COL11A1-related",AD,COL11A1,154780,One report with homozygous p.G901E variant in two affected sibs (PMID 22499343),3,Type 11 collagen disorders
 NOS 03-0030,"Stickler syndrome, COL11A2-related (non-ocular type)",AD,COL11A2,184840,,3,Type 11 collagen disorders
 NOS 03-0040,"Fibrochondrogenesis, COL11A1-related","AR, AD",COL11A1,228520,,3,Type 11 collagen disorders
 NOS 03-0050,"Fibrochondrogenesis, COL11A2-related","AR, AD",COL11A2,614524,,3,Type 11 collagen disorders
 NOS 03-0060,"Otospondylomegaepiphyseal dysplasia (OSMED), recessive type, COL11A2-related",AR,COL11A2,215150,,3,Type 11 collagen disorders
-NOS 03-0070,"Otospondylomegaepiphyseal dysplasia (OSMED), dominant type, COL11A2-related",AD,COL11A2,184840,Formerly Weissenbacher-ZweymÃ¼ller syndrome and Stickler syndrome type 3,3,Type 11 collagen disorders
+NOS 03-0070,"Otospondylomegaepiphyseal dysplasia (OSMED), dominant type, COL11A2-related",AD,COL11A2,184840,Formerly Weissenbacher-Zweymüller syndrome and Stickler syndrome type 3,3,Type 11 collagen disorders
 NOS 04-0010,"Achondrogenesis, SLC26A2-related (formerly achondrogenesis type 1B, or type Fraccaro)",AR,SLC26A2,600972,"Formerly known as achondrogenesis, type Fraccaro",4,Sulfation disorders
 NOS 04-0020,"Atelosteogenesis, SLC26A2-related (formerly atelosteogenesis type 2)",AR,SLC26A2,256050,"Includes former entities de la Chapelle dysplasia, McAlister dysplasia, and neonatal osseous dysplasia",4,Sulfation disorders
 NOS 04-0030,"Diastrophic dysplasia, SLC26A2-related",AR,SLC26A2,222600,,4,Sulfation disorders
 NOS 04-0040,"Multiple epiphyseal dysplasia, SLC26A2-related (autosomal recessive type, rMED)",AR,SLC26A2,226900,See also multiple epiphyseal dysplasias and pseudoachondroplasia group (group 9),4,Sulfation disorders
-NOS 04-0050,"Spondylo-epi-metaphyseal dysplasia, PAPSS2-related",AR,PAPSS2,612847,"Formerly âSEMD Pakistani typeâ; includes the former ârecessive brachyolmia, recessive typeâ as well as the older entities âToledo brachyolmiaâ and âHobaek brachyolmiaâ",4,Sulfation disorders
+NOS 04-0050,"Spondylo-epi-metaphyseal dysplasia, PAPSS2-related",AR,PAPSS2,612847,"Formerly “SEMD Pakistani type”; includes the former “recessive brachyolmia, recessive type” as well as the older entities “Toledo brachyolmia” and “Hobaek brachyolmia”",4,Sulfation disorders
 NOS 04-0060,"Chondrodysplasia with congenital joint dislocations, IMPAD1-related",AR,IMPAD1,614078,"Some features similar to Catel-Manzke syndrome, TGDS-related, as well as to Desbuquois syndrome, CANT1-related",4,Sulfation disorders
 NOS 04-0070,"Chondrodysplasia with congenital joint dislocations, CHST3-related",AR,CHST3,143095,"Includes recessive Larsen syndrome, humero-spinal dysostosis, and SED type Omani",4,Sulfation disorders
 NOS 04-0080,"Chondrodysplasia with hypomyelinating leucodystrophy, SLC35B2-related",AR,SLC35B2,See 610788,,4,Sulfation disorders
@@ -38,14 +38,14 @@ NOS 05-0020,"Desbuquois dysplasia (with accessory ossification center in digit 2
 NOS 05-0030,"Desbuquois dysplasia (with short metacarpals and elongated phalanges, Kim type), CANT1-related",AR,CANT1,251450,,5,Dysplasias with multiple joint dislocations
 NOS 05-0040,"SEMD with joint laxity (Hall type or leptodactylic type), KIF22-related",AD,KIF22,603546,,5,Dysplasias with multiple joint dislocations
 NOS 05-0050,"SEMD with joint laxity, EXOC6B-related",AR,EXOC6B,618395,Phenotype resembles SEMD-JL leptodactylic or type Hall (preceding line),5,Dysplasias with multiple joint dislocations
-NOS 05-0060,"SEMD with joint laxity (Beighton type), B3GALT6-related (Ehlers-Danlos syndrome, spondylodysplastic type 2, EDSSPD2)",AR,B3GALT6,271640,Includes MIM 609465âAl-Gazali syndrome as neonatal form,5,Dysplasias with multiple joint dislocations
-NOS 05-0070,"Ehlers-Danlos syndrome, spondylodysplastic type 1 (EDSSPD1), B4GALT7-related",AR,B4GALT7,130070,"Formerly known as âEDS, progeroid formâ; includes Larsen syndrome, La Reunion type; see also B3GALT6 deficiency above",5,Dysplasias with multiple joint dislocations
-NOS 05-0080,"Multiple joint dislocations, short stature, craniofacial dysmorphisms, and skeletal dysplasia, with or without heart defects, B3GAT3-related",AR,B3GAT3,245600,The phenotype is very variable and has been reported also as âLarsen-likeâ or as âpseudodiastrophic dysplasiaâ. Intellectual disability and severe osteopenia with fractures have been observed. The OMIM entry includes older descriptions that are probably unrelated.,5,Dysplasias with multiple joint dislocations
+NOS 05-0060,"SEMD with joint laxity (Beighton type), B3GALT6-related (Ehlers-Danlos syndrome, spondylodysplastic type 2, EDSSPD2)",AR,B3GALT6,271640,Includes MIM 609465—Al-Gazali syndrome as neonatal form,5,Dysplasias with multiple joint dislocations
+NOS 05-0070,"Ehlers-Danlos syndrome, spondylodysplastic type 1 (EDSSPD1), B4GALT7-related",AR,B4GALT7,130070,"Formerly known as “EDS, progeroid form”; includes Larsen syndrome, La Reunion type; see also B3GALT6 deficiency above",5,Dysplasias with multiple joint dislocations
+NOS 05-0080,"Multiple joint dislocations, short stature, craniofacial dysmorphisms, and skeletal dysplasia, with or without heart defects, B3GAT3-related",AR,B3GAT3,245600,The phenotype is very variable and has been reported also as “Larsen-like” or as “pseudodiastrophic dysplasia”. Intellectual disability and severe osteopenia with fractures have been observed. The OMIM entry includes older descriptions that are probably unrelated.,5,Dysplasias with multiple joint dislocations
 NOS 05-0090,"Skeletal dysplasia with joint laxity and advanced bone age (SDJLABA), CSGALNACT1-related",AR,CSGALNACT1,618870,,5,Dysplasias with multiple joint dislocations
 NOS 05-0100,"Skeletal dysplasia with joint dislocations and amelogenesis imperfecta, SLC10A7-related",AR,SLC10A7,618363,,5,Dysplasias with multiple joint dislocations
 NOS 06-0010,"Frontometaphyseal dysplasia, FLNA-related",XL,FLNA,305620,"FLNA gene also associated with MIM 300049, MIM 300321, MIM 314400, MIM 300048, MIM 300049 (see) and conditions below in this group",6,Filamins and related disorders
 NOS 06-0020,"Frontometaphyseal dysplasia, MAP3K7-related",AD,MAP3K7,617137,,6,Filamins and related disorders
-NOS 06-0030,"Frontometaphyseal dysplasia, TAB2-related",AD,TAB2,,"No MIM entry yet; TAB2 gene also associated with MIM 614980âcongenital heart defects, nonsyndromic, 2",6,Filamins and related disorders
+NOS 06-0030,"Frontometaphyseal dysplasia, TAB2-related",AD,TAB2,,"No MIM entry yet; TAB2 gene also associated with MIM 614980—congenital heart defects, nonsyndromic, 2",6,Filamins and related disorders
 NOS 06-0040,"Cardiospondylocarpofacial syndrome, MAP3K7-related",AD,MAP3K7,157800,,6,Filamins and related disorders
 NOS 06-0050,"Melnick-Needles syndrome, FLNA-related",XL,FLNA,309350,Includes osteodysplasty,6,Filamins and related disorders
 NOS 06-0060,"Otopalatodigital syndrome type 1 (OPD1), FLNA-related",XL,FLNA,311300,,6,Filamins and related disorders
@@ -64,8 +64,8 @@ NOS 07-0030,"Spondylo-epiphyseal dysplasia, ACAN-related (dominant, Kimberley ty
 NOS 07-0040,"Spondylo-epi-metaphyseal dysplasia, ACAN-related (recessive, aggrecan type)",AR,ACAN,612813,,7,Proteoglycan core proteins disorders
 NOS 07-0050,"Short stature with advanced bone age, ACAN-related",AD,ACAN,165800,Sometimes with osteochondritis dissecans; other cases short stature with no skeletal features and normal bone age,7,Proteoglycan core proteins disorders
 NOS 07-0060,"SEMD, BGN-related (Camera type)",XL,BGN,300106,"The BGN gene is also associated with a connective tissue- arterial aneurysms disorder (Meester-Loeys syndrome, MIM300989)",7,Proteoglycan core proteins disorders
-NOS 08-0010,"Metatropic dysplasia, TRPV4-related","AD, MOS",TRPV4,156530,"Includes so-called âhyperplasticâ, lethal, and non-lethal forms. Can also result from somatic mosaicism for a TRPV4 variant.",8,TRPV4 disorders
-NOS 08-0020,"Spondyloepimetaphyseal dysplasia, TRPV4-related (Maroteaux type)",AD,TRPV4,184095,"Previously known as âpseudo-Morquio syndrome type 2â. Includes the obsolete MIM 168400-parastremmatic dwarfism entry, a phenotypic variant.",8,TRPV4 disorders
+NOS 08-0010,"Metatropic dysplasia, TRPV4-related","AD, MOS",TRPV4,156530,"Includes so-called “hyperplastic”, lethal, and non-lethal forms. Can also result from somatic mosaicism for a TRPV4 variant.",8,TRPV4 disorders
+NOS 08-0020,"Spondyloepimetaphyseal dysplasia, TRPV4-related (Maroteaux type)",AD,TRPV4,184095,"Previously known as “pseudo-Morquio syndrome type 2”. Includes the obsolete MIM 168400-parastremmatic dwarfism entry, a phenotypic variant.",8,TRPV4 disorders
 NOS 08-0030,"Spondyloepiphyseal dysplasia, Kozlowski type",AD,TRPV4,184252,,8,TRPV4 disorders
 NOS 08-0040,"Brachyolmia, TRPV4-related",AD,TRPV4,113500,,8,TRPV4 disorders
 NOS 08-0050,"Familial digital arthropathy with brachydactyly, TRPV4-related",AD,TRPV4,606835,,8,TRPV4 disorders
@@ -80,39 +80,39 @@ NOS 09-0080,"Stickler syndrome, recessive type, COL9A1-related",AR,COL9A1,614134
 NOS 09-0090,"Stickler syndrome, recessive type, COL9A2-related",AR,COL9A2,614284,,9,Pseudoachondroplasia and the multiple epiphyseal dysplasias
 NOS 09-0100,"Stickler syndrome, recessive type, COL9A3-related",AR,COL9A3,120270,,9,Pseudoachondroplasia and the multiple epiphyseal dysplasias
 NOS 09-0110,"Multiple epiphyseal dysplasia with microcephaly and nystagmus (Lowry-Wood syndrome), RNU4ATAC-related",AR,RNU4ATAC,226960,"See also Microcephalic osteodysplastic primordial dwarfism, RNU4ATAC-related, as well as Roifman syndrome, RNU4ATAC-related, both in the primordial dwarfism group (Group 21), for conditions with different severity from the RNU4ATAC gene",9,Pseudoachondroplasia and the multiple epiphyseal dysplasias
-NOS 10-0010,"Short ribâpolydactyly syndrome (SRPS), DYNC2H1-related",AR,DYNC2H1,"613091, 263520","There is significant clinical and radiological overlap between SRP1/3 and ATD. Some forms of both remain unlinked to the known genes. This gene can also be responsible for chondroectodermal dysplasia (Ellis-van Creveld), see below.",1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0020,"Short ribâpolydactyly syndrome (SRPS), IFT80-related",AR,IFT80,611263,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0030,"Short ribâpolydactyly syndrome (SRPS), IFT81-related",AR,IFT81,617895,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0040,"Short ribâpolydactyly syndrome (SRPS), WDR34-related",AR,WDR34,615633,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0050,"Short ribâpolydactyly syndrome (SRPS), WDR60-related",AR,WDR60,615503,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0060,"Short ribâpolydactyly syndrome (SRPS), DYNC2LI1-related",AR,DYNC2LI1,617088,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0070,"Short ribâpolydactyly syndrome (SRPS), NEK1-related",AR,NEK1,263520,Possibly also digenic inheritance combining NEK1 with DYNC2H1 variants,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0080,"Short ribâpolydactyly syndrome (SRPS), IFT122-related",AR,IFT122,269860,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0090,"Short ribâpolydactyly syndrome (SRPS), WDR19-related",AR,WDR19,614091,"WDR19 is associated with MIM 614091, 614376, 614378, 615633 as well as with nephronopthisis (MIM 614377), Senior-Loken syndrome (MIM 616307) and Mainzer-Saldino syndrome (see below)",1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0010,"Short rib–polydactyly syndrome (SRPS), DYNC2H1-related",AR,DYNC2H1,"613091, 263520","There is significant clinical and radiological overlap between SRP1/3 and ATD. Some forms of both remain unlinked to the known genes. This gene can also be responsible for chondroectodermal dysplasia (Ellis-van Creveld), see below.",1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0020,"Short rib–polydactyly syndrome (SRPS), IFT80-related",AR,IFT80,611263,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0030,"Short rib–polydactyly syndrome (SRPS), IFT81-related",AR,IFT81,617895,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0040,"Short rib–polydactyly syndrome (SRPS), WDR34-related",AR,WDR34,615633,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0050,"Short rib–polydactyly syndrome (SRPS), WDR60-related",AR,WDR60,615503,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0060,"Short rib–polydactyly syndrome (SRPS), DYNC2LI1-related",AR,DYNC2LI1,617088,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0070,"Short rib–polydactyly syndrome (SRPS), NEK1-related",AR,NEK1,263520,Possibly also digenic inheritance combining NEK1 with DYNC2H1 variants,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0080,"Short rib–polydactyly syndrome (SRPS), IFT122-related",AR,IFT122,269860,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0090,"Short rib–polydactyly syndrome (SRPS), WDR19-related",AR,WDR19,614091,"WDR19 is associated with MIM 614091, 614376, 614378, 615633 as well as with nephronopthisis (MIM 614377), Senior-Loken syndrome (MIM 616307) and Mainzer-Saldino syndrome (see below)",1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0100,"Short rib-polydactyly syndrome (SRPS), INTU-related",AR,INTU,617925,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0110,"Short rib-polydactyly syndrome (SRPS), TRAF3IP1-related",AR,TRAF3IP1,See 607380,TRAF3IP1 also known as IFT154,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0120,"Endocrine-cerebro-osteo dysplasia (ECO), CILK1-related",AR,CILK1,612651,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0130,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), DYNC2H1-related",AR,DYNC2H1,613091,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0140,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), DYNC2LI1-related",AR,DYNC2LI1,See 617088,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0150,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), WDR34-related",AR,WDR34,See 615633,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0160,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), TCTEX1D2-related",AR,TCTEX1D2,617405,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0170,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), WDR60-related",AR,WDR60,See 615503,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0180,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), WDR19-related",AR,WDR19,614376,"WDR19 is associated with MIM 614091, 614376, 614378, 615633 as well as with nephronopthisis (MIM 614377), Senior-Loken syndrome (MIM 616307) and Mainzer-Saldino syndrome (see below)",1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0190,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), IFT140-related",AR,IFT140,266920,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0200,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), TTC21B-related",AR,TTC21B,613819,Gene also known for nephronophthisis (MIM 613820),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0210,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), IFT122-related",AR,IFT122,See 269860,Subsumed under SRPS (MIM 269860),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0220,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), WDR35-related",AR,WDR35,614091,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0230,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), IFT43-related",AR,IFT43,617866,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0240,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), IFT80-related",AR,IFT80,611623,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0250,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), IFT172-related",AR,IFT172,615630,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0260,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), IFT81-related",AR,IFT81,617895,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0270,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), IFT52-related",AR,IFT52,617102,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0280,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), CFAP410-related",AR,CFAP410,602271,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0290,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), CEP120-related",AR,CEP120,616300,Described in severe cases resembling SRPS; the CEP120 gene is also associated with Joubert syndrome (MIM 617761),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0300,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), KIAA0586-related",AR,KIAA0586,616546,Gene also associated with Joubert syndrome (MIM 616490),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0310,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), GRK2-related",AR,GRK2,See 109635,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0320,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), TRAF3IP1-related",AR,TRAF3IP1,See 607380,TRAF3IP1 also known as IFT154,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0330,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasiaâJeune syndrome), KIAA0753-related",AR,KIAA0753,619479,KIAA0753 variants also associated with orofaciodigital syndrome (MIM 617127) and with Joubert syndrome (MIM 619476),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0130,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), DYNC2H1-related",AR,DYNC2H1,613091,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0140,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), DYNC2LI1-related",AR,DYNC2LI1,See 617088,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0150,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), WDR34-related",AR,WDR34,See 615633,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0160,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), TCTEX1D2-related",AR,TCTEX1D2,617405,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0170,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), WDR60-related",AR,WDR60,See 615503,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0180,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), WDR19-related",AR,WDR19,614376,"WDR19 is associated with MIM 614091, 614376, 614378, 615633 as well as with nephronopthisis (MIM 614377), Senior-Loken syndrome (MIM 616307) and Mainzer-Saldino syndrome (see below)",1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0190,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), IFT140-related",AR,IFT140,266920,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0200,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), TTC21B-related",AR,TTC21B,613819,Gene also known for nephronophthisis (MIM 613820),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0210,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), IFT122-related",AR,IFT122,See 269860,Subsumed under SRPS (MIM 269860),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0220,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), WDR35-related",AR,WDR35,614091,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0230,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), IFT43-related",AR,IFT43,617866,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0240,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), IFT80-related",AR,IFT80,611623,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0250,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), IFT172-related",AR,IFT172,615630,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0260,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), IFT81-related",AR,IFT81,617895,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0270,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), IFT52-related",AR,IFT52,617102,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0280,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), CFAP410-related",AR,CFAP410,602271,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0290,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), CEP120-related",AR,CEP120,616300,Described in severe cases resembling SRPS; the CEP120 gene is also associated with Joubert syndrome (MIM 617761),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0300,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), KIAA0586-related",AR,KIAA0586,616546,Gene also associated with Joubert syndrome (MIM 616490),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0310,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), GRK2-related",AR,GRK2,See 109635,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0320,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), TRAF3IP1-related",AR,TRAF3IP1,See 607380,TRAF3IP1 also known as IFT154,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0330,"Short-rib thoracic dysplasia (formerly asphyxiating thoracic dysplasia—Jeune syndrome), KIAA0753-related",AR,KIAA0753,619479,KIAA0753 variants also associated with orofaciodigital syndrome (MIM 617127) and with Joubert syndrome (MIM 619476),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0340,"Axial spondylometaphyseal dysplasia, CFAP410-related",AR,CFAP410,602271,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0350,"Axial spondylometaphyseal dysplasia, NEK1-related",AR,NEK1,See 252100,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0360,"Chondroectodermal dysplasia (Ellis-van Creveld), EVC1-related",AR,EVC1,225500,See also Weyers acrofacial (acrodental) dysostosis (MIM 193530),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
@@ -128,9 +128,9 @@ NOS 10-0450,"Cranioectodermal dysplasia (Levin-Sensenbrenner), WDR35-related",AR
 NOS 10-0460,"Cranioectodermal dysplasia (Levin-Sensenbrenner), WDR19-related",AR,WDR19,614378,"WDR19 is associated with MIM 614091, 614376, 614378, 615633 as well as with nephronopthisis (MIM 614377), Senior-Loken syndrome (MIM 616307) and Mainzer-Saldino syndrome (see below)",1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0470,"Cranioectodermal dysplasia (Levin-Sensenbrenner), IFT40-related",AR,IFT40,see 614620,"see short rib thoracic dysplasia, IFT140-associated, above",1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0480,"Cranioectodermal dysplasia (Levin-Sensenbrenner), IFT43-related",AR,IFT43,614009,,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0490,"Joubert syndrome with short-rib thoracic dysplasia, CSPP1-related",AR,CSPP1,615636,In OMIM as âJoubert syndrome type 21â; not all cases have thoracic dysplasia,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0500,"Atrial defects-polydactyly-multiple congenital malformation syndrome, PRKACA-related",AD,PRKACA,619142,OMIM created the name of âCardioacrofacial syndrome 1â.,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
-NOS 10-0510,"Atrial defects-polydactyly-multiple congenital malformation syndrome, PRKACB-related","AD, MOS",PRKACB,619143,OMIM created the name of âCardioacrofacial syndrome 2â; one published patient later reclassified as âEllis-van Creveld syndromeâ.,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0490,"Joubert syndrome with short-rib thoracic dysplasia, CSPP1-related",AR,CSPP1,615636,In OMIM as “Joubert syndrome type 21”; not all cases have thoracic dysplasia,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0500,"Atrial defects-polydactyly-multiple congenital malformation syndrome, PRKACA-related",AD,PRKACA,619142,OMIM created the name of “Cardioacrofacial syndrome 1”.,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
+NOS 10-0510,"Atrial defects-polydactyly-multiple congenital malformation syndrome, PRKACB-related","AD, MOS",PRKACB,619143,OMIM created the name of “Cardioacrofacial syndrome 2”; one published patient later reclassified as “Ellis-van Creveld syndrome”.,1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0520,"Mainzer-Saldino syndrome, IFT140-related",AR,IFT140,266920,IFT140 also associated with isolated retinitis pigmentosa (MIM 617781),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0530,"Mainzer-Saldino syndrome, IFT172-related",AR,IFT172,,IFT172 also associated with Bardet-Biedl syndrome (MIM 619471) and isolated retinitis pigmentosa (616394),1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 10-0540,"Mainzer-Saldino syndrome, WDR19-related",AR,WDR19,See 614376,"WDR19 is also associated with MIM 614091, 614376, 614378, 615633 as well as with nephronopthisis (MIM 614377), and Senior-Loken syndrome (MIM 616307)",1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
@@ -143,7 +143,7 @@ NOS 10-0600,"Meckel syndrome, CC2D2A-related",AR,CC2D2A,612284,,1,Skeletal disor
 NOS 10-0610,Thoracolaryngopelvic dysplasia (Barnes),SP,,187760,"Dominant transmission reported, but diagnostic criteria not stringent. The existence pf this entity is disputed.",1,Skeletal disorders caused by abnormalities of cilia or ciliary signaling
 NOS 11-0010,"Metaphyseal dysplasia Schmid (MCS), COL10A1-related",AD,COL10A1,156500,Pathogenic variants are typically located in the C-terminal domain of the protein.,11,Metaphyseal dysplasias
 NOS 11-0020,"Cartilage-hair hypoplasia (CHH; metaphyseal dysplasia, McKusick type), RMRP-related",AR,RMRP,250250,The phenotype of CHH is variable and includes MIM 607095-anauxetic dysplasia as well as MIM 250460-metaphyseal dysplasia without hypotrichosis,11,Metaphyseal dysplasias
-NOS 11-0030,"Metaphyseal dysplasia with short stature (CHH-like), POP1-related",AR,POP1,617396,The clinical spectrum is variable. The denomination of âanauxetic dysplasia 2â in MIM is confusing as anauxetic dysplasia is a variant of Cartilage-Hair Hypoplasia,11,Metaphyseal dysplasias
+NOS 11-0030,"Metaphyseal dysplasia with short stature (CHH-like), POP1-related",AR,POP1,617396,The clinical spectrum is variable. The denomination of “anauxetic dysplasia 2” in MIM is confusing as anauxetic dysplasia is a variant of Cartilage-Hair Hypoplasia,11,Metaphyseal dysplasias
 NOS 11-0040,"Metaphyseal dysplasia with short stature (CHH-like), NEPRO-related",AR,NEPRO,618853,Facial features and hypotrichosis reminiscent of Cartilage-Hair Hypoplasia,11,Metaphyseal dysplasias
 NOS 11-0050,"Metaphyseal dysplasia with pancreatic insufficiency and cyclic neutropenia (Shwachman-Bodian-Diamond syndrome), SBDS-related",AR,SBDS,260400,"See also severe spondylodysplastic dysplasia, Sedaghatian-like",11,Metaphyseal dysplasias
 NOS 11-0060,"Metaphyseal dysplasia with pancreatic insufficiency and cyclic neutropenia (SBDS type 2), EFL1-related",AR,EFL1,617941,,11,Metaphyseal dysplasias
@@ -155,7 +155,7 @@ NOS 11-0110,"Metaphyseal anadysplasia, MMP9-related",AR,MMP9,613073,,11,Metaphys
 NOS 11-0120,"Metaphyseal dysplasia with maxillary hypoplasia, RUNX2-related",AD,RUNX2,156510,"Frequently associated with intragenic duplication of exons 3 to 5 or 3 to 6. See also Cleidocranial dysplasia, RUNX2-related (below; MIM 119600), as well as non-syndromic midline craniosynostosis, RUNX2-related, below",11,Metaphyseal dysplasias
 NOS 12-0010,"Spondyloenchondrodysplasia with immune dysregulation (SPENCD), ACP5-related",AR,ACP5,607944,,12,Spondylometaphyseal dysplasias (SMD)
 NOS 12-0020,"Odontochondrodysplasia (ODCD), TRIP11-related",AR,TRIP11,184260,"See also Achondrogenesis, TRIP11-related (formerly type 1A)",12,Spondylometaphyseal dysplasias (SMD)
-NOS 12-0030,"Spondylometaphyseal dysplasia Sutcliffe (or âcorner fracturesâ type), FN1-related",AD,FN1,184255,Some cases are linked to COL2A1 but not the original family,12,Spondylometaphyseal dysplasias (SMD)
+NOS 12-0030,"Spondylometaphyseal dysplasia Sutcliffe (or “corner fractures” type), FN1-related",AD,FN1,184255,Some cases are linked to COL2A1 but not the original family,12,Spondylometaphyseal dysplasias (SMD)
 NOS 12-0040,"Spondylometaphyseal dysplasia with cone-rod dystrophy, PCYT1A-related",AR,PCYT1A,608940,,12,Spondylometaphyseal dysplasias (SMD)
 NOS 12-0050,"Spondylometaphyseal dysplasia with corneal dystrophy, PLCB3-related",AR,PLCB3,618961,,12,Spondylometaphyseal dysplasias (SMD)
 NOS 12-0060,"Chondrodysplasia-pseudohermaphroditism syndrome, HHAT-related",AR,HHAT,600092,Also known as Nivelon-Nivelon-Mabille syndrome (sic),12,Spondylometaphyseal dysplasias (SMD)
@@ -172,13 +172,13 @@ NOS 13-0100,"SEMD, RSPRY1-related",AR,RSPRY1,616723,,13,Spondyloepi(meta)physeal
 NOS 13-0110,"SEMD, TMEM165-related",AR,TMEM165,614727,Congenital disorder of glycosylation type IIk,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
 NOS 13-0120,"SEMD with microcephaly, retinal dystrophy and hearing loss, PISD-related (Liberfarb syndrome)",AR,PISD,618889,Phenotypically variable; in some affected individuals hearing and vision may be unaffected,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
 NOS 13-0130,"SEMD, UFSP2-related",AD,UFSP2,"142669, 617974",Includes Familial hip dysplasia (Beukes),13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
-NOS 13-0140,"SEMD, short limbâabnormal calcification type, DDR2-related",AR,DDR2,271665,See also other dysplasias with stippling,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
+NOS 13-0140,"SEMD, short limb–abnormal calcification type, DDR2-related",AR,DDR2,271665,See also other dysplasias with stippling,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
 NOS 13-0150,"Immuno-osseous dysplasia, SMARCAL1-related (Schimke type)",AR,SMARCAL1,242900,"Nephrotic syndrome is an important manifestation; see also EXTL3 deficiency, below",13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
-NOS 13-0160,"SEMD with immune deficiency and intellectual disability, EXTL3-related",AR,EXTL3,617425,"Also known as âImmunoskeletal dysplasia with developmental abnormalitiesâ; includes Omenn syndrome with chondrodysplasia; see also SMARCAL1, above",13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
-NOS 13-0170,"SEMD with immune deficiency, PGM3-related",AR,PGM3,615816,Known in OMIM as âimmunodeficiency 23â,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
+NOS 13-0160,"SEMD with immune deficiency and intellectual disability, EXTL3-related",AR,EXTL3,617425,"Also known as “Immunoskeletal dysplasia with developmental abnormalities”; includes Omenn syndrome with chondrodysplasia; see also SMARCAL1, above",13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
+NOS 13-0170,"SEMD with immune deficiency, PGM3-related",AR,PGM3,615816,Known in OMIM as “immunodeficiency 23”,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
 NOS 13-0180,"SEMD with intellectual disability, NANS-related",AR,NANS,610442,,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
 NOS 13-0190,"SEMD with severe short stature, RPL13-related",AD,RPL13,618728,,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
-NOS 13-0200,"SEMD with elevated lysosomal enzymes, MBTPS1-related",AR,MBTPS1,618392,only two unrelated individuals known so far; in OMIM as âKondo-Fu typeâ; possible role of lysosomal dysfunction in pathogenesis is unclear,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
+NOS 13-0200,"SEMD with elevated lysosomal enzymes, MBTPS1-related",AR,MBTPS1,618392,only two unrelated individuals known so far; in OMIM as “Kondo-Fu type”; possible role of lysosomal dysfunction in pathogenesis is unclear,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
 NOS 13-0210,"Short stature, skeletal dysplasia, liver failure, optic nerve atrophy and Pelger-Huet anomaly, NBAS-related",AR,NBAS,616483,Combination of clinical features is variable; also known as infantile liver failure syndrome type 2,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
 NOS 13-0220,"Short stature, skeletal dysplasia and liver failure, RINT1-related",AR,RINT1,618641,Combination of clinical features is variable; also known as infantile liver failure syndrome type 3,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
 NOS 13-0230,"Spondylodysplastic Ehlers-Danlos syndrome (SDEDSS type 3), SLC39A13-related",AR,SLC39A13,612350,SLC39A13/ZIP13 zinc transporter,13,Spondyloepi(meta)physeal dysplasias (SE(M)D)
@@ -214,9 +214,9 @@ NOS 15-0130,"Mesomelic dysplasia, Kozlowski-Reardon type",AR,,249710,,15,Mesomel
 NOS 15-0140,Mesomelic dysplasia with acral synostoses (Verloes-David-Pfeiffer type),AD,"SULF1, SLCO5A1",600383,Microdeletion syndrome involving two adjacent genes,15,Mesomelic and rhizo-mesomelic dysplasias
 NOS 15-0150,"Mesomelic dysplasia (Savarirayan type), ID4-related",AD,ID4,605274,Microdeletions on 6p22.3,15,Mesomelic and rhizo-mesomelic dysplasias
 NOS 15-0160,"Mesomelic dysplasia with digital anomalies and intellectual disability (KINSSHIP syndrome), AFF3-related",AD,AFF3,619297,"In spite of the acronym, this condition is quite different from both Nievergelt and Savarirayan mesomelic dysplasias",15,Mesomelic and rhizo-mesomelic dysplasias
-NOS 15-0170,"Oculo-skeletal syndrome with rhizomelic shortening, MAB21L2-related",AD,MAB21L2,615877,In OMIM as âMicrophthalmia/Coloboma and skeletal dysplasia syndromeâ. Skeletal involvement not in all individuals. Two brothers with biallelic variants (AR?) had ocular but no skeletal involvement.,15,Mesomelic and rhizo-mesomelic dysplasias
+NOS 15-0170,"Oculo-skeletal syndrome with rhizomelic shortening, MAB21L2-related",AD,MAB21L2,615877,In OMIM as “Microphthalmia/Coloboma and skeletal dysplasia syndrome”. Skeletal involvement not in all individuals. Two brothers with biallelic variants (AR?) had ocular but no skeletal involvement.,15,Mesomelic and rhizo-mesomelic dysplasias
 NOS 16-0010,"Acromesomelic dysplasia (type Maroteaux), NPR2-related",AR,NPR2,602875,,16,Acromesomelic dysplasias
-NOS 16-0020,"Acromesomelic dysplasia, PRKG2-related",AR,PRKG2,"619636, 619638","Condition associated with biallelic loss of function variants. Three brothers form one family were found to have a spondylo-metaphyseal dysplasia phenotype (in OMIM as â619638 - Spondylometaphyseal dysplasia, Pagnamenta typeâ. Needs to be confirmed)",16,Acromesomelic dysplasias
+NOS 16-0020,"Acromesomelic dysplasia, PRKG2-related",AR,PRKG2,"619636, 619638","Condition associated with biallelic loss of function variants. Three brothers form one family were found to have a spondylo-metaphyseal dysplasia phenotype (in OMIM as “619638 - Spondylometaphyseal dysplasia, Pagnamenta type”. Needs to be confirmed)",16,Acromesomelic dysplasias
 NOS 16-0030,"Grebe dysplasia, GDF5-related",AR,GDF5,200700,Includes acromesomelic dysplasia Hunter-Thompson type and acromesomelic dysplasia with genital anomalies; see also see other GDF5-related disorders,16,Acromesomelic dysplasias
 NOS 16-0040,"Grebe dysplasia, BMPR1B-related",AR,BMPR1B,609441,,16,Acromesomelic dysplasias
 NOS 16-0050,"Fibular hypoplasia and complex brachydactyly (Du Pan), GDF5-related",AR,GDF5,228900,See also other GDF5-related disorders,16,Acromesomelic dysplasias
@@ -253,11 +253,11 @@ NOS 18-0110,"Preaxial brachydactyly, PAX3 type, linked to 2q35-36",AD,2q35-36,,D
 NOS 19-0010,Trichorhinophalangeal dysplasia types 1/3,AD,TRPS1,"190350, 190351",TRPS1 and 3 are a phenotypic spectrum,19,Brachydactylies as part of syndromes
 NOS 19-0020,Langer-Giedion syndrome (Trichorhinophalangeal dysplasia type 2),AD,"TRPS1, EXT1",150230,Microdeletion syndrome; see also multiple cartilaginous exostoses,19,Brachydactylies as part of syndromes
 NOS 19-0030,"Catel-Manzke syndrome, TGDS-related",AR,TGDS,616145,,19,Brachydactylies as part of syndromes
-NOS 19-0040,"Deafness, onychodystrophy, osteodystrophy, retardation and seizures (DOORS) syndrome",AR,TBC1D24,220500,âOsteodystrophyâ and âretardationâ are misnomers,19,Brachydactylies as part of syndromes
-NOS 19-0050,"Brachydactylyâintellectual disability syndrome, HDAC4-related",AD,HDAC4,600430,The existence of this entity is questionable. HDAC4 variants alone may not be sufficient to produce either brachydactyly or intellectual disability. Some patients have microdeletions involving contiguous genes (2q37 deletion syndrome). HDAC4 variants have been associated with a developmental disorder (see MIM 619797),19,Brachydactylies as part of syndromes
+NOS 19-0040,"Deafness, onychodystrophy, osteodystrophy, retardation and seizures (DOORS) syndrome",AR,TBC1D24,220500,“Osteodystrophy” and “retardation” are misnomers,19,Brachydactylies as part of syndromes
+NOS 19-0050,"Brachydactyly—intellectual disability syndrome, HDAC4-related",AD,HDAC4,600430,The existence of this entity is questionable. HDAC4 variants alone may not be sufficient to produce either brachydactyly or intellectual disability. Some patients have microdeletions involving contiguous genes (2q37 deletion syndrome). HDAC4 variants have been associated with a developmental disorder (see MIM 619797),19,Brachydactylies as part of syndromes
 NOS 19-0060,"Hyperphosphatasia with intellectual disability, brachytelephalangy, and distinct face, PIGV-related",AR,PIGV,239300,"Several other related defects of GPI synthesis known, most cases not known for skeletal changes; see for example, MIM 610293 for a summary",19,Brachydactylies as part of syndromes
 NOS 19-0070,"Brachydactyly-short stature-hypertension syndrome, PDE3A-related (Bilginturan syndrome)",AD,PDE3A,112410,,19,Brachydactylies as part of syndromes
-NOS 19-0080,"Brachydactyly, obesity and intellectual disability syndrome, PRMT7-related",AR,PRMT7,617157,"Phenotype reminiscent of Albright Hereditary Ostedystrophy (AHO), GNAS-related (see above) but recessive. In OMIM as â617157âShort stature, brachydactyly, intellectual developmental disability, and seizuresâ",19,Brachydactylies as part of syndromes
+NOS 19-0080,"Brachydactyly, obesity and intellectual disability syndrome, PRMT7-related",AR,PRMT7,617157,"Phenotype reminiscent of Albright Hereditary Ostedystrophy (AHO), GNAS-related (see above) but recessive. In OMIM as “617157—Short stature, brachydactyly, intellectual developmental disability, and seizures”",19,Brachydactylies as part of syndromes
 NOS 19-0090,"Microcephaly-oculo-digito-esophageal-duodenal syndrome, MYCN-related (Feingold syndrome)",AD,MYCN,164280,,19,Brachydactylies as part of syndromes
 NOS 19-0100,"Hand-foot-genital syndrome, HOXA13-related",AD,HOXA13,140000,Includes Guttmacher syndrome,19,Brachydactylies as part of syndromes
 NOS 19-0110,"Rubinstein-Taybi syndrome, CREBBP-related",AD,CREBBP,180849,,19,Brachydactylies as part of syndromes
@@ -271,17 +271,17 @@ NOS 19-0180,"Coffin-Siris syndrome, ARIB1B-related",AD,ARID1B,135900,Variants in
 NOS 19-0190,"Coffin-Siris syndrome, SMARCB1-related",AD,SMARCB1,614608,,19,Brachydactylies as part of syndromes
 NOS 19-0200,"Coffin-Siris syndrome, SMARCA4-related",AD,SMARCA4,614609,,19,Brachydactylies as part of syndromes
 NOS 19-0210,"Coffin-Siris syndrome, SMARCE1-related",AD,SMARCE1,616938,,19,Brachydactylies as part of syndromes
-NOS 19-0220,"Cardiomyopathy and brachydactyly, LMNA-related (Heart-hand syndrome type IV)",AD,LMNA,610140,"in OMIM as âHeart-Hand syndrome, Slovenian typeâ",19,Brachydactylies as part of syndromes
+NOS 19-0220,"Cardiomyopathy and brachydactyly, LMNA-related (Heart-hand syndrome type IV)",AD,LMNA,610140,"in OMIM as “Heart-Hand syndrome, Slovenian type”",19,Brachydactylies as part of syndromes
 NOS 20-0010,"Campomelic dysplasia (CD), SOX9-related",AD,SOX9,114290,"Includes acampomelic campomelic dysplasia (ACD), mild campomelic dysplasia (MIM 602196); so-called Ischio-pubic-patellar dysplasia, as well as some cases of isolated Pierre-Robin sequence",2,Bent bones dysplasia group
-NOS 20-0020,"StÃ¼ve-Wiedemann syndrome, LIFR-related",AR,LIFR,601559,Includes former neonatal Schwartz-Jampel syndrome or SJS type 2,2,Bent bones dysplasia group
-NOS 20-0030,"StÃ¼ve-Wiedemann syndrome, IL6ST-related",AR,IL6ST,619751,,2,Bent bones dysplasia group
-NOS 20-0040,"Kyphomelic dysplasia with facial dysmorphism, KIF5B-related",AD,KIF5B,211350,The name âkyphomelic dysplasiaâ has been applied to heterogeneous conditions,2,Bent bones dysplasia group
+NOS 20-0020,"Stüve-Wiedemann syndrome, LIFR-related",AR,LIFR,601559,Includes former neonatal Schwartz-Jampel syndrome or SJS type 2,2,Bent bones dysplasia group
+NOS 20-0030,"Stüve-Wiedemann syndrome, IL6ST-related",AR,IL6ST,619751,,2,Bent bones dysplasia group
+NOS 20-0040,"Kyphomelic dysplasia with facial dysmorphism, KIF5B-related",AD,KIF5B,211350,The name “kyphomelic dysplasia” has been applied to heterogeneous conditions,2,Bent bones dysplasia group
 NOS 20-0050,"Bent bone dysplasia, FGFR2-related",AD,FGFR2,614592,,2,Bent bones dysplasia group
 NOS 20-0060,"Bent bone dysplasia, LAMA5-related",AR,LAMA5,,Biallelic LAMA5 variants are associated with congenital or infantile nephrotic syndrome (MIM),2,Bent bones dysplasia group
 NOS 21-0010,"3-M syndrome, CUL7-related",AR,CUL7,273750,Includes dolichospondylic dysplasia and Yakut short stature syndrome,21,Primordial dwarfism and slender bones group
 NOS 21-0020,"3-M syndrome, OBSL1-related",AR,OBSL1,612921,,21,Primordial dwarfism and slender bones group
 NOS 21-0030,"3-M syndrome, CCDC8-related",AR,CCDC8,614205,,21,Primordial dwarfism and slender bones group
-NOS 21-0040,"Sanjad-Sakati syndrome, recessive, TBCE-related",AR,TBCE,241410,In OMIM as âKenny-Caffey type 1â but does not correspond to the disorder described by Kenny and Caffey which is the dominant form,21,Primordial dwarfism and slender bones group
+NOS 21-0040,"Sanjad-Sakati syndrome, recessive, TBCE-related",AR,TBCE,241410,In OMIM as “Kenny-Caffey type 1” but does not correspond to the disorder described by Kenny and Caffey which is the dominant form,21,Primordial dwarfism and slender bones group
 NOS 21-0050,"Kenny-Caffey syndrome, dominant, FAM111A-related",AD,FAM111A,127000,,21,Primordial dwarfism and slender bones group
 NOS 21-0060,"Osteocraniostenosis, FAM111A-related",AD,FAM111A,602361,,21,Primordial dwarfism and slender bones group
 NOS 21-0070,Hallermann-Streiff syndrome,,,234100,"Usually sporadic; some cases have phenotypic overlap with osteocraniostenosis, FAM111A-related",21,Primordial dwarfism and slender bones group
@@ -301,7 +301,7 @@ NOS 21-0200,"Microcephalic osteodysplastic primordial dwarfism, or microcephaly-
 NOS 21-0210,"IMAGE syndrome (intrauterine growth retardation, metaphyseal dysplasia, adrenal hypoplasia, and genital anomalies)",AD,CDKN1C,614732,Gene also known to cause Beckwith-Wiedemann syndrome (MIM 130650). IMAGE-associated variants are clustered in the PCNA-binding region and are maternally transmitted (gene is imprinted with preferential maternal expression),21,Primordial dwarfism and slender bones group
 NOS 21-0220,"IMAGE syndrome/FILS syndrome, POLE-related",AR,POLE,"618336, 615139",The phenotype is variable and may include immune deficiency (OMIM 615139),21,Primordial dwarfism and slender bones group
 NOS 21-0230,"Saul-Wilson syndrome, COG4-related",AD,COG4,618150,,21,Primordial dwarfism and slender bones group
-NOS 21-0240,"Short stature, facial dysmorphism, skeletal and dental anomalies syndrome, SCUBE3-related",AR,SCUBE3,619184,"in OMIM as âshort stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies 2â",21,Primordial dwarfism and slender bones group
+NOS 21-0240,"Short stature, facial dysmorphism, skeletal and dental anomalies syndrome, SCUBE3-related",AR,SCUBE3,619184,"in OMIM as “short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies 2”",21,Primordial dwarfism and slender bones group
 NOS 21-0250,"Ear-patella-primordial short stature syndrome (Meier-Gorlin), ORC4-related",AR,ORC1,224690,,21,Primordial dwarfism and slender bones group
 NOS 21-0260,"Ear-patella-primordial short stature syndrome (Meier-Gorlin), ORC4-related",AR,ORC4,613800,,21,Primordial dwarfism and slender bones group
 NOS 21-0270,"Ear-patella-primordial short stature syndrome (Meier-Gorlin), ORC6-related",AR,ORC6,613803,,21,Primordial dwarfism and slender bones group
@@ -337,17 +337,17 @@ NOS 22-0210,"Multiple sulfatase deficiency, SUMF-related",AR,SUMF1,272200,,22,Ly
 NOS 22-0220,"Mucolipidosis II (I-cell disease), GNPTAB-related",AR,GNPTAB,252500,The old entity of Pacman dysplasia is the prenatal manifestation of mucolipidosis II with hyperparathyroidism,22,Lysosomal storage diseases with skeletal involvement
 NOS 22-0230,"Mucolipidosis III (Pseudo-Hurler polydystrophy), GNPTAB-related",AR,GNPTAB,252600,,22,Lysosomal storage diseases with skeletal involvement
 NOS 22-0240,"Mucolipidosis III (Pseudo-Hurler polydystrophy), GNPTG-related",AR,GNPTG,252605,In general somewhat milder phenotype than the GNPTAB-related form,22,Lysosomal storage diseases with skeletal involvement
-NOS 22-0250,"Mucolipidosis, GCAF-related",AR,CGAF,619345,"The gene was previously known as TMEM251 and encodes for a âGNTAP cleavage and activity factorâ (see GNTAP, above)",22,Lysosomal storage diseases with skeletal involvement
-NOS 22-0260,"Gaucher disease, GBA-related",AR,GBA,230800,Long-standing Gaucher disease can have bone changes that are different from the âdysostosis multiplexâ pattern seen in other lysosomal diseases in this group,22,Lysosomal storage diseases with skeletal involvement
+NOS 22-0250,"Mucolipidosis, GCAF-related",AR,CGAF,619345,"The gene was previously known as TMEM251 and encodes for a “GNTAP cleavage and activity factor” (see GNTAP, above)",22,Lysosomal storage diseases with skeletal involvement
+NOS 22-0260,"Gaucher disease, GBA-related",AR,GBA,230800,Long-standing Gaucher disease can have bone changes that are different from the “dysostosis multiplex” pattern seen in other lysosomal diseases in this group,22,Lysosomal storage diseases with skeletal involvement
 NOS 23-0010,"CDP, X-linked recessive, ARSE-related (brachytelephalangic type; CDPX1)",XL,ARSE,302950,,23,Chondrodysplasia punctata (CDP) group
-NOS 23-0020,"CDP, X-linked dominant, EBP-related (Conradi-HÃ¼nermann type; CDPX2)",XL,EBP,302960,,23,Chondrodysplasia punctata (CDP) group
+NOS 23-0020,"CDP, X-linked dominant, EBP-related (Conradi-Hünermann type; CDPX2)",XL,EBP,302960,,23,Chondrodysplasia punctata (CDP) group
 NOS 23-0030,"Congenital hemidysplasia, ichthyosis, limb defects (CHILD) syndrome, NSDHL-related",XL,NSDHL,308050,,23,Chondrodysplasia punctata (CDP) group
 NOS 23-0040,"Keutel syndrome, MGP-related",AR,MGP,245150,,23,Chondrodysplasia punctata (CDP) group
 NOS 23-0050,"Greenberg dysplasia, LBR-related",AR,LBR,215140,"Includes hydrops-ectopic calcification-moth-eaten appearance dysplasia (HEM) and dappled diaphyseal dysplasia; possibly includes also the ultrarare entity designed as Astley-Kendall dysplasia. See also the non-lethal condition associated with LBR, above",23,Chondrodysplasia punctata (CDP) group
 NOS 23-0060,"Rhizomelic CDP, PEX7-related",AR,PEX7,215100,,23,Chondrodysplasia punctata (CDP) group
 NOS 23-0070,"Rhizomelic CDP, DHPAT-related",AR,DHPAT,222765,,23,Chondrodysplasia punctata (CDP) group
 NOS 23-0080,"Rhizomelic CDP, AGP5-related",AR,AGPS,600121,,23,Chondrodysplasia punctata (CDP) group
-NOS 23-0090,"Rhizomelic CDP, FAR1-related",AR,FAR1,616154,"MIM calls this entity âperoxisomal fatty acyl-CoA reductase 1 disorderâ; skeletal phenotype milder than other rCDP forms. The FAR1 gene is also associated with cataracts, spastic paraparesis, and speech delay (MIM 619338, AD)",23,Chondrodysplasia punctata (CDP) group
+NOS 23-0090,"Rhizomelic CDP, FAR1-related",AR,FAR1,616154,"MIM calls this entity “peroxisomal fatty acyl-CoA reductase 1 disorder”; skeletal phenotype milder than other rCDP forms. The FAR1 gene is also associated with cataracts, spastic paraparesis, and speech delay (MIM 619338, AD)",23,Chondrodysplasia punctata (CDP) group
 NOS 23-0100,"Rhizomelic CDP, PEX5-related",AR,PEX5,616716,,23,Chondrodysplasia punctata (CDP) group
 NOS 23-0110,CDP tibial-metacarpal type,,,118651,Some cases possibly caused by maternal auto-immune disease,23,Chondrodysplasia punctata (CDP) group
 NOS 24-0010,"Osteopetrosis, neonatal or infantile form, TCIRG1-related",AR,TCIRG1,259700,,24,Osteopetrosis and related osteoclast disorders
@@ -363,24 +363,24 @@ NOS 24-0100,"Osteopetrosis, late-onset, dominant form, CLCN7-related",AD,CLCN7,1
 NOS 24-0110,"Osteopetrosis with renal tubular acidosis, CA2-related",AR,CA2,259730,,24,Osteopetrosis and related osteoclast disorders
 NOS 24-0120,"Osteopetrosis with ectodermal dysplasia and immune defect (OLEDAID), IKBKG-related",XL,IKBKG,300301,,24,Osteopetrosis and related osteoclast disorders
 NOS 24-0130,"Osteopetrosis, moderate form, SLC4A2-related",AR,SLC4A2,See 109280,"A single adult patient reported, phenotype may evolve",24,Osteopetrosis and related osteoclast disorders
-NOS 24-0140,"Osteopetrosis, moderate form with defective leucocyte adhesion, FERMT3-related",AR,FERMT3,612840,In OMIM as Leucocyte Adhesion Deficiency 3 (LAD3)âMIM 612840,24,Osteopetrosis and related osteoclast disorders
+NOS 24-0140,"Osteopetrosis, moderate form with defective leucocyte adhesion, FERMT3-related",AR,FERMT3,612840,In OMIM as Leucocyte Adhesion Deficiency 3 (LAD3)—MIM 612840,24,Osteopetrosis and related osteoclast disorders
 NOS 24-0150,"Osteopetrosis, moderate form with defective leucocyte adhesion, RASGRP2-related",AR,RASGRP2,615888,"OMIM only includes bleeding disorder, platelet type, 18 (MIM 615888) for this gene",24,Osteopetrosis and related osteoclast disorders
 NOS 24-0160,"Osteosclerotic metaphyseal dysplasia, LRKK1-related",AR,LRRK1,615198,The name may be misleading as the condition is best described as a form of osteopetrosis,24,Osteopetrosis and related osteoclast disorders
 NOS 24-0170,"Pyknodysostosis, CTSK-related",AR,CTSK,265800,"In some individuals, the features of pyknodyostosis are absent and the disorder mimics osteopetrosis",24,Osteopetrosis and related osteoclast disorders
 NOS 24-0180,"Dysosteosclerosis, SLC29A3-related",AR,SLC29A3,224300,,24,Osteopetrosis and related osteoclast disorders
 NOS 24-0190,"Dysosteosclerosis, TNFRSF11A-related",AR,TNFRSF11A,224300,"This entity probably forms a spectrum with Osteopetrosis, intermediate form, TNFSF11-related (above)",24,Osteopetrosis and related osteoclast disorders
-NOS 24-0200,"Dysosteosclerosis with degenerative encephalopathy and brain malformation, CSF1R-related",AR,CSF1R,618476,"In OMIM as âBrain abnormalities, neurodegeneration and dysosteosclerosis (BANDDOS)â; gene also associated with MIM 221820âleukoencephalopathy with spheroids.",24,Osteopetrosis and related osteoclast disorders
+NOS 24-0200,"Dysosteosclerosis with degenerative encephalopathy and brain malformation, CSF1R-related",AR,CSF1R,618476,"In OMIM as “Brain abnormalities, neurodegeneration and dysosteosclerosis (BANDDOS)”; gene also associated with MIM 221820—leukoencephalopathy with spheroids.",24,Osteopetrosis and related osteoclast disorders
 NOS 25-0010,"Desmosterolosis, DHCR4-related",AR,DHCR24,602398,See also other sterol-metabolism related conditions,25,Osteosclerotic disorders
 NOS 25-0020,"Raine dysplasia, FAM20C-related",AR,FAM20C,259775,"Variable severity, many cases are perinatal severe, some cases show survival to adulthood; then often combined with FGF23 elevation and hypophosphatemic rickets",25,Osteosclerotic disorders
 NOS 25-0030,"Caffey disease, COL1A1-related",AD,COL1A1,114000,Rare specific variants in COL1A1. See also osteogenesis imperfecta related to collagen 1 genes.,25,Osteosclerotic disorders
 NOS 25-0040,Caffey dysplasia (severe variants with prenatal onset),AR?,,114000,,25,Osteosclerotic disorders
 NOS 25-0050,"Dysplastic cortical hyperostosis, Kozlowski-Tsuruta type",,,,"A few sporadic cases known, phenotype consistent, molecular basis unknown",25,Osteosclerotic disorders
-NOS 25-0060,"Dysplastic cortical hyperostosis, Al-Gazali type",,,601356,"Only a few cases known. Im OMIM as âLethal short-limb skeletal dysplasia, Al Gazali typeâ . Not to be confused with âAl-Gazali syndromeâ, a rare variant of B3GALT6 disorders (see above)",25,Osteosclerotic disorders
+NOS 25-0060,"Dysplastic cortical hyperostosis, Al-Gazali type",,,601356,"Only a few cases known. Im OMIM as “Lethal short-limb skeletal dysplasia, Al Gazali type” . Not to be confused with “Al-Gazali syndrome”, a rare variant of B3GALT6 disorders (see above)",25,Osteosclerotic disorders
 NOS 25-0070,"Osteopoikilosis, LEMD3-related",AD,LEMD3,166700,Includes Buschke-Ollendorff syndrome (same OMIM entry),25,Osteosclerotic disorders
 NOS 25-0080,"Melorheostosis with osteopoikilosis, LEMD3-related",AD,LEMD3,166700,Includes mixed sclerosing bone dysplasia,25,Osteosclerotic disorders
 NOS 25-0090,"Melorheostosis, MAP2K1-related",SP,MAP2K1,155950,Possibly locus heterogeneity,25,Osteosclerotic disorders
 NOS 25-0100,"Osteopathia striata with cranial sclerosis (OSCS), AMER1-related",XL,AMER1,300373,,25,Osteosclerotic disorders
-NOS 25-0110,"Pyle disease, SFRP4-related",AR,SFRP4,265900,"The name âmetaphyseal dysplasia, Pyle typeâ is misleading (no growth plate dysplasia) and should be avoided",25,Osteosclerotic disorders
+NOS 25-0110,"Pyle disease, SFRP4-related",AR,SFRP4,265900,"The name “metaphyseal dysplasia, Pyle type” is misleading (no growth plate dysplasia) and should be avoided",25,Osteosclerotic disorders
 NOS 25-0120,"Craniometaphyseal dysplasia, ANKH-related",AD,ANKH,123000,Dominant type,25,Osteosclerotic disorders
 NOS 25-0130,"Craniometaphyseal dysplasia, GJA1-related",AR,GJA1,218400,Recessive type,25,Osteosclerotic disorders
 NOS 25-0140,"Diaphyseal dysplasia Camurati-Engelmann, TGFB1-related",AD,TGFB1,131300,Gain-of-function variants,25,Osteosclerotic disorders
@@ -414,11 +414,11 @@ NOS 25-0410,"Metaphyseal dysplasia, Braun-Tinschert type",AD,,605946,,25,Osteosc
 NOS 25-0420,Trichothiodystrophy with axial osteosclerosis,AR,,,A subset of patients with trichothiodystrophy have marked osteosclerosis but have not been molecularly characterized so far,25,Osteosclerotic disorders
 NOS 26-0010,"Osteogenesis imperfecta, non-deforming (Sillence type 1), COL1A1-related",AD,COL1A1,166200,"Usually with persistently blue sclerae, can have signs of connective tissue weakness (in MIM as OI type I)",26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0020,"Osteogenesis imperfecta, non-deforming (Sillence type 1), COL1A2-related",AD,COL1A2,166200,"Usually with persistently blue sclerae, can have signs of connective tissue weakness (in MIM as OI type I)",26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0030,"Osteogenesis imperfecta, severe perinatal form (Sillence type 2) COL1A1-related",AD,COL1A1,166210,Formerly âperinatal lethalâ; in OMIM as OI type II,26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0040,"Osteogenesis imperfecta, severe perinatal form (Sillence type 2), COL1A2-related",AD,COL1A2,166210,Formerly âperinatal lethalâ; in OMIM as OI type II,26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0050,"Osteogenesis imperfecta, severe perinatal form (Sillence type 2), CRTAP-related",AR,CRTAP,610682,Formerly âperinatal lethalâ; in OMIM as OI type VII,26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0060,"Osteogenesis imperfecta, severe perinatal form (Sillence type 2), P3H1-related",AR,P3H1,610915,Formerly âperinatal lethalâ; in OMIM as OI type VIII,26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0070,"Osteogenesis imperfecta, severe perinatal form (Sillence type 2), PPIB-related",AR,PPIB,259440,Formerly âperinatal lethalâ; in OMIM as OI type IX,26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0030,"Osteogenesis imperfecta, severe perinatal form (Sillence type 2) COL1A1-related",AD,COL1A1,166210,Formerly “perinatal lethal”; in OMIM as OI type II,26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0040,"Osteogenesis imperfecta, severe perinatal form (Sillence type 2), COL1A2-related",AD,COL1A2,166210,Formerly “perinatal lethal”; in OMIM as OI type II,26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0050,"Osteogenesis imperfecta, severe perinatal form (Sillence type 2), CRTAP-related",AR,CRTAP,610682,Formerly “perinatal lethal”; in OMIM as OI type VII,26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0060,"Osteogenesis imperfecta, severe perinatal form (Sillence type 2), P3H1-related",AR,P3H1,610915,Formerly “perinatal lethal”; in OMIM as OI type VIII,26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0070,"Osteogenesis imperfecta, severe perinatal form (Sillence type 2), PPIB-related",AR,PPIB,259440,Formerly “perinatal lethal”; in OMIM as OI type IX,26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0080,"Osteogenesis imperfecta, progressively deforming (Sillence type 3), COL1A1-related",AD,COL1A1,259420,In OMIM as OI type III,26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0090,"Osteogenesis imperfecta, progressively deforming (Sillence type 3), COL1A2-related",AD,COL1A2,259420,In OMIM as OI type III,26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0100,"Osteogenesis imperfecta, progressively deforming (Sillence type 3), IFITM5-related",AD,IFITM5,610967,In OMIM OI type III; phenotype is distinct but in some instances can minimize OI type III,26,Osteogenesis imperfecta and bone fragility group
@@ -449,15 +449,15 @@ NOS 26-0340,"Osteogenesis imperfecta, moderate form (Sillence type 4), SP7-relat
 NOS 26-0350,"Osteogenesis imperfecta with calcification of interosseous membranes and/or hypertrophic callus (OI type 5), IFITM5-related",AD,IFITM5,610967,"When calcification of intraosseous membranes or hypertrophic callus are not observed, may mimic progressively deforming or moderate OI (Sillence types 3 and 4)",26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0360,"Osteogenesis imperfecta with craniosynostosis (Cole-Carpenter syndrome), P4HB-related",AD,P4HB,112240,Craniosynostosis is not well documented in this condition in spite of the name.,26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0370,"Osteogenesis imperfecta with craniosynostosis (Cole-Carpenter syndrome), SEC24D-related",AR,SEC24D,616294,"Was Cole-Carpenter syndrome 2. Possibly misnomer, as most patients do not have craniosynostosis but rather large fontanels.",26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0380,"Osteoporosis â X-linked form, PLS3-related",XL,PLS3,300910,,26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0390,"OsteoporosisâX-linked form, MBPTS2-related",XL,MBTPS2,301014,"In OMIM as OI type XIX; gene also associated with MIM 300918, MIM308205, MIM 308800",26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0400,"Osteoporosisâdominant form, WNT1-related",AD,WNT1,615220,OMIM OI type XV,26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0410,"Osteoporosis â AD form, LRP5-related",AD,LRP5,"166710, 601884","Monoallelic variants; biallelic variants result in MIM 259770 osteoporosis-pseudoglioma (see below); this gene is also associated with hyperostotic forms (see below) as well as with MIM 601813âexudative vitreoretinopathy, as well as MIM 617875âpolycystic liver disease",26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0420,"OsteoporosisâAD form, ARHGAP25-related",AD,ARHGAP25,see 610587,,26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0380,"Osteoporosis – X-linked form, PLS3-related",XL,PLS3,300910,,26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0390,"Osteoporosis—X-linked form, MBPTS2-related",XL,MBTPS2,301014,"In OMIM as OI type XIX; gene also associated with MIM 300918, MIM308205, MIM 308800",26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0400,"Osteoporosis—dominant form, WNT1-related",AD,WNT1,615220,OMIM OI type XV,26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0410,"Osteoporosis – AD form, LRP5-related",AD,LRP5,"166710, 601884","Monoallelic variants; biallelic variants result in MIM 259770 osteoporosis-pseudoglioma (see below); this gene is also associated with hyperostotic forms (see below) as well as with MIM 601813—exudative vitreoretinopathy, as well as MIM 617875—polycystic liver disease",26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0420,"Osteoporosis—AD form, ARHGAP25-related",AD,ARHGAP25,see 610587,,26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0430,"Bruck syndrome type 1 (BS1), FKBP10-related",AR,FKBP10,259450,"See autosomal recessive OI, above; intrafamilial variability between OI type 3, arthrogryposis and Bruck syndrome 1 is documented",26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0440,"Bruck syndrome type 2 (BS2), PLOD2-related",AR,PLOD2,609220,,26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0450,"Osteoporosis-pseudoglioma syndrome, LRP5-related",AR,LRP5,259770,"When eye involvement is absent, may mimic progressively deforming or moderate OI (Sillence types 3 and 4)",26,Osteogenesis imperfecta and bone fragility group
-NOS 26-0460,"Bone fragility with calvarial âdoughnutâ lesions, SGSM2-related",AD,SGMS2,126550,Overlap with a spondylo-metaphyseal dysplasia phenotype,26,Osteogenesis imperfecta and bone fragility group
+NOS 26-0460,"Bone fragility with calvarial “doughnut” lesions, SGSM2-related",AD,SGMS2,126550,Overlap with a spondylo-metaphyseal dysplasia phenotype,26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0470,"Spondylo-ocular dysplasia, XYLT2-related",AR,XYLT2,605822,,26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0480,"Gnathodiaphyseal dysplasia, ANO5-related",AD,ANO5,166260,"Gene also associated with OMIM 613319-Miyoshi muscular dystrophy 3, and OMIM 611307-recessive limb-girdle muscular dystrophy 12",26,Osteogenesis imperfecta and bone fragility group
 NOS 26-0490,"Osteoporosis with developmental delay and microcephaly, COPB2-related",AD,COPB2,619884,"Clinically variable, microcephaly in some cases only",26,Osteogenesis imperfecta and bone fragility group
@@ -484,7 +484,7 @@ NOS 27-0140,"Vitamin D-dependent rickets, HNRNPC-related",AD?,HNRNPC,see 164020,
 NOS 27-0150,"Familial hyperparathyroidism, CDC73-related",AD,CDC73,"145000, 145001",With or without jaw tumors,27,Disorders of bone mineralisation
 NOS 27-0160,Familial hyperparathyroidism linked to chromosome 2,AD,2p14-p13.3,610071,Linkage studies; no gene identified,27,Disorders of bone mineralisation
 NOS 27-0170,"Familial hyperparathyroidism, GCM2-related",AD,GCM2,617343,Variants in this gene also cause familial isolated hypoparathyroidism (MIM 618883),27,Disorders of bone mineralisation
-NOS 27-0180,"Neonatal hyperparathyroidism, CASR-related","AR, AD",CASR,239200,"âSevereâ form (but see below, transient form also CASR-related). Variants in the CASR gene can also result in autosomal dominant hypocalcemia (MIM 601198)",27,Disorders of bone mineralisation
+NOS 27-0180,"Neonatal hyperparathyroidism, CASR-related","AR, AD",CASR,239200,"“Severe” form (but see below, transient form also CASR-related). Variants in the CASR gene can also result in autosomal dominant hypocalcemia (MIM 601198)",27,Disorders of bone mineralisation
 NOS 27-0190,"Neonatal hyperparathyroidism, TRPV6-related",AR,TRPV6,618188,Transient form,27,Disorders of bone mineralisation
 NOS 27-0200,"Familial hypocalciuric hypercalcemia with transient neonatal hyperparathyroidism, CASR-related",AD,CASR,145980,Other forms of familial hypocalciuric hypercalcemia do not show significant skeletal phenotypes,27,Disorders of bone mineralisation
 NOS 27-0210,"Calcium pyrophosphate deposition disease (familial chondrocalcinosis), ANKH-related",AD,ANKH,118600,"Loss-of-function variants (see also craniometaphyseal dysplasia, dominant type)",27,Disorders of bone mineralisation
@@ -519,7 +519,7 @@ NOS 30-0070,"Osteoglophonic dysplasia, FGFR1-related",AD,FGFR1,166250,Craniosyno
 NOS 30-0080,"Fibrodysplasia ossificans progressiva (FOP), ACVR1-related",AD,ACVR1,135100,Most cases sporadic but dominant transmission documented,3,Disorganized development of skeletal components group
 NOS 30-0090,"Neurofibromatosis type 1, NF1-related",AD,NF1,162200,,3,Disorganized development of skeletal components group
 NOS 30-0100,Cherubism with gingival fibromatosis (Ramon syndrome),AR,,266270,"Some similarities to primary intraosseous vascular malformation, ELMO2-related (see below)",3,Disorganized development of skeletal components group
-NOS 30-0110,Dysplasia epiphysealis hemimelica (Trevor),SP,,127800,Some familial cases reported (âfamilial Trevor diseaseâ) but probably represent a different condition,3,Disorganized development of skeletal components group
+NOS 30-0110,Dysplasia epiphysealis hemimelica (Trevor),SP,,127800,Some familial cases reported (“familial Trevor disease”) but probably represent a different condition,3,Disorganized development of skeletal components group
 NOS 30-0120,"Lipomembraneous osteodystrophy with leukoencephalopathy, TREM2-related (Nasu-Hakola)",AR,TREM2,618193,Also known as presenile dementia with bone cysts,3,Disorganized development of skeletal components group
 NOS 30-0130,"Lipomembraneous osteodystrophy with leukoencephalopathy, TYROBP-related (Nasu-Hakola)",AR,TYROBP,221770,Also known as presenile dementia with bone cysts,3,Disorganized development of skeletal components group
 NOS 30-0140,"Enchondromatosis, IDH1-related (Ollier disease)",MOS,IDH1,166000,Somatic mosaicism for specific IDH1 variants. See also MIM 147700 and 137800,3,Disorganized development of skeletal components group
@@ -528,9 +528,9 @@ NOS 30-0160,"Enchondromatosis with hemangiomas, IDH1-related (Maffucci disease)"
 NOS 30-0170,"Enchondromatosis with hemangiomas, IDH2-related (Maffucci disease)",MOS,IDH2,614569,"Somatic mosaicism for IDH2 variants; significantly rarer than IDH1 variants. See also MIM 147650 and 613657, D-2-hydroxyglutaric aciduria 2",3,Disorganized development of skeletal components group
 NOS 30-0180,"Metaphyseal chondromatosis with D-2-hydroxyglutaric aciduria, IDH1-related",MOS,IDH1,614875,Includes so-called cheirospondyloenchondromatosis. Somatic mosaicism for IDH1 variants. Possibly also IDH2 variants but not yet well documented,3,Disorganized development of skeletal components group
 NOS 30-0190,"Primary intraosseous vascular malformation, ELMO2-related",AR,ELMO2,606893,,3,Disorganized development of skeletal components group
-NOS 30-0200,"Osteofibrous dysplasia, MET-related","AD, SP",MET,607278,Possibly corresponding to the former âCampanacci dysplasiaâ,3,Disorganized development of skeletal components group
-NOS 30-0210,Genochondromatosis,AD,,137360,"âGenoâ from Greek âkneeâ, but upper limbs also affected. Probably includes the condition known as Vaandrager-PeÃ±a syndrome",3,Disorganized development of skeletal components group
-NOS 30-0220,Gorham-Stout disease and familial diffuse angiomatosis of bone,"SP (MOS?), AD",,see 123880,"Severe Gorham-Stout disease is mostly sporadic. Somatic KRAS variants have been found in rare cases. In contrast, milder cases may be familial (âfamilial diffuse cystic angiomatosis of boneâ; see OMIM 123880).",3,Disorganized development of skeletal components group
+NOS 30-0200,"Osteofibrous dysplasia, MET-related","AD, SP",MET,607278,Possibly corresponding to the former “Campanacci dysplasia”,3,Disorganized development of skeletal components group
+NOS 30-0210,Genochondromatosis,AD,,137360,"“Geno” from Greek “knee”, but upper limbs also affected. Probably includes the condition known as Vaandrager-Peña syndrome",3,Disorganized development of skeletal components group
+NOS 30-0220,Gorham-Stout disease and familial diffuse angiomatosis of bone,"SP (MOS?), AD",,see 123880,"Severe Gorham-Stout disease is mostly sporadic. Somatic KRAS variants have been found in rare cases. In contrast, milder cases may be familial (“familial diffuse cystic angiomatosis of bone”; see OMIM 123880).",3,Disorganized development of skeletal components group
 NOS 31-0010,"Marfan syndrome, FBN1-related",AD,FBN1,154700,See also as differential diagnosis: homocystinuria and marfanoid habitus with ID (Lujan Fryns syndrome): MED12; ZDHHC9; UPF3B,31,Overgrowth (tall stature) syndromes and segmental overgrowth
 NOS 31-0020,"Congenital contractural arachnodactyly (Beals-Hecht syndrome), FBN2-related",AD,FBN2,121050,,31,Overgrowth (tall stature) syndromes and segmental overgrowth
 NOS 31-0030,"Loeys-Dietz syndrome, TGFBR1-related",AD,TGFBR1,609192,Osteopenia with propensity to fractures may be observed in all variants of the Loeys-Dietz syndrome,31,Overgrowth (tall stature) syndromes and segmental overgrowth
@@ -591,22 +591,22 @@ NOS 34-0120,"Baller-Gerold syndrome, RECQL4-related",AR,RECQL4,218600,"See other
 NOS 34-0130,"Carpenter syndrome, RAB23-related",AR,RAB23,201000,,34,Syndromes featuring craniosynostosis
 NOS 34-0140,"Carpenter syndrome, MEGF8-related",AR,MEGF8,614976,,34,Syndromes featuring craniosynostosis
 NOS 34-0150,"Craniosynostosis, TCF12-related",AD,TCF12,615314,Frequently coronal craniosynostosis,34,Syndromes featuring craniosynostosis
-NOS 34-0160,"Craniosynostosis, SIX1-related",AD,SIX1,see 601205,"Frequently sagittal and lambdoid synostosis. See also MIM 608389âBranchiootic syndrome 3, and 605192âdeafness, autosomal dominant 23, for other SIX1-related phenotypes",34,Syndromes featuring craniosynostosis
+NOS 34-0160,"Craniosynostosis, SIX1-related",AD,SIX1,see 601205,"Frequently sagittal and lambdoid synostosis. See also MIM 608389—Branchiootic syndrome 3, and 605192—deafness, autosomal dominant 23, for other SIX1-related phenotypes",34,Syndromes featuring craniosynostosis
 NOS 34-0170,"Complex craniosynostosis, ERF-related",AD,ERF,600775,Variants in ERF also cause Chitayat hyperphalangism syndrome (Group 19),34,Syndromes featuring craniosynostosis
 NOS 34-0180,"Non-syndromic midline (metopic / sagittal) craniosynostosis, SMAD6-related",AD?,SMAD6,617439,Rare SMAD6 variants and a common BMP2 polymorphism may interact to produce craniosynostosis; subject disputed,34,Syndromes featuring craniosynostosis
 NOS 34-0190,"Non-syndromic midline craniosynostosis, RUNX2-related",AD,RUNX2,,"Gain-of-function variants, duplications, triplications",34,Syndromes featuring craniosynostosis
 NOS 34-0200,Structural brain anomalies with impaired ID and craniosynostosis / craniosynostosis type 6,AD,ZIC1,618736,,34,Syndromes featuring craniosynostosis
 NOS 34-0210,"Craniosynostosis and dental anomalies (CRSDA), IL11RA-related",AR,IL11RA,614188,,34,Syndromes featuring craniosynostosis
-NOS 34-0220,"Craniosynostosis, retained deciduous teeth and intellectual disability, IL6ST-related",AR,IL6ST,see 600694,"Single case reported, with preserved LIF signaling. See StÃ¼ve-Wiedemann syndrome, IL6ST-related (above, group 24) as well as IL6ST-MIM 600694 for other phenotypes associated with IL6ST",34,Syndromes featuring craniosynostosis
+NOS 34-0220,"Craniosynostosis, retained deciduous teeth and intellectual disability, IL6ST-related",AR,IL6ST,see 600694,"Single case reported, with preserved LIF signaling. See Stüve-Wiedemann syndrome, IL6ST-related (above, group 24) as well as IL6ST-MIM 600694 for other phenotypes associated with IL6ST",34,Syndromes featuring craniosynostosis
 NOS 34-0230,"Cutis laxa with craniosynostosis, short stature, brachydactyly, and syndactyly, LTBP1-related",AR,LTBP1,619451,,34,Syndromes featuring craniosynostosis
 NOS 34-0240,"Bohring-Opitz syndrome, ASXL1-related",AD,ASXL1,605039,,34,Syndromes featuring craniosynostosis
 NOS 34-0250,"Craniosynostosis, radiohumeral fusion and other skeletal defects, CYP26B1-related",AR,CYP26B1,614416,"CYP26B1 is a retinoid acid-degrading enzyme, pathogenesis involves retinoic acid-associated morphogenesis",34,Syndromes featuring craniosynostosis
 NOS 34-0260,"Cardiac, facial and digital anomalies with developmental delay (CAFDADD), TRAF7-related",AD,TRAF7,618164,Multistructure craniosynostosis is one of the features,34,Syndromes featuring craniosynostosis
 NOS 34-0270,"Craniosynostosis, hypertrichosis, progeroid appearance, bone dysplasia, characteristic face (Fontaine progeroid syndrome, Gorlin-Chaudhry-Moss syndrome), SLC25A24-related",AD,SLC25A24,612289,,34,Syndromes featuring craniosynostosis
 NOS 34-0280,"Curry-Jones syndrome, SMO-related",MOS,SMO,601707,Activating variant c.1234C>T (p.L412F),34,Syndromes featuring craniosynostosis
-NOS 34-0290,"3MC syndrome, MASP1-related",AR,MASP1,257920,Craniosynostosis in 20%â30%,34,Syndromes featuring craniosynostosis
-NOS 34-0300,"3MC syndrome, COLEC11-related",AR,COLEC11,265050,Craniosynostosis in 20%â30%,34,Syndromes featuring craniosynostosis
-NOS 34-0310,"3MC syndrome, COLEC10-related",AR,COLEC10,248340,Craniosynostosis in 20%â30%,34,Syndromes featuring craniosynostosis
+NOS 34-0290,"3MC syndrome, MASP1-related",AR,MASP1,257920,Craniosynostosis in 20%–30%,34,Syndromes featuring craniosynostosis
+NOS 34-0300,"3MC syndrome, COLEC11-related",AR,COLEC11,265050,Craniosynostosis in 20%–30%,34,Syndromes featuring craniosynostosis
+NOS 34-0310,"3MC syndrome, COLEC10-related",AR,COLEC10,248340,Craniosynostosis in 20%–30%,34,Syndromes featuring craniosynostosis
 NOS 34-0320,"Weiss-Kruszka syndrome, ZNF462-related",AD,ZNF462,618619,"Metopic ridging or CSO (metopic, lambdoid, 9/24)",34,Syndromes featuring craniosynostosis
 NOS 34-0330,"Au-Kline syndrome, HNRNPK-related",AD,HNRNPK,616580,Craniosynostosis and vertebral anomalies in a significant proportion of cases,34,Syndromes featuring craniosynostosis
 NOS 34-0340,"Char syndrome, TFAP2B-related",AD,TFAP2B,169100,Mainly with loss-of-function variants,34,Syndromes featuring craniosynostosis
@@ -615,12 +615,12 @@ NOS 35-0010,"Mandibulofacial dysostosis, TCOF1-related (Treacher-Collins, France
 NOS 35-0020,"Mandibulofacial dysostosis, POLR1B-related (Treacher-Collins, Franceschetti-Klein)",AD,POLR1B,618939,,35,Craniofacial dysostoses
 NOS 35-0030,"Mandibulofacial dysostosis, POLR1C-related (Treacher-Collins, Franceschetti-Klein)",AR,POLR1C,248390,,35,Craniofacial dysostoses
 NOS 35-0040,"Mandibulofacial dysostosis, POLR1D-related (Treacher-Collins, Franceschetti-Klein)","AD, AR",POLR1D,613717,,35,Craniofacial dysostoses
-NOS 35-0050,"Mandibulofacial dysostosis with limb deficiencies, POLR1A-related (Cincinnati type)",AD,POLR1A,616462,The original description was âacrofacial dysostosis: a mandibulofacial dysostosis with limb anomaliesâ. The limb anomalies are variable,35,Craniofacial dysostoses
+NOS 35-0050,"Mandibulofacial dysostosis with limb deficiencies, POLR1A-related (Cincinnati type)",AD,POLR1A,616462,The original description was “acrofacial dysostosis: a mandibulofacial dysostosis with limb anomalies”. The limb anomalies are variable,35,Craniofacial dysostoses
 NOS 35-0060,"Mandibulofacial dysostosis with microcephaly, EFTUD2-related (Guion-Almeida type)",AD,EFTUD2,610536,,35,Craniofacial dysostoses
 NOS 35-0070,"Mandibulofacial dysostosis with alopecia, EDNRA-related",AD,EDNRA,616367,,35,Craniofacial dysostoses
 NOS 35-0080,"Burns-McKeown syndrome, TXNL4A-related",AR,TXNL4A,608572,Some pathogenic variants are in the promoter region; severity is variable,35,Craniofacial dysostoses
 NOS 35-0090,"Postaxial acrofacial dysostosis, DHODH-related (Miller syndrome)",AR,DHODH,263750,,35,Craniofacial dysostoses
-NOS 35-0100,"Acrofacial dysostosis, SF3B4-related (Nager syndrome)","AD, AR",SF3B4,"154400, 201170",Both monoallelic and biallelic variants are at the basis of a spectrum that also includes the former âRodriguez typeâ of acrofacial dysostosis,35,Craniofacial dysostoses
+NOS 35-0100,"Acrofacial dysostosis, SF3B4-related (Nager syndrome)","AD, AR",SF3B4,"154400, 201170",Both monoallelic and biallelic variants are at the basis of a spectrum that also includes the former “Rodriguez type” of acrofacial dysostosis,35,Craniofacial dysostoses
 NOS 35-0110,"Agnathia-Otocephaly complex, PRRX1-related","AD, AR",PRRX1,202650,,35,Craniofacial dysostoses
 NOS 35-0120,"Frontonasal dysplasia, ALX3-related",AR,ALX3,136760,,35,Craniofacial dysostoses
 NOS 35-0130,"Frontonasal dysplasia, ALX4-related",AR,ALX4,613451,,35,Craniofacial dysostoses
@@ -671,52 +671,52 @@ NOS 36-0220,"NAD deficiency syndrome, NADSYN1-related",AR,NADSYN1,618845,In some
 NOS 36-0230,VATER/VACTERL association,SP,,192350,,36,Vertebral and costal dysostoses
 NOS 36-0240,"VACTERL association with hydrocephalus (VACTERL-H), FANCB-related",XL,FANCB,300514,FANCB-related Fanconi anemia may present in hemizygous males with the VACTERL-hydrocephalus phenotype,36,Vertebral and costal dysostoses
 NOS 36-0250,"VACTERL association with hydrocephalus (VACTERL-H), ZIC3-related",XL,ZIC3,314390,,36,Vertebral and costal dysostoses
-NOS 36-0260,"Uniparental disomy, paternal, for chromosome 14 (UPD14; Kagami-Ogata syndrome)",SP,14q32?,608149,Imprinted genes at 14q32 may have a role in this complex phenotype with skeletal malformations such as âcoat-hanger ribsâ,36,Vertebral and costal dysostoses
-NOS 37-0010,"Ischiopatellar dysplasia (small patella syndrome), TBX4-related",AD,TBX4,147891,See MIM 601360âposterior amelia for the biallelic phenotype,37,Patellar dysostoses
+NOS 36-0260,"Uniparental disomy, paternal, for chromosome 14 (UPD14; Kagami-Ogata syndrome)",SP,14q32?,608149,Imprinted genes at 14q32 may have a role in this complex phenotype with skeletal malformations such as “coat-hanger ribs”,36,Vertebral and costal dysostoses
+NOS 37-0010,"Ischiopatellar dysplasia (small patella syndrome), TBX4-related",AD,TBX4,147891,See MIM 601360—posterior amelia for the biallelic phenotype,37,Patellar dysostoses
 NOS 37-0020,"Nail-patella syndrome, LMX1B-related",AD,LMX1B,161200,,37,Patellar dysostoses
 NOS 37-0030,"Genitopatellar syndrome, KAT6B-related",AD,KAT6B,606170,,37,Patellar dysostoses
-NOS 38-0010,"Ulnar-mammary syndrome, TBX3-related",AD,TBX3,181450,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0020,"Holt-Oram syndrome, TBX5-related",AD,TBX5,142900,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0030,Holt-Oram/Ulnar Mammary blended phenotype,AD,"TBX3, TBX5",,CNVs involving both TBX3 and TBX5 may result in combined phenotype,38,Limb hypoplasiaâreduction defects group
-NOS 38-0040,"Posterior Amelia, TBX4-related",AR,TBX4,601360,See also ischiopatellar syndrome for the monoallelic TBX4-related phenotype,38,Limb hypoplasiaâreduction defects group
-NOS 38-0050,"Cornelia de Lange syndrome, NIPBL-related",AD,NIPBL,122470,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0060,"Cornelia de Lange syndrome, SMC1A-related",XL,SMC1A,300590,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0070,"Cornelia de Lange syndrome, SMC3-related",AD,SMC3,610759,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0080,"Cornelia de Lange syndrome, RAD21-related",AD,RAD21,614701,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0090,"Cornelia de Lange syndrome, HDAC8-related",XL,HDAC8,300882,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0100,"Thrombocytopenia-absent radius (TAR) syndrome, RBM8A-related",AR,RBM8A,274000,Deletion and common SNP on other allele that has regulatory function,38,Limb hypoplasiaâreduction defects group
-NOS 38-0110,"Thrombocythemia with distal limb defects, THPO-related",AD,THPO,187950,Distal limb defects postulated as consequence of vascular occlusions,38,Limb hypoplasiaâreduction defects group
-NOS 38-0120,"Okihiro syndrome (Duane syndrome with radial ray anomaly), SALL4-related",AD,SALL4,607323,Includes IVIC syndrome,38,Limb hypoplasiaâreduction defects group
-NOS 38-0130,"Cousin syndrome, TBX15-related",AR,TBX15,260660,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0140,"Roberts syndrome, ESCO2-related",AR,ESCO2,268300,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0150,"Tibial hemimelia-polysyndactyly-triphalangeal thumb (Werner syndrome), ZRS-related",AD,ZRS,188740,"Monoallelic variants in ZRS, a limb-specific enhancer of SHH that is located within intron 5 of the LMBR1 gene",38,Limb hypoplasiaâreduction defects group
-NOS 38-0160,"Clubfoot with or without deficiency of long bones and/or mirror-image polydactyly, PITX1-related",AD,PITX1,119800,In some patients bilateral patellar hypoplasia (see Group 37),38,Limb hypoplasiaâreduction defects group
-NOS 38-0170,"Acheiropodia, LMBR1-related",AR,LMBR1,200500,"The Brazilian founder allele is deletion spanning exon 4 of LMBR1 that probably affects the activity of ZRS, the limb-specific enhancer of SHH. In a further patient, biallelic deletion of exons 1 to 16 of LMBR1, including the ZRS",38,Limb hypoplasiaâreduction defects group
-NOS 38-0180,"Engrailed-1 related dorsoventral syndrome (ENDOVES), limb-brain type",AR,EN1,619218,One single patient with a biallelic frameshift variant described,38,Limb hypoplasiaâreduction defects group
-NOS 38-0190,"Engrailed-1 related dorsoventral syndrome (ENDOVES), limb-only type",AR,MAENLI,619217,MAENLI is a lncRNA regulating EN1 expression,38,Limb hypoplasiaâreduction defects group
-NOS 38-0200,"Tetra-amelia, WNT3-related",AR,WNT3,273395,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0210,"Tetra-amelia, RSPO2-related",AR,RSPO2,618021,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0220,"Limb reduction syndrome, WNT7A-related",AR,WNT7A,"276820, 228930",Includes former Al-Awadi Raas-Rothschild limb-pelvis hypoplasia-aplasia as well as Fuhrmann syndrome,38,Limb hypoplasiaâreduction defects group
-NOS 38-0230,"RAPADILINO syndrome, RECQL4-related",AR,RECQL4,266280,"See also Baller-Gerold syndrome, RECQL4-related. See MIM 266280 for explanation of the RAPADILINO acronym",38,Limb hypoplasiaâreduction defects group
-NOS 38-0240,"Rothmund-Thompson syndrome, RECQL4-related",AR,RECQL4,268400,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0250,"Rothmund-Thompson syndrome, ANAPC1-related",AR,ANAPC1,618625,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0260,"Rothmund-Thompson syndrome, DNA2-related",AR,DNA2,,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0270,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), ARHGAP31-related",AD,ARHGAP31,100300,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0280,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), DOCK6-related",AR,DOCK6,614219,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0290,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), RBPJ-related",AD,RBPJ,614814,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0300,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), DLL4-related",AR,DLL4,616589,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0310,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), EOGT-related",AD,EOGT,615297,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0320,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), NOTCH1-related",AD,NOTCH1,616028,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0330,"B-cell immunodeficiency-limb anomaly-urogenital malformation syndrome (BILU syndrome), TOP2B-related",AD,TOP2B,609296,Also known as Hoffmann syndrome (see MIM 609296),38,Limb hypoplasiaâreduction defects group
-NOS 38-0340,Scapulo-iliac dysplasia (Kosenow syndrome),AD,,169550,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0350,Hypoglossia-hypodactylia (Hanhart syndrome),SP,,103300,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0360,Poland syndrome,"SP, AD",,173800,Most commonly sporadic and probably non-genetic; some familial cases reported but no specific gene identified so far,38,Limb hypoplasiaâreduction defects group
-NOS 38-0370,Femoral facial syndrome (FFS),SP,,134780,Some phenotypic overlap with FFU syndrome (below),38,Limb hypoplasiaâreduction defects group
-NOS 38-0380,Femur-fibula-ulna syndrome (FFU),SP,,228200,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0390,"Fibular aplasia, tibial campomelia, and oligosyndactyly syndrome (FATCO)",SP,,246570,,38,Limb hypoplasiaâreduction defects group
-NOS 38-0400,Tibial hemimelia (isolated),SP,,275220,Possibly non-genetic etiology,38,Limb hypoplasiaâreduction defects group
-NOS 38-0410,Sirenomelia,SP,,,Rare cases reported as associated with monoallelic CDX2 variants with variable expressivity,38,Limb hypoplasiaâreduction defects group
-NOS 38-0420,Fanconi anemia,AR,(several),227650,The complex genetic basis of Fanconi anemia and its complementation groups and loci is acknowledged but not further listed in this Nosology; please refer to MIM or to specialized reviews,38,Limb hypoplasiaâreduction defects group
+NOS 38-0010,"Ulnar-mammary syndrome, TBX3-related",AD,TBX3,181450,,38,Limb hypoplasia—reduction defects group
+NOS 38-0020,"Holt-Oram syndrome, TBX5-related",AD,TBX5,142900,,38,Limb hypoplasia—reduction defects group
+NOS 38-0030,Holt-Oram/Ulnar Mammary blended phenotype,AD,"TBX3, TBX5",,CNVs involving both TBX3 and TBX5 may result in combined phenotype,38,Limb hypoplasia—reduction defects group
+NOS 38-0040,"Posterior Amelia, TBX4-related",AR,TBX4,601360,See also ischiopatellar syndrome for the monoallelic TBX4-related phenotype,38,Limb hypoplasia—reduction defects group
+NOS 38-0050,"Cornelia de Lange syndrome, NIPBL-related",AD,NIPBL,122470,,38,Limb hypoplasia—reduction defects group
+NOS 38-0060,"Cornelia de Lange syndrome, SMC1A-related",XL,SMC1A,300590,,38,Limb hypoplasia—reduction defects group
+NOS 38-0070,"Cornelia de Lange syndrome, SMC3-related",AD,SMC3,610759,,38,Limb hypoplasia—reduction defects group
+NOS 38-0080,"Cornelia de Lange syndrome, RAD21-related",AD,RAD21,614701,,38,Limb hypoplasia—reduction defects group
+NOS 38-0090,"Cornelia de Lange syndrome, HDAC8-related",XL,HDAC8,300882,,38,Limb hypoplasia—reduction defects group
+NOS 38-0100,"Thrombocytopenia-absent radius (TAR) syndrome, RBM8A-related",AR,RBM8A,274000,Deletion and common SNP on other allele that has regulatory function,38,Limb hypoplasia—reduction defects group
+NOS 38-0110,"Thrombocythemia with distal limb defects, THPO-related",AD,THPO,187950,Distal limb defects postulated as consequence of vascular occlusions,38,Limb hypoplasia—reduction defects group
+NOS 38-0120,"Okihiro syndrome (Duane syndrome with radial ray anomaly), SALL4-related",AD,SALL4,607323,Includes IVIC syndrome,38,Limb hypoplasia—reduction defects group
+NOS 38-0130,"Cousin syndrome, TBX15-related",AR,TBX15,260660,,38,Limb hypoplasia—reduction defects group
+NOS 38-0140,"Roberts syndrome, ESCO2-related",AR,ESCO2,268300,,38,Limb hypoplasia—reduction defects group
+NOS 38-0150,"Tibial hemimelia-polysyndactyly-triphalangeal thumb (Werner syndrome), ZRS-related",AD,ZRS,188740,"Monoallelic variants in ZRS, a limb-specific enhancer of SHH that is located within intron 5 of the LMBR1 gene",38,Limb hypoplasia—reduction defects group
+NOS 38-0160,"Clubfoot with or without deficiency of long bones and/or mirror-image polydactyly, PITX1-related",AD,PITX1,119800,In some patients bilateral patellar hypoplasia (see Group 37),38,Limb hypoplasia—reduction defects group
+NOS 38-0170,"Acheiropodia, LMBR1-related",AR,LMBR1,200500,"The Brazilian founder allele is deletion spanning exon 4 of LMBR1 that probably affects the activity of ZRS, the limb-specific enhancer of SHH. In a further patient, biallelic deletion of exons 1 to 16 of LMBR1, including the ZRS",38,Limb hypoplasia—reduction defects group
+NOS 38-0180,"Engrailed-1 related dorsoventral syndrome (ENDOVES), limb-brain type",AR,EN1,619218,One single patient with a biallelic frameshift variant described,38,Limb hypoplasia—reduction defects group
+NOS 38-0190,"Engrailed-1 related dorsoventral syndrome (ENDOVES), limb-only type",AR,MAENLI,619217,MAENLI is a lncRNA regulating EN1 expression,38,Limb hypoplasia—reduction defects group
+NOS 38-0200,"Tetra-amelia, WNT3-related",AR,WNT3,273395,,38,Limb hypoplasia—reduction defects group
+NOS 38-0210,"Tetra-amelia, RSPO2-related",AR,RSPO2,618021,,38,Limb hypoplasia—reduction defects group
+NOS 38-0220,"Limb reduction syndrome, WNT7A-related",AR,WNT7A,"276820, 228930",Includes former Al-Awadi Raas-Rothschild limb-pelvis hypoplasia-aplasia as well as Fuhrmann syndrome,38,Limb hypoplasia—reduction defects group
+NOS 38-0230,"RAPADILINO syndrome, RECQL4-related",AR,RECQL4,266280,"See also Baller-Gerold syndrome, RECQL4-related. See MIM 266280 for explanation of the RAPADILINO acronym",38,Limb hypoplasia—reduction defects group
+NOS 38-0240,"Rothmund-Thompson syndrome, RECQL4-related",AR,RECQL4,268400,,38,Limb hypoplasia—reduction defects group
+NOS 38-0250,"Rothmund-Thompson syndrome, ANAPC1-related",AR,ANAPC1,618625,,38,Limb hypoplasia—reduction defects group
+NOS 38-0260,"Rothmund-Thompson syndrome, DNA2-related",AR,DNA2,,,38,Limb hypoplasia—reduction defects group
+NOS 38-0270,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), ARHGAP31-related",AD,ARHGAP31,100300,,38,Limb hypoplasia—reduction defects group
+NOS 38-0280,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), DOCK6-related",AR,DOCK6,614219,,38,Limb hypoplasia—reduction defects group
+NOS 38-0290,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), RBPJ-related",AD,RBPJ,614814,,38,Limb hypoplasia—reduction defects group
+NOS 38-0300,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), DLL4-related",AR,DLL4,616589,,38,Limb hypoplasia—reduction defects group
+NOS 38-0310,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), EOGT-related",AD,EOGT,615297,,38,Limb hypoplasia—reduction defects group
+NOS 38-0320,"Adams-Oliver syndrome (aplasia cutis congenita and transverse limb defects), NOTCH1-related",AD,NOTCH1,616028,,38,Limb hypoplasia—reduction defects group
+NOS 38-0330,"B-cell immunodeficiency-limb anomaly-urogenital malformation syndrome (BILU syndrome), TOP2B-related",AD,TOP2B,609296,Also known as Hoffmann syndrome (see MIM 609296),38,Limb hypoplasia—reduction defects group
+NOS 38-0340,Scapulo-iliac dysplasia (Kosenow syndrome),AD,,169550,,38,Limb hypoplasia—reduction defects group
+NOS 38-0350,Hypoglossia-hypodactylia (Hanhart syndrome),SP,,103300,,38,Limb hypoplasia—reduction defects group
+NOS 38-0360,Poland syndrome,"SP, AD",,173800,Most commonly sporadic and probably non-genetic; some familial cases reported but no specific gene identified so far,38,Limb hypoplasia—reduction defects group
+NOS 38-0370,Femoral facial syndrome (FFS),SP,,134780,Some phenotypic overlap with FFU syndrome (below),38,Limb hypoplasia—reduction defects group
+NOS 38-0380,Femur-fibula-ulna syndrome (FFU),SP,,228200,,38,Limb hypoplasia—reduction defects group
+NOS 38-0390,"Fibular aplasia, tibial campomelia, and oligosyndactyly syndrome (FATCO)",SP,,246570,,38,Limb hypoplasia—reduction defects group
+NOS 38-0400,Tibial hemimelia (isolated),SP,,275220,Possibly non-genetic etiology,38,Limb hypoplasia—reduction defects group
+NOS 38-0410,Sirenomelia,SP,,,Rare cases reported as associated with monoallelic CDX2 variants with variable expressivity,38,Limb hypoplasia—reduction defects group
+NOS 38-0420,Fanconi anemia,AR,(several),227650,The complex genetic basis of Fanconi anemia and its complementation groups and loci is acknowledged but not further listed in this Nosology; please refer to MIM or to specialized reviews,38,Limb hypoplasia—reduction defects group
 NOS 39-0010,Ankyloblepharon-ectodermal dysplasia-cleft palate (AEC),AD,TP63,106260,See other TP63-related disorders in this group (below),39,Split hand/foot with and without other manifestations
 NOS 39-0020,Ectrodactyly-ectodermal dysplasia cleft-palate syndrome Type 3 (EEC3),AD,TP63,604292,,39,Split hand/foot with and without other manifestations
 NOS 39-0030,Ectrodactyly-ectodermal dysplasia-macular dystrophy syndrome (EEM),AR,CDH3,225280,,39,Split hand/foot with and without other manifestations
@@ -730,7 +730,7 @@ NOS 39-0100,Split-foot malformation with mesoaxial polydactyly (SFMMP),AR,ZAK,61
 NOS 39-0110,"Split-hand-foot malformation with or without long bone deficiency (SHFLD), BHLHA9-related",AD,BHLHA9,612576,Duplications at 17p13.3 that include BHLHA9. Phenotypic penetrance is less than 50% and shows markedly variable expressivity; includes the so-called Gollop-Wolfgang complex,39,Split hand/foot with and without other manifestations
 NOS 39-0120,"Hartsfield syndrome, FGFR1-related",AD,FGFR1,615465,,39,Split hand/foot with and without other manifestations
 NOS 39-0130,"Split hand-foot malformation, EPS15L-related",AD,EPS15L1,,Structural variants (deletions) at this locus; one consanguineous family with homozygous point variant in EPS15L1 but inheritance still unclear,39,Split hand/foot with and without other manifestations
-NOS 39-0140,"Aplasia cutis congenita with ectrodactyly, UBA2-related",AD,UBA2,,19q13.11 deletions may also cause this phenotype. In OMIM as âaplasia cutis congenita with ectrodactyly skeletal syndromeâ (a redundant name),39,Split hand/foot with and without other manifestations
+NOS 39-0140,"Aplasia cutis congenita with ectrodactyly, UBA2-related",AD,UBA2,,19q13.11 deletions may also cause this phenotype. In OMIM as “aplasia cutis congenita with ectrodactyly skeletal syndrome” (a redundant name),39,Split hand/foot with and without other manifestations
 NOS 39-0150,"Focal dermal hypoplasia (Goltz Syndrome), PORCN-related",XLD,PORCN,305600,,39,Split hand/foot with and without other manifestations
 NOS 40-0010,"Preaxial polydactyly, SHH-related",AD,SHH,174400,Formerly preaxial polydactyly types 1 and 2 (with triphalangeal thumb); regulatory domain variant or duplication of ZRS (limb enhancer of SHH),4,Polydactyly-Syndactyly-Triphalangism group
 NOS 40-0020,"Preaxial polydactyly, GLI1-related",AR,GLI1,174400,,4,Polydactyly-Syndactyly-Triphalangism group
@@ -772,4 +772,4 @@ NOS 41-0050,"Liebenberg syndrome, PITX1-related",AD,PITX1,186550,Structural vari
 NOS 41-0060,"Short stature, auditory atresia, mandibular hypoplasia, skeletal abnormalities (SAMS) syndrome, GSC-related",AR,GSC,602471,,41,Defects in joint formation and synostoses
 NOS 41-0070,"Radio-ulnar synostosis with amegakaryocytic thrombocytopenia, HOXA11-related",AD,HOXA11,605432,,41,Defects in joint formation and synostoses
 NOS 41-0080,"Radio-ulnar synostosis with amegakaryocytic thrombocytopenia, MECOM-related",AD,MECOM,616738,,41,Defects in joint formation and synostoses
-NOS 41-0090,Radio-ulnar synostosis with microcephaly (GiuffrÃ©-Tsukahara syndrome),,,603438,X-linked recessive inheritance suggested,41,Defects in joint formation and synostoses
+NOS 41-0090,Radio-ulnar synostosis with microcephaly (Giuffré-Tsukahara syndrome),,,603438,X-linked recessive inheritance suggested,41,Defects in joint formation and synostoses

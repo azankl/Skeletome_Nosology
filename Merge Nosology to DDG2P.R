@@ -11,7 +11,15 @@ here::i_am("Merge Nosology to DDG2P.R")
 library(tidyverse)
 library(here)
 
+#read the Nosology object created in 'Convert AJMG Table to Nosology object'
 nosology <- read_rds("Nosology_2023.rds")
+
+#nosology sometimes has multiple DMIMs in the DMIM field.
+#split such entries into individual rows
+#the regex splits at comma plus optional white space
+nosology <- nosology %>%
+  separate_rows(NOS_OMIM, sep=",\\s+")
+
 #download latest version of DDG2P or use a stored snapshot
 #use snapshots for development as new data might be brake things
 #but try with latest version from time to time
@@ -21,18 +29,26 @@ ddg2p <- read_csv(here("DDG2P_12_5_2023.csv"))
 #take note of some importing problems:
 problems(ddg2p)
 
-skg2p_innerJoin <- inner_join(ddg2p, nosology, by = join_by ('disease mim' == 'NOS_OMIM'))
-skg2p_semiJoin <- semi_join(ddg2p, nosology, by = join_by ('disease mim' == 'NOS_OMIM'))
+#filter ddg2p for entries that have a matching DMIM number in Nosology
+skg2p_semiJoin_byDMIM <- semi_join(ddg2p, nosology, by = join_by ('disease mim' == 'NOS_OMIM'))
+#this might already be the first version of skg2p to publish online.
 
-#use mutate with replace to correct errors in the table
+#creating an anti_join to see which entries in nosology are NOT in DDG2P
+nosology_antijoin_byDMIM <- anti_join(nosology, ddg2p, by = join_by ('NOS_OMIM' == 'disease mim'))
+
+#some entries in NOS_OMIM are empty (no OMIM) or cross-references to other OMIM numbers ("see xxxxxx")
+#what to do with these?
+
+
+#then fix errors:
+#could use mutate with replace to correct errors in the table
 #as described here: https://stackoverflow.com/questions/36924911/how-to-assign-a-value-to-a-data-frame-filtered-by-dplyr
 #need to decide if better to correct errors before of after joining (I think better before) 
-#the below does not work, not sure why, works if setting NOS_ID to NOS 01-0010 for example
-#maybe something to do with brackets in the name of this particular disorder?
-nosology %>%
+
+#Error to fix: NOS 40-0170 is LADD syndrome 3 (FGF10 associated), but the nosology gives the DMIM number for LADD syndrome 1 (FGFR3 associated)
+nosology <- nosology %>%
   mutate(NOS_OMIM = replace(NOS_OMIM, NOS_ID=="NOS 40-0170", "620193"))
 
-#this works, as described here: https://sparkbyexamples.com/r-programming/replace-values-in-r/
-nosology$NOS_OMIM[nosology$NOS_ID=="NOS 40-0170"] <- "620193"
+#alternatively, replace directly using base R syntax as described here: https://sparkbyexamples.com/r-programming/replace-values-in-r/
+#nosology$NOS_OMIM[nosology$NOS_ID=="NOS 40-0170"] <- "620193"
 
-#also do join by DMIM and check for rows where genes dont match, that must be an error
