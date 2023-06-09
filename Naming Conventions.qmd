@@ -1,0 +1,44 @@
+---
+title: "Naming Conventions"
+format: html
+editor: visual
+---
+
+## Notes on Naming Conventions
+
+### Disease Names
+
+#### Resources
+
+-   MONDO: disease names should be lower case, unless they are proper names: e.g. lung cancer, Parkinson disease. See here: [OBO Foundry Naming Conventions](https://obofoundry.org/principles/fp-012-naming-conventions.html)
+
+-   Orphanet has detailed rules on naming diseases: [Orphanet Rare Disease Nomenclature](https://www.orpha.net/orphacom/cahiers/docs/GB/eproc_Disease_naming_rules_in_English_PR_R1_Nom_01.pdf)
+
+-   OMIM's rules for disease naming: [What's in a name? Issues to consider when naming Mendelian disorders](https://www.nature.com/articles/s41436-020-0851-0)
+
+#### Capitalisation
+
+#### Gene-based subtypes
+
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

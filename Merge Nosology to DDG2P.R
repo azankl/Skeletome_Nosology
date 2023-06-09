@@ -21,13 +21,17 @@ nosology <- nosology %>%
   separate_rows(NOS_OMIM, sep=",\\s+")
 
 #then fix errors:
+#need to decide if better to correct errors before of after joining (I think better before) 
 #could use mutate with replace to correct errors in the table
 #as described here: https://stackoverflow.com/questions/36924911/how-to-assign-a-value-to-a-data-frame-filtered-by-dplyr
-#need to decide if better to correct errors before of after joining (I think better before) 
 
-#Error to fix: NOS 40-0170 is LADD syndrome 3 (FGF10 associated), but the nosology gives the DMIM number for LADD syndrome 1 (FGFR3 associated)
+#Fix errors:
+#NOS 40-0170 is LADD syndrome 3 (FGF10 associated), but the nosology gives the DMIM number for LADD syndrome 1 (FGFR2 associated)
+#NOS 40-0160 is LADD syndrome 2 (FGFR3 associated), but the nosology gives the DMIM number for LADD syndrome 1 (FGFR2 associated)
+
 nosology <- nosology %>%
-  mutate(NOS_OMIM = replace(NOS_OMIM, NOS_ID=="NOS 40-0170", "620193"))
+  mutate(NOS_OMIM = replace(NOS_OMIM, NOS_ID=="NOS 40-0170", "620193")) %>%
+  mutate(NOS_OMIM = replace(NOS_OMIM, NOS_ID=="NOS 40-0160", "620192"))
 
 #alternatively, replace directly using base R syntax as described here: https://sparkbyexamples.com/r-programming/replace-values-in-r/
 #nosology$NOS_OMIM[nosology$NOS_ID=="NOS 40-0170"] <- "620193"
@@ -40,7 +44,7 @@ nosology <- nosology %>%
 #ddg2p <- read_csv("https://www.ebi.ac.uk/gene2phenotype/downloads/DDG2P.csv.gz")
 ddg2p <- read_csv(here("DDG2P_12_5_2023.csv"))
 
-#take note of some importing problems:
+#take note of some importing problems, these are actually errors in ddg2p:
 problems(ddg2p)
 
 #filter ddg2p for entries that have a matching DMIM number in Nosology
@@ -54,16 +58,4 @@ nosology_antijoin_byDMIM <- anti_join(nosology, ddg2p, by = join_by ('NOS_OMIM' 
 #some entries in NOS_OMIM are empty (no OMIM) or cross-references to other OMIM numbers ("see xxxxxx")
 #what to do with these?
 
-
-#then fix errors:
-#could use mutate with replace to correct errors in the table
-#as described here: https://stackoverflow.com/questions/36924911/how-to-assign-a-value-to-a-data-frame-filtered-by-dplyr
-#need to decide if better to correct errors before of after joining (I think better before) 
-
-#Error to fix: NOS 40-0170 is LADD syndrome 3 (FGF10 associated), but the nosology gives the DMIM number for LADD syndrome 1 (FGFR3 associated)
-nosology <- nosology %>%
-  mutate(NOS_OMIM = replace(NOS_OMIM, NOS_ID=="NOS 40-0170", "620193"))
-
-#alternatively, replace directly using base R syntax as described here: https://sparkbyexamples.com/r-programming/replace-values-in-r/
-#nosology$NOS_OMIM[nosology$NOS_ID=="NOS 40-0170"] <- "620193"
 
