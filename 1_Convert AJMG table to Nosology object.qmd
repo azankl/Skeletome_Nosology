@@ -25,11 +25,13 @@ Selecting the xpath as described [here](https://www.r-bloggers.com/2015/01/using
 :::
 
 ```{r}
+
 library(tidyverse)
 library(here)
 library(rvest)
 
-AJMG_table<- read_html (here("AJMG.html"), encoding = "UTF-8") %>%
+
+AJMG_table<- read_html (here("raw_data/AJMG.html"), encoding = "UTF-8") %>%
   html_element(".article-section__table") %>%
   html_table()
 
@@ -76,13 +78,13 @@ Nosology_2023 <- AJMG_table %>%
 
 #save the Nosology_2023 object to file (as a serialised RDS object).
 #read back in with read_rds
-write_rds (Nosology_2023, here("Nosology_2023.rds"))
+write_rds (Nosology_2023, here("data/Nosology_2023.rds"))
 
 ##csv is easier to view in RStudio, as the text includes commas, write_csv puts quotation marks around those fields, which might add complexity in downstream applications.
 #tsv does not need to work around commas in the text, but cannot be imported directly into RStudio Viewer.
 #both csv and tsv versions display correctly in Easy CSV Editor app.
-write_tsv(Nosology_2023, here("Nosology_2023.tsv"))
-write_csv(Nosology_2023, here("Nosology_2023.csv"))
+write_tsv(Nosology_2023, here("data/Nosology_2023.tsv"))
+write_csv(Nosology_2023, here("data/Nosology_2023.csv"))
 
 ```
 

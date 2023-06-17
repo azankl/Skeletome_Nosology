@@ -6,13 +6,11 @@
 #Then merge DDG2P_1_12_2021 to this combined table, to get the older nomenclature where it exists
 
 
-here::i_am("Merge Nosology to DDG2P.R")
-
 library(tidyverse)
 library(here)
 
 #read the Nosology object created in 'Convert AJMG Table to Nosology object'
-nosology <- read_rds("Nosology_2023.rds")
+nosology <- read_rds(here("data/Nosology_2023.rds"))
 
 #nosology sometimes has multiple DMIMs in the DMIM field.
 #split such entries into individual rows
@@ -42,7 +40,7 @@ nosology <- nosology %>%
 #use snapshots for development as new data might be brake things
 #but try with latest version from time to time
 #ddg2p <- read_csv("https://www.ebi.ac.uk/gene2phenotype/downloads/DDG2P.csv.gz")
-ddg2p <- read_csv(here("DDG2P_12_5_2023.csv"))
+ddg2p <- read_csv(here("raw_data/DDG2P_12_5_2023.csv"))
 
 #take note of some importing problems, these are actually errors in ddg2p:
 problems(ddg2p)
@@ -50,7 +48,7 @@ problems(ddg2p)
 #filter ddg2p for entries that have a matching DMIM number in Nosology
 skg2p_semiJoin_byDMIM <- semi_join(ddg2p, nosology, by = join_by ('disease mim' == 'NOS_OMIM'))
 #save as the first version of skg2p to publish online:
-write_csv(skg2p_semiJoin_byDMIM,here("skg2p_v1.csv"), col_names = TRUE)
+write_csv(skg2p_semiJoin_byDMIM,here("data/skg2p_v1.csv"), col_names = TRUE)
 
 #creating an anti_join to see which entries in nosology are NOT in DDG2P
 nosology_antijoin_byDMIM <- anti_join(nosology, ddg2p, by = join_by ('NOS_OMIM' == 'disease mim'))

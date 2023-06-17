@@ -1,5 +1,6 @@
-# SkeletalG2P
-Combining the ISDS Nosology with DDG2P and MONDO.
+# Skeletome Nosology Projct
 
-Some preliminary data in 2019Version folder.
-Now starting work with 2023Nosology data.
+In this project I am trying to combine the 2023 Skeletal Dyspalsia Nosology with DDG2P and MONDO.
+
+Some preliminary work done on the 2019 Nosology is now in the old_scripts folder.
+
