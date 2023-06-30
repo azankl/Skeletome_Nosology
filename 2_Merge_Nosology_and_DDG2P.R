@@ -34,8 +34,13 @@ nosology <- nosology %>%
 #alternatively, replace directly using base R syntax as described here: https://sparkbyexamples.com/r-programming/replace-values-in-r/
 #nosology$NOS_OMIM[nosology$NOS_ID=="NOS 40-0170"] <- "620193"
 
+#More errors I found in Nosology:
+#NOS 34-0190 (Non-syndromic midline craniosynostosis, RUNX2-related) is more a risk factor than a Mendelian disorder, sePMID: 32360898, should be removed
+nosology <- nosology %>%
+ filter(NOS_ID != "NOS 34-0190")
 
 
+# --- end of error listings -----
 #download latest version of DDG2P or use a stored snapshot
 #use snapshots for development as new data might be brake things
 #but try with latest version from time to time
