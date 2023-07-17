@@ -1,0 +1,22 @@
+---
+title: "Nosology_table"
+format: html
+editor: visual
+---
+
+## 2023 Nosology Table
+
+Here is the first version of the 2023 Nosology Table
+
+```{r echo = FALSE}
+#trying to make an interactive gt table
+library(gt)
+library(here)
+library(readr)
+Nosology_2023 <- read_rds(here("data/Nosology_2023.rds"))
+nosology_tbl <-Nosology_2023 |>
+  gt() |>
+  opt_interactive()
+#show the table
+nosology_tbl
+```
