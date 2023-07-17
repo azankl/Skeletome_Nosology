@@ -88,8 +88,8 @@ write_csv(Nosology_2023, here("data/Nosology_2023.csv"))
 
 ```
 
-Step 3:
-Create an interactive gt table:
+Step 3: Create an interactive gt table:
+
 ```{r}
 #trying to make an interactive gt table
 library(gt)
@@ -99,7 +99,6 @@ nosology_tbl <-Nosology_2023 |>
 #show the table
 nosology_tbl
 ```
-
 
 ::: callout-note
 Develop further analyses as R Scripts first, as it allows better debugging in RStudio. Only create the Quarto document when everything works, to document how it was done.
