@@ -1,6 +1,8 @@
 ---
 title: "Nosology Table"
 format: html
+html:
+  page-layout: full
 editor: visual
 ---
 
