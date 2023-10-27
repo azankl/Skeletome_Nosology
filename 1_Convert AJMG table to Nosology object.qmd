@@ -128,9 +128,14 @@ nosology <- nosology %>%
 #nosology$NOS_OMIM[nosology$NOS_ID=="NOS 40-0170"] <- "620193"
 
 #More errors I found in Nosology:
-#NOS 34-0190 (Non-syndromic midline craniosynostosis, RUNX2-related) is more a risk factor than a Mendelian disorder, sePMID: 32360898, should be removed
+#NOS 10-0480 Cranioectodermal dysplasia Levin-Sensenbrenner is listed as DMIM 614009, should be DMIM 614099.
+nosology <- nosology %>%
+  mutate(NOS_OMIM = replace(NOS_OMIM, NOS_ID=="NOS 10-0480", "614099"))
+
+#NOS 34-0190 (Non-syndromic midline craniosynostosis, RUNX2-related) is more a risk factor than a Mendelian disorder, see PMID: 32360898, should be removed
 nosology <- nosology %>%
  filter(NOS_ID != "NOS 34-0190")
+
 
 #Export cleaned nosology
 write_rds (nosology, here("data/nosology_cleaned.rds"))
