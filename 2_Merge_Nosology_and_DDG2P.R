@@ -9,38 +9,9 @@
 library(tidyverse)
 library(here)
 
-#read the Nosology object created in 'Convert AJMG Table to Nosology object'
-nosology <- read_rds(here("data/Nosology_2023.rds"))
+#read the cleaned-up nosology, created in '1 Convert AJMG Table to Nosology object'
+nosology <- read_rds(here("data/nosology_cleaned.rds"))
 
-#nosology sometimes has multiple DMIMs in the DMIM field.
-#split such entries into individual rows
-#the regex splits at comma plus optional white space
-nosology <- nosology %>%
-  separate_rows(NOS_OMIM, sep=",\\s+")
-
-#then fix errors:
-#need to decide if better to correct errors before of after joining (I think better before) 
-#could use mutate with replace to correct errors in the table
-#as described here: https://stackoverflow.com/questions/36924911/how-to-assign-a-value-to-a-data-frame-filtered-by-dplyr
-
-#Fix errors:
-#NOS 40-0170 is LADD syndrome 3 (FGF10 associated), but the nosology gives the DMIM number for LADD syndrome 1 (FGFR2 associated)
-#NOS 40-0160 is LADD syndrome 2 (FGFR3 associated), but the nosology gives the DMIM number for LADD syndrome 1 (FGFR2 associated)
-
-nosology <- nosology %>%
-  mutate(NOS_OMIM = replace(NOS_OMIM, NOS_ID=="NOS 40-0170", "620193")) %>%
-  mutate(NOS_OMIM = replace(NOS_OMIM, NOS_ID=="NOS 40-0160", "620192"))
-
-#alternatively, replace directly using base R syntax as described here: https://sparkbyexamples.com/r-programming/replace-values-in-r/
-#nosology$NOS_OMIM[nosology$NOS_ID=="NOS 40-0170"] <- "620193"
-
-#More errors I found in Nosology:
-#NOS 34-0190 (Non-syndromic midline craniosynostosis, RUNX2-related) is more a risk factor than a Mendelian disorder, sePMID: 32360898, should be removed
-nosology <- nosology %>%
- filter(NOS_ID != "NOS 34-0190")
-
-
-# --- end of error listings -----
 #download latest version of DDG2P or use a stored snapshot
 #use snapshots for development as new data might be brake things
 #but try with latest version from time to time
