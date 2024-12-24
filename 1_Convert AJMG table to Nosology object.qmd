@@ -112,8 +112,16 @@ nosology <- nosology %>%
   separate_rows(NOS_OMIM, sep=",\\s+")
 
 #then fix errors:
-#need to decide if better to correct errors before of after joining (I think better before) 
-#could use mutate with replace to correct errors in the table
+#need to decide when these errors should be fixed, before or after comparing and joining with other data like G2P and PanelApp
+
+#there are multiple ways to fix errors, I will show a few examples
+
+#Fix errors with rows_upate
+#change NOS_Gene IFT40 to IFT140
+nosology <- nosology %>%
+  rows_update(tibble (NOS_ID = "NOS 10-0470", NOS_Gene = "IFT140"))
+
+#could also use mutate with replace to correct errors in the table
 #as described here: https://stackoverflow.com/questions/36924911/how-to-assign-a-value-to-a-data-frame-filtered-by-dplyr
 
 #Fix errors:

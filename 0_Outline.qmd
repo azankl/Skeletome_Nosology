@@ -1,0 +1,17 @@
+---
+title: "0_Outline"
+format: html
+editor: visual
+---
+Here I outline what I want to do and where I am up to.
+
+Convert 2023 ISDS table from AJMG to a tibble
+done, see 1a_Convert AJMG table to Nosology object.R
+
+Make website for original 2023 ISDS Nosology with gt interactive table
+done, see 1c_Make an interactive gt table from Nosology object.R
+
+Compare ISDS table to Skeletal Dysplasia PanelApp table
+explore differences
+fix errors in Nosology identified this way
+
