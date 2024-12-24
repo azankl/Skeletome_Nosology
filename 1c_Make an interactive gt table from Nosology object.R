@@ -1,7 +1,8 @@
 #trying to make an interactive gt table
+library(tidyverse)
 library(gt)
 library(here)
-library(readr)
+
 
 Nosology_2023 <- read_rds(here("data/Nosology_2023.rds")) |>
   select(NOS_ID, NOS_Name, NOS_MOI, NOS_Gene, NOS_OMIM, NOS_Notes, NOS_Group_Name)
