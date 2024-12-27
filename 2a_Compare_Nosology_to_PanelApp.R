@@ -23,4 +23,15 @@ PanApp_only_genes <- setdiff(PanApp_genes$`Gene Symbol`, nosology_genes$NOS_Gene
 #find the genes that are in nosology but not in PanelApp
 nosology_only_genes <- setdiff(nosology_genes$NOS_Gene, PanApp_genes$`Gene Symbol`)
 
-nosology_only_genes
+#the above only gives lists of genes, which is not very informative
+#need disease name, OMIM number etc., so will use anitjoin below
+
+#antijoin nosology with PanelApp on gene symbol
+nosology_antijoin_byGene <- anti_join(nosology, PanApp, by = join_by ('NOS_Gene' == 'Gene Symbol'))
+PanApp_antijoin_byGene <- anti_join(PanApp, nosology, by = join_by ('Gene Symbol'== 'NOS_Gene'))
+
+#rearrange columns in PanApp_antijoin_byGene
+PanApp_antijoin_byGene <- PanApp_antijoin_byGene %>% 
+  select(`Gene Symbol`, `Phenotypes`, `Omim` )
+
+
