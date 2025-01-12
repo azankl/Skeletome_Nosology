@@ -32,13 +32,18 @@ PanAppAU_antijoin_byGene <- anti_join(PanAppAU, nosology, by = join_by ('Gene Sy
 
 #rearrange columns in PanAppAU_antijoin_byGene
 PanAppAU_antijoin_byGene <- PanAppAU_antijoin_byGene %>% 
-  select(`Gene Symbol`, `Phenotypes`, `Omim` )
+  select(`Gene Symbol`, `Phenotypes`, `Omim` ) |>
+  mutate(OMIM = str_extract_all(Phenotypes, "\\d{6}")) 
+  #unnest(c('Gene Symbol', 'Phenotypes', 'OMIM'))
 
-#read PanelAppUK Skeletal Dysplasia data
-PanAppUK <- read_tsv(here("raw_data/Skeletal dysplasia_PanelApp_UK_Version_7.5.tsv"))
+  
+  
 
-#antijoin PanelAppAU with PanelAppUK on gene symbol
-PanAppAU_antijoin_byGene <- anti_join(PanAppAU, PanAppUK, by = join_by ('Gene Symbol' == 'Gene Symbol')) |>
-  select(`Gene Symbol`, `Phenotypes`, `Omim` )
+# #read PanelAppUK Skeletal Dysplasia data
+# PanAppUK <- read_tsv(here("raw_data/Skeletal dysplasia_PanelApp_UK_Version_7.5.tsv"))
+# 
+# #antijoin PanelAppAU with PanelAppUK on gene symbol
+# PanAppAUvsUK_antijoin_byGene <- anti_join(PanAppAU, PanAppUK, by = join_by ('Gene Symbol' == 'Gene Symbol')) |>
+#   select(`Gene Symbol`, `Phenotypes`, `Omim` )
 
 

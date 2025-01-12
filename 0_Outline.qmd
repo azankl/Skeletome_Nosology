@@ -3,15 +3,36 @@ title: "0_Outline"
 format: html
 editor: visual
 ---
+
 Here I outline what I want to do and where I am up to.
 
-Convert 2023 ISDS table from AJMG to a tibble
-done, see 1a_Convert AJMG table to Nosology object.R
+#### Convert 2023 ISDS table from AJMG to a tibble
 
-Make website for original 2023 ISDS Nosology with gt interactive table
+Done, see 1a_Convert AJMG table to Nosology object.R\
+Could add code here.
+
+#### Make website for original 2023 ISDS Nosology with gt interactive table
+
 done, see 1c_Make an interactive gt table from Nosology object.R
 
-Compare ISDS table to Skeletal Dysplasia PanelApp table
-explore differences
-fix errors in Nosology identified this way
+#### Clean-Up ISDS table
 
+::: callout-important
+try to maintain original information as much as possible and track every change
+:::
+
+##### convert all genes to HGNC symbol
+
+working on now
+
+##### clean up OMIM IDs
+
+split entries with multiple OMIM IDs into separate rows (using separate_rows)
+
+split entries with multiple inheritance types into separate rows
+
+review the newly separated rows and decide on correct OMIM ID for each
+
+then assign matching MONDO IDs
+
+#### Compare ISDS table to Skeletal Dysplasia PanelApp table explore differences fix errors in Nosology identified this way

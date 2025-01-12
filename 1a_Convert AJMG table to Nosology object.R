@@ -99,4 +99,15 @@ write_rds (Nosology_2023, here("data/Nosology_2023.rds"))
 #write_tsv(Nosology_2023, here("data/Nosology_2023.tsv"))
 #write_csv(Nosology_2023, here("data/Nosology_2023.csv"))
 
+######################################################
+# Step 4: clean up the Nosology_2023 object
+
+# The ISDS Nosology sometimes has multiple DMIM values in the DMIM field.
+# split such entries into individual rows
+# the regex splits at comma plus optional white space
+nosology <- Nosology_2023 %>%
+  separate_rows(NOS_OMIM, sep=",\\s+") %>%
+  add_column(Comment = "NA") #add new Comment column to nosology dataframe
+
+write_rds (nosology, here("data/nosology.rds"))
 

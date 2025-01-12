@@ -1,0 +1,616 @@
+id	name	Ontology	Term
+MONDO:0005298	osteoporosis	OMIM	166710
+MONDO:0007037	Achondroplasia	OMIM	100800
+MONDO:0007040	Sakati-Nyhan syndrome	OMIM	101120
+MONDO:0007041	Apert syndrome	OMIM	101200
+MONDO:0007042	Saethre-Chotzen syndrome	OMIM	101400
+MONDO:0007043	Pfeiffer syndrome	OMIM	101600
+MONDO:0007044	Acrodysostosis 1 with or without hormone resistance	OMIM	101800
+MONDO:0007055	Acromicric dysplasia	OMIM	102370
+MONDO:0007056	acroosteolysis	OMIM	102400
+MONDO:0007057	Acroosteolysis dominant type	OMIM	102500
+MONDO:0007058	Acropectorovertebral dysplasia	OMIM	102510
+MONDO:0007062	adactylia, unilateral	OMIM	102650
+MONDO:0007073	Hypoglossia-hypodactyly syndrome	OMIM	103300
+MONDO:0007078	pseudohypoparathyroidism type 1A	OMIM	103580
+MONDO:0007114	Angel-shaped phalango-epiphyseal dysplasia	OMIM	105835
+MONDO:0007160	Stickler syndrome type 1	OMIM	108300
+MONDO:0007167	atelosteogenesis type I	OMIM	108720
+MONDO:0007168	atelosteogenesis type III	OMIM	108721
+MONDO:0007204	Cole-Carpenter syndrome 1	OMIM	112240
+MONDO:0007205	diaphyseal medullary stenosis-bone malignancy syndrome	OMIM	112250
+MONDO:0007208	Boomerang dysplasia	OMIM	112310
+MONDO:0007209	Weismann-Netter syndrome	OMIM	112350
+MONDO:0007219	Osebold-Remondini syndrome	OMIM	112910
+MONDO:0007225	fibular aplasia-ectrodactyly syndrome	OMIM	113310
+MONDO:0007232	autosomal dominant brachyolmia	OMIM	113500
+MONDO:0007244	Caffey disease	OMIM	114000
+MONDO:0007251	campomelic dysplasia	OMIM	114290
+MONDO:0007301	cerebrocostomandibular syndrome	OMIM	117650
+MONDO:0007319	chondrocalcinosis 2	OMIM	118600
+MONDO:0007321	autosomal dominant chondrodysplasia punctata	OMIM	118650
+MONDO:0007322	chondrodysplasia punctata, tibial-metacarpal type	OMIM	118651
+MONDO:0007340	cleidocranial dysplasia 1	OMIM	119600
+MONDO:0007341	cleidorhizomelic syndrome	OMIM	119650
+MONDO:0007342	clubfoot	OMIM	119800
+MONDO:0007387	Cornelia de Lange syndrome 1	OMIM	122470
+MONDO:0007400	Jackson-Weiss syndrome	OMIM	123150
+MONDO:0007401	craniosynostosis-Dandy-Walker malformation-hydrocephalus syndrome	OMIM	123155
+MONDO:0007405	Crouzon syndrome	OMIM	123500
+MONDO:0007412	Beare-Stevenson cutis gyrata syndrome	OMIM	123790
+MONDO:0007470	calvarial doughnut lesions-bone fragility syndrome	OMIM	126550
+MONDO:0007478	autosomal dominant Kenny-Caffey syndrome	OMIM	127000
+MONDO:0007481	Leri-Weill dyschondrosteosis	OMIM	127300
+MONDO:0007482	dyschondrosteosis-nephritis syndrome	OMIM	127350
+MONDO:0007489	dysplasia epiphysealis hemimelica	OMIM	127800
+MONDO:0007490	carpotarsal osteochondromatosis	OMIM	127820
+MONDO:0007542	Camurati-Engelmann disease	OMIM	131300
+MONDO:0007561	multiple epiphyseal dysplasia type 1	OMIM	132400
+MONDO:0007562	multiple epiphyseal dysplasia, Beighton type	OMIM	132450
+MONDO:0007604	femoral-facial syndrome	OMIM	134780
+MONDO:0007615	laurin-Sandrow syndrome	OMIM	135750
+MONDO:0007653	genochondromatosis	OMIM	137360
+MONDO:0007688	Myhre syndrome	OMIM	139210
+MONDO:0007702	heart-hand syndrome type 3	OMIM	140450
+MONDO:0007726	hip dysplasia, Beukes type	OMIM	142669
+MONDO:0007732	Holt-Oram syndrome	OMIM	142900
+MONDO:0007738	spondyloepiphyseal dysplasia with congenital joint dislocations	OMIM	143095
+MONDO:0007764	autosomal dominant osteosclerosis, Worth type	OMIM	144750
+MONDO:0007764	autosomal dominant osteosclerosis, Worth type	OMIM	607636
+MONDO:0007767	hyperparathyroidism 1	OMIM	145000
+MONDO:0007768	hyperparathyroidism 2 with jaw tumors	OMIM	145001
+MONDO:0007791	familial hypocalciuric hypercalcemia 1	OMIM	145980
+MONDO:0007793	hypochondroplasia	OMIM	146000
+MONDO:0007804	Pallister-Hall syndrome	OMIM	146510
+MONDO:0007841	coxopodopatellar syndrome	OMIM	147891
+MONDO:0007874	trichorhinophalangeal syndrome type II	OMIM	150230
+MONDO:0007875	Larsen syndrome	OMIM	150250
+MONDO:0007885	Legg-Calve-Perthes disease	OMIM	150600
+MONDO:0007892	Lenz-Majewski hyperostotic dwarfism	OMIM	151050
+MONDO:0007894	Leri pleonosteosis	OMIM	151200
+MONDO:0007895	platyspondylic dysplasia, Torrance type	OMIM	151210
+MONDO:0007949	Marshall syndrome	OMIM	154780
+MONDO:0007970	melorheostosis	OMIM	155950
+MONDO:0007971	delayed membranous cranial ossification	OMIM	155980
+MONDO:0007977	mesomelic dysplasia, Kantaputra type	OMIM	156232
+MONDO:0007982	metaphyseal chondrodysplasia, Jansen type	OMIM	156400
+MONDO:0007983	Schmid metaphyseal chondrodysplasia	OMIM	156500
+MONDO:0007984	metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome	OMIM	156510
+MONDO:0007986	metatropic dysplasia	OMIM	156530
+MONDO:0007987	Kniest dysplasia	OMIM	156550
+MONDO:0007994	micromelic bone dysplasia with cloverleaf skull	OMIM	156830
+MONDO:0008005	cardiospondylocarpofacial syndrome	OMIM	157800
+MONDO:0008098	mesomelic dwarfism, Nievergelt type	OMIM	163400
+MONDO:0008111	oculodentodigital dysplasia	OMIM	164200
+MONDO:0008123	autosomal dominant omodysplasia	OMIM	164745
+MONDO:0008145	Ollier disease	OMIM	166000
+MONDO:0008146	osteogenesis imperfecta type 1	OMIM	166200
+MONDO:0008147	osteogenesis imperfecta type 2	OMIM	166210
+MONDO:0008148	osteogenesis imperfecta type 4	OMIM	166220
+MONDO:0008149	osteogenesis imperfecta with opalescent teeth, blue sclerae and wormian bones but without fractures	OMIM	166230
+MONDO:0008151	gnathodiaphyseal dysplasia	OMIM	166260
+MONDO:0008152	multicentric carpo-tarsal osteolysis with or without nephropathy	OMIM	166300
+MONDO:0008155	osteomesopyknosis	OMIM	166450
+MONDO:0008156	autosomal dominant osteopetrosis 2	OMIM	166600
+MONDO:0008175	pacman dysplasia	OMIM	167220
+MONDO:0008196	parastremmatic dwarfism	OMIM	168400
+MONDO:0008197	parietal foramina 1	OMIM	168500
+MONDO:0008198	parietal foramina with cleidocranial dysplasia	OMIM	168550
+MONDO:0008207	chondromalacia patellae	OMIM	168900
+MONDO:0008217	pelvis-shoulder dysplasia	OMIM	169550
+MONDO:0008227	peripheral dysostosis	OMIM	170700
+MONDO:0008262	Poland syndrome	OMIM	173800
+MONDO:0008269	polydactyly of a biphalangeal thumb	OMIM	174400
+MONDO:0008271	polydactyly of an index finger	OMIM	174600
+MONDO:0008272	polysyndactyly 4	OMIM	174700
+MONDO:0008275	familial expansile osteolysis	OMIM	174810
+MONDO:0008287	Greig cephalopolysyndactyly syndrome	OMIM	175700
+MONDO:0008305	Currarino triad	OMIM	176450
+MONDO:0008310	Hutchinson-Gilford progeria syndrome	OMIM	176670
+MONDO:0008318	Proteus syndrome	OMIM	176920
+MONDO:0008322	pseudoachondroplasia	OMIM	177170
+MONDO:0008411	ulnar-mammary syndrome	OMIM	181450
+MONDO:0008426	Shprintzen-Goldberg syndrome	OMIM	182212
+MONDO:0008469	spondyloepimetaphyseal dysplasia-hypotrichosis syndrome	OMIM	183849
+MONDO:0008470	spondyloepiphyseal dysplasia with punctate corneal dystrophy	OMIM	183850
+MONDO:0008471	spondyloepiphyseal dysplasia congenita	OMIM	183900
+MONDO:0008472	spondyloepiphyseal dysplasia, MacDermot type	OMIM	184000
+MONDO:0008473	spondyloepimetaphyseal dysplasia, Maroteaux type	OMIM	184095
+MONDO:0008474	spondyloepiphyseal dysplasia tarda, autosomal dominant	OMIM	184100
+MONDO:0008476	spondyloepimetaphyseal dysplasia, Strudwick type	OMIM	184250
+MONDO:0008477	spondylometaphyseal dysplasia, Kozlowski type	OMIM	184252
+MONDO:0008478	spondylometaphyseal dysplasia, Schmidt type	OMIM	184253
+MONDO:0008479	spondylometaphyseal dysplasia, 'corner fracture' type	OMIM	184255
+MONDO:0008490	otospondylomegaepiphyseal dysplasia, autosomal dominant	OMIM	184840
+MONDO:0008490	otospondylomegaepiphyseal dysplasia, autosomal dominant	OMIM	277610
+MONDO:0008512	syndactyly type 1	OMIM	185900
+MONDO:0008513	synpolydactyly type 1	OMIM	186000
+MONDO:0008514	syndactyly type 3	OMIM	186100
+MONDO:0008515	syndactyly type 4	OMIM	186200
+MONDO:0008516	syndactyly type 5	OMIM	186300
+MONDO:0008520	brachydactyly-elbow wrist dysplasia syndrome	OMIM	186550
+MONDO:0008546	thanatophoric dysplasia type 1	OMIM	187600
+MONDO:0008546	thanatophoric dysplasia type 1	OMIM	270230
+MONDO:0008547	thanatophoric dysplasia type 2	OMIM	187601
+MONDO:0008551	thoracolaryngopelvic dysplasia	OMIM	187760
+MONDO:0008551	thoracolaryngopelvic dysplasia	OMIM	187770
+MONDO:0008554	thrombocythemia 1	OMIM	187950
+MONDO:0008571	Blount disease, infantile	OMIM	188700
+MONDO:0008572	tibia, hypoplasia or aplasia of, with polydactyly	OMIM	188740
+MONDO:0008592	tricho-dento-osseous syndrome	OMIM	190320
+MONDO:0008596	trichorhinophalangeal syndrome type I	OMIM	190350
+MONDO:0008618	mesomelic dwarfism, Reinhardt-Pfeiffer type	OMIM	191400
+MONDO:0008619	ulna metaphyseal dysplasia syndrome	OMIM	191420
+MONDO:0008620	upper limb mesomelic dysplasia	OMIM	191440
+MONDO:0008660	autosomal dominant hypophosphatemic rickets	OMIM	193100
+MONDO:0008700	acheiropody	OMIM	200500
+MONDO:0008701	achondrogenesis type IA	OMIM	200600
+MONDO:0008702	achondrogenesis type II	OMIM	200610
+MONDO:0008703	acromesomelic dysplasia 2A	OMIM	200700
+MONDO:0008708	acrocallosal syndrome	OMIM	200990
+MONDO:0008709	acrocephalopolydactyly	OMIM	200995
+MONDO:0008710	RAB23-related Carpenter syndrome	OMIM	201000
+MONDO:0008711	Goodman syndrome	OMIM	201020
+MONDO:0008717	acromesomelic dysplasia 2C, Hunter-Thompson type	OMIM	201250
+MONDO:0008726	Antley-Bixler syndrome with genital anomalies and disordered steroidogenesis	OMIM	201750
+MONDO:0008827	progressive pseudorheumatoid arthropathy of childhood	OMIM	208230
+MONDO:0008830	aspartylglucosaminuria	OMIM	208400
+MONDO:0008831	asphyxiating thoracic dystrophy 1	OMIM	208500
+MONDO:0008870	bird headed-dwarfism, Montreal type	OMIM	210700
+MONDO:0008871	microcephalic osteodysplastic primordial dwarfism type I	OMIM	210710
+MONDO:0008872	microcephalic osteodysplastic primordial dwarfism type II	OMIM	210720
+MONDO:0008873	microcephalic osteodysplastic primordial dwarfism, type 3	OMIM	210730
+MONDO:0008878	bone dysplasia, lethal Holmgren type	OMIM	211120
+MONDO:0008881	kyphomelic dysplasia	OMIM	211350
+MONDO:0008882	congenital bowing of long bones	OMIM	211355
+MONDO:0008893	C syndrome	OMIM	211750
+MONDO:0008896	campomelia, Cumming type	OMIM	211890
+MONDO:0008931	Cenani-Lenz syndactyly syndrome	OMIM	212780
+MONDO:0008970	chondrodysplasia Blomstrand type	OMIM	215045
+MONDO:0008971	chondrodysplasia calcificans Metaphysealis	OMIM	215050
+MONDO:0008972	rhizomelic chondrodysplasia punctata type 1	OMIM	215100
+MONDO:0008973	chondrodysplasia punctata, Toriello type	OMIM	215105
+MONDO:0008974	Greenberg dysplasia	OMIM	215140
+MONDO:0008995	Yunis-Varon syndrome	OMIM	216340
+MONDO:0009036	cardiocranial syndrome, Pfeiffer type	OMIM	218450
+MONDO:0009038	craniosynostosis-fibular aplasia syndrome	OMIM	218550
+MONDO:0009039	Baller-Gerold syndrome	OMIM	218600
+MONDO:0009042	craniotelencephalic dysplasia	OMIM	218670
+MONDO:0009080	split hand-foot malformation 1 with sensorineural hearing loss	OMIM	220600
+MONDO:0009112	rhizomelic chondrodysplasia punctata type 2	OMIM	222765
+MONDO:0009130	Dyggve-Melchior-Clausen disease	OMIM	223800
+MONDO:0009138	dysosteosclerosis	OMIM	224300
+MONDO:0009139	dyssegmental dysplasia, Rolland-Desbuquois type	OMIM	224400
+MONDO:0009140	Silverman-Handmaker type dyssegmental dysplasia	OMIM	224410
+MONDO:0009162	Ellis-van Creveld syndrome	OMIM	225500
+MONDO:0009189	multiple epiphyseal dysplasia type 4	OMIM	226900
+MONDO:0009191	Lowry-Wood syndrome	OMIM	226960
+MONDO:0009192	Wolcott-Rallison syndrome	OMIM	226980
+MONDO:0009215	Fanconi anemia complementation group A	OMIM	227650
+MONDO:0009221	femur-fibula-ulna complex	OMIM	228200
+MONDO:0009222	Gollop-Wolfgang complex	OMIM	228250
+MONDO:0009226	fibrochondrogenesis 1	OMIM	228520
+MONDO:0009229	hyaline fibromatosis syndrome	OMIM	228600
+MONDO:0009231	acromesomelic dysplasia 2B	OMIM	228900
+MONDO:0009232	Fuhrmann syndrome	OMIM	228930
+MONDO:0009254	fucosidosis	OMIM	230000
+MONDO:0009260	GM1 gangliosidosis type 1	OMIM	230500
+MONDO:0009269	geleophysic dysplasia 1	OMIM	231050
+MONDO:0009271	geroderma osteodysplastica	OMIM	231070
+MONDO:0009274	ghosal hematodiaphyseal dysplasia	OMIM	231095
+MONDO:0009318	Hallermann-Streiff syndrome	OMIM	234100
+MONDO:0009395	hyperostosis corticalis generalisata	OMIM	239100
+MONDO:0009397	neonatal severe primary hyperparathyroidism	OMIM	239200
+MONDO:0009426	hypoparathyroidism-retardation-dysmorphism syndrome	OMIM	241410
+MONDO:0009430	hypophosphatemic rickets, autosomal recessive, 1	OMIM	241520
+MONDO:0009431	hereditary hypophosphatemic rickets with hypercalciuria	OMIM	241530
+MONDO:0009436	congenital hypothalamic hamartoma syndrome	OMIM	241800
+MONDO:0009458	Schimke immuno-osseous dysplasia	OMIM	242900
+MONDO:0009486	autosomal recessive Kenny-Caffey syndrome	OMIM	244460
+MONDO:0009495	Keutel syndrome	OMIM	245150
+MONDO:0009498	lethal Kniest-like dysplasia	OMIM	245190
+MONDO:0009511	Larsen-like syndrome, B3GAT3 type	OMIM	245600
+MONDO:0009526	fibular aplasia, tibial campomelia, and oligosyndactyly syndrome	OMIM	246570
+MONDO:0009557	mandibuloacral dysplasia with type A lipodystrophy	OMIM	248370
+MONDO:0009561	alpha-mannosidosis	OMIM	248500
+MONDO:0009562	beta-mannosidosis	OMIM	248510
+MONDO:0009571	Meckel syndrome, type 1	OMIM	249000
+MONDO:0009579	Frank-Ter Haar syndrome	OMIM	211170
+MONDO:0009579	Frank-Ter Haar syndrome	OMIM	249420
+MONDO:0009588	Langer mesomelic dysplasia	OMIM	249700
+MONDO:0009589	mesomelic dwarfism-cleft palate-camptodactyly syndrome	OMIM	249710
+MONDO:0009592	metaphyseal acroscyphodysplasia	OMIM	250215
+MONDO:0009593	spondylometaphyseal dysplasia, Sedaghatian type	OMIM	250220
+MONDO:0009594	metaphyseal chondrodysplasia, Kaitila type	OMIM	250230
+MONDO:0009597	metaphyseal chondrodysplasia, Spahr type	OMIM	250400
+MONDO:0009598	metaphyseal chondrodysplasia-retinitis pigmentosa syndrome	OMIM	250410
+MONDO:0009599	metaphyseal dysostosis-intellectual disability-conductive deafness syndrome	OMIM	250420
+MONDO:0009616	microcephalic primordial dwarfism, Toriello type	OMIM	251190
+MONDO:0009642	orofaciodigital syndrome type II	OMIM	252100
+MONDO:0009650	mucolipidosis type II	OMIM	252500
+MONDO:0009652	GNPTG-mucolipidosis	OMIM	252605
+MONDO:0009655	mucopolysaccharidosis type 3A	OMIM	252900
+MONDO:0009656	mucopolysaccharidosis type 3B	OMIM	252920
+MONDO:0009657	mucopolysaccharidosis type 3C	OMIM	252930
+MONDO:0009658	mucopolysaccharidosis type 3D	OMIM	252940
+MONDO:0009659	mucopolysaccharidosis type 4A	OMIM	253000
+MONDO:0009660	mucopolysaccharidosis type 4B	OMIM	253010
+MONDO:0009661	mucopolysaccharidosis type 6	OMIM	253200
+MONDO:0009662	mucopolysaccharidosis type 7	OMIM	253220
+MONDO:0009716	Richieri Costa-da Silva syndrome	OMIM	255710
+MONDO:0009737	galactosialidosis	OMIM	256540
+MONDO:0009738	sialidosis type 2	OMIM	256150
+MONDO:0009738	sialidosis type 2	OMIM	256550
+MONDO:0009768	oculodentodigital dysplasia, autosomal recessive	OMIM	257850
+MONDO:0009779	autosomal recessive omodysplasia	OMIM	258315
+MONDO:0009785	opsismodysplasia	OMIM	258480
+MONDO:0009794	orofaciodigital syndrome IV	OMIM	258860
+MONDO:0009800	Blount disease, adolescent	OMIM	259200
+MONDO:0009801	familial osteodysplasia, Anderson type	OMIM	259250
+MONDO:0009804	osteogenesis imperfecta type 3	OMIM	259420
+MONDO:0009805	osteogenesis imperfecta type 9	OMIM	259440
+MONDO:0009806	Bruck syndrome 1	OMIM	259450
+MONDO:0009809	multicentric osteolysis, nodulosis, and arthropathy	OMIM	259600
+MONDO:0009810	autosomal recessive distal osteolysis syndrome	OMIM	259610
+MONDO:0009815	autosomal recessive osteopetrosis 1	OMIM	259700
+MONDO:0009816	autosomal recessive osteopetrosis 2	OMIM	259710
+MONDO:0009817	autosomal recessive osteopetrosis 5	OMIM	259720
+MONDO:0009818	autosomal recessive osteopetrosis 3	OMIM	259730
+MONDO:0009820	osteoporosis-pseudoglioma syndrome	OMIM	259770
+MONDO:0009821	lethal osteosclerotic bone dysplasia	OMIM	259660
+MONDO:0009821	lethal osteosclerotic bone dysplasia	OMIM	259775
+MONDO:0009845	pelviscapular dysplasia	OMIM	260660
+MONDO:0009894	short-rib thoracic dysplasia 6 with or without polydactyly	OMIM	263520
+MONDO:0009906	prenatal bowing	OMIM	264050
+MONDO:0009910	Wiedemann-Rautenstrauch syndrome	OMIM	264090
+MONDO:0009914	pseudodiastrophic dysplasia	OMIM	264180
+MONDO:0009940	pycnodysostosis	OMIM	265800
+MONDO:0009942	pyknoachondrogenesis	OMIM	265880
+MONDO:0009943	Pyle disease	OMIM	265900
+MONDO:0009955	rapadilino syndrome	OMIM	266280
+MONDO:0009964	short-rib thoracic dysplasia 9 with or without polydactyly	OMIM	266920
+MONDO:0009996	rhizomelic syndrome, Urbach type	OMIM	268250
+MONDO:0009998	Richieri Costa-Pereira syndrome	OMIM	268305
+MONDO:0009999	autosomal recessive Robinow syndrome	OMIM	268310
+MONDO:0010013	schneckenbecken dysplasia	OMIM	269250
+MONDO:0010014	craniometadiaphyseal dysplasia, wormian bone type	OMIM	269300
+MONDO:0010024	Beemer-Langer syndrome	OMIM	269860
+MONDO:0010027	free sialic acid storage disease, infantile form	OMIM	269920
+MONDO:0010068	spondyloepimetaphyseal dysplasia, sponastrime type	OMIM	271510
+MONDO:0010070	brachyolmia type 1, Hobaek type	OMIM	271530
+MONDO:0010072	spondyloepiphyseal dysplasia tarda, autosomal recessive	OMIM	271600
+MONDO:0010073	spondyloepiphyseal dysplasia tarda, Kohn type	OMIM	271620
+MONDO:0010074	brachyolmia type 1, toledo type	OMIM	271630
+MONDO:0010075	spondyloepimetaphyseal dysplasia with joint laxity, type 1, with or without fractures	OMIM	271640
+MONDO:0010076	spondyloepimetaphyseal dysplasia, Irapa type	OMIM	271650
+MONDO:0010077	spondyloepimetaphyseal dysplasia-short limb-abnormal calcification syndrome	OMIM	271665
+MONDO:0010078	spondyloperipheral dysplasia	OMIM	271700
+MONDO:0010088	mucosulfatidosis	OMIM	272200
+MONDO:0010090	Summitt syndrome	OMIM	272350
+MONDO:0010092	Filippi syndrome	OMIM	272440
+MONDO:0010094	spondylocarpotarsal synostosis syndrome	OMIM	272460
+MONDO:0010114	thanatophoric dysplasia, Glasgow variant	OMIM	273680
+MONDO:0010116	thoracomelic dysplasia	OMIM	273740
+MONDO:0010117	3M syndrome 1	OMIM	273750
+MONDO:0010121	thrombocytopenia-absent radius syndrome	OMIM	274000
+MONDO:0010144	tibial hemimelia	OMIM	275220
+MONDO:0010164	phocomelia, Schinzel type	OMIM	276820
+MONDO:0010186	vitamin D-dependent rickets, type 2A	OMIM	277440
+MONDO:0010193	Weaver syndrome	OMIM	277590
+MONDO:0010194	Weill-Marchesani syndrome 1	OMIM	277600
+MONDO:0010201	Winchester syndrome	OMIM	277950
+MONDO:0010208	wrinkly skin syndrome	OMIM	278250
+MONDO:0010237	X-linked intellectual disability-plagiocephaly syndrome	OMIM	300064
+MONDO:0010248	X-linked spondyloepimetaphyseal dysplasia	OMIM	300106
+MONDO:0010275	spondyloepimetaphyseal dysplasia, Bieganski type	OMIM	300232
+MONDO:0010279	terminal osseous dysplasia-pigmentary defects syndrome	OMIM	300244
+MONDO:0010295	anhidrotic ectodermal dysplasia-immunodeficiency-osteopetrosis-lymphedema syndrome	OMIM	300301
+MONDO:0010310	osteopathia striata with cranial sclerosis	OMIM	300373
+MONDO:0010358	hypophosphatemic rickets, X-linked recessive	OMIM	300554
+MONDO:0010367	SHOX-related short stature	OMIM	300582
+MONDO:0010370	Cornelia de Lange syndrome 2	OMIM	300590
+MONDO:0010408	syndactyly-telecanthus-anogenital and renal malformations syndrome	OMIM	300707
+MONDO:0010471	Cornelia de Lange syndrome 5	OMIM	300882
+MONDO:0010505	intellectual disability-balding-patella luxation-acromicria syndrome	OMIM	300977
+MONDO:0010555	X-linked chondrodysplasia punctata 1	OMIM	302950
+MONDO:0010570	craniofrontonasal syndrome	OMIM	304110
+MONDO:0010571	otopalatodigital syndrome type 2	OMIM	304120
+MONDO:0010583	Dyggve-Melchior-Clausen syndrome, X-linked	OMIM	304950
+MONDO:0010619	X-linked dominant hypophosphatemic rickets	OMIM	307800
+MONDO:0010621	CHILD syndrome	OMIM	308050
+MONDO:0010650	Melnick-Needles syndrome	OMIM	309350
+MONDO:0010668	skeletal dysplasia-intellectual disability syndrome	OMIM	309620
+MONDO:0010674	mucopolysaccharidosis type 2	OMIM	309900
+MONDO:0010704	otopalatodigital syndrome type 1	OMIM	311300
+MONDO:0010737	spondyloepiphyseal dysplasia tarda, X-linked	OMIM	313400
+MONDO:0010738	spondylometaphyseal dysplasia, Golden type	OMIM	313420
+MONDO:0010801	spondylocamptodactyly syndrome	OMIM	600000
+MONDO:0010803	Eiken syndrome	OMIM	600002
+MONDO:0010810	vitamin D hydroxylation-deficient rickets, type 1B	OMIM	600081
+MONDO:0010815	spondyloepiphyseal dysplasia tarda with characteristic facies	OMIM	600093
+MONDO:0010823	rhizomelic chondrodysplasia punctata type 3	OMIM	600121
+MONDO:0010844	epiphyseal dysplasia, multiple, 2	OMIM	600204
+MONDO:0010851	Lowry-MacLean syndrome	OMIM	600252
+MONDO:0010865	pseudoaminopterin syndrome	OMIM	600325
+MONDO:0010866	infantile osteopetrosis with neuroaxonal dysplasia	OMIM	600329
+MONDO:0010879	CODAS syndrome	OMIM	600373
+MONDO:0010881	mesomelia-synostoses syndrome	OMIM	600383
+MONDO:0010886	2q37 microdeletion syndrome	OMIM	600430
+MONDO:0010902	spondyloepiphyseal dysplasia, Reardon type	OMIM	600561
+MONDO:0010929	craniosynostosis 4	OMIM	600775
+MONDO:0010931	vitamin D-dependent rickets, type 2B	OMIM	600785
+MONDO:0010964	epiphyseal dysplasia, multiple, 3	OMIM	600969
+MONDO:0010966	achondrogenesis type IB	OMIM	600972
+MONDO:0011011	skeletal dysplasia-epilepsy-short stature syndrome	OMIM	601187
+MONDO:0011018	brachyolmia-amelogenesis imperfecta syndrome	OMIM	601216
+MONDO:0011051	lethal short-limb skeletal dysplasia, Al Gazali type	OMIM	601356
+MONDO:0011059	holoprosencephaly-craniosynostosis syndrome	OMIM	601370
+MONDO:0011064	lethal chondrodysplasia, Seller type	OMIM	601376
+MONDO:0011065	Hunter-McAlpine craniosynostosis	OMIM	601379
+MONDO:0011079	rhizomelic dysplasia, Patterson-Lowry type	OMIM	601438
+MONDO:0011109	multiple epiphyseal dysplasia, Lowry type	OMIM	601560
+MONDO:0011124	spondyloepimetaphyseal dysplasia-abnormal dentition syndrome	OMIM	601668
+MONDO:0011134	Curry-Jones syndrome	OMIM	601707
+MONDO:0011183	Paget disease of bone 2, early-onset	OMIM	602080
+MONDO:0011198	spondyloepimetaphyseal dysplasia, Missouri type	OMIM	602111
+MONDO:0011211	axial spondylometaphyseal dysplasia	OMIM	602271
+MONDO:0011215	osteocraniostenosis	OMIM	602361
+MONDO:0011217	desmosterolosis	OMIM	602398
+MONDO:0011235	pelvic dysplasia-arthrogryposis of lower limbs syndrome	OMIM	602484
+MONDO:0011238	chondrodysplasia punctata, brachytelephalangic, autosomal	OMIM	602497
+MONDO:0011244	Marshall-Smith syndrome	OMIM	602535
+MONDO:0011252	spondyloepimetaphyseal dysplasia, Shohat type	OMIM	602557
+MONDO:0011253	craniomicromelic syndrome	OMIM	602558
+MONDO:0011261	spondyloepiphyseal dysplasia with coronal craniosynostosis, cataracts, cleft palate, and intellectual disability	OMIM	602611
+MONDO:0011274	Muenke syndrome	OMIM	602849
+MONDO:0011275	acromesomelic dysplasia 1, Maroteaux type	OMIM	602875
+MONDO:0011287	craniosynostosis-anal anomalies-porokeratosis syndrome	OMIM	603116
+MONDO:0011296	Meckel syndrome, type 2	OMIM	603194
+MONDO:0011335	spondyloepimetaphyseal dysplasia with multiple dislocations	OMIM	603546
+MONDO:0011481	craniosynostosis 2	OMIM	604757
+MONDO:0011493	Stickler syndrome type 2	OMIM	604841
+MONDO:0011496	mild spondyloepiphyseal dysplasia due to COL2A1 mutation with early-onset osteoarthritis	OMIM	604864
+MONDO:0011530	mesomelic dysplasia, Savarirayan type	OMIM	605274
+MONDO:0011604	spondylo-ocular syndrome	OMIM	605822
+MONDO:0011606	baby rattle pelvis dysplasia	OMIM	605838
+MONDO:0011620	metaphyseal dysplasia, Braun-Tinschert type	OMIM	605946
+MONDO:0011621	acropectoral syndrome	OMIM	605967
+MONDO:0011640	genitopatellar syndrome	OMIM	606170
+MONDO:0011715	Seckel syndrome 2	OMIM	606744
+MONDO:0011732	familial digital arthropathy-brachydactyly	OMIM	606835
+MONDO:0011758	Hurler syndrome	OMIM	607014
+MONDO:0011759	Hurler-Scheie syndrome	OMIM	607015
+MONDO:0011760	Scheie syndrome	OMIM	607016
+MONDO:0011765	multiple epiphyseal dysplasia type 5	OMIM	607078
+MONDO:0011778	multiple epiphyseal dysplasia, Al-Gazali type	OMIM	607131
+MONDO:0011788	cloverleaf skull-multiple congenital anomalies syndrome	OMIM	607161
+MONDO:0011806	osteofibrous dysplasia	OMIM	607278
+MONDO:0011806	osteofibrous dysplasia	OMIM	609143
+MONDO:0011812	Duane-radial ray syndrome	OMIM	607323
+MONDO:0011814	Smith-McCort dysplasia 1	OMIM	607326
+MONDO:0011821	Meckel syndrome, type 3	OMIM	607361
+MONDO:0011856	spondylometaphyseal dysplasia-bowed forearms-facial dysmorphism syndrome	OMIM	607543
+MONDO:0011877	autosomal dominant osteopetrosis 1	OMIM	607634
+MONDO:0011907	acrocapitofemoral dysplasia	OMIM	607778
+MONDO:0011939	Spondyloenchondrodysplasia with immune dysregulation	OMIM	271550
+MONDO:0011939	Spondyloenchondrodysplasia with immune dysregulation	OMIM	607944
+MONDO:0011946	diaphanospondylodysostosis	OMIM	608022
+MONDO:0011984	synpolydactyly type 2	OMIM	608180
+MONDO:0012013	Weill-Marchesani syndrome 2, dominant	OMIM	608328
+MONDO:0012019	spondyloepiphyseal dysplasia, Kimberley type	OMIM	608361
+MONDO:0012035	craniosynostosis-intracranial calcifications syndrome	OMIM	608432
+MONDO:0012055	Larsen-like osseous dysplasia-short stature syndrome	OMIM	608545
+MONDO:0012074	mandibuloacral dysplasia with type B lipodystrophy	OMIM	608612
+MONDO:0012108	spondyloepimetaphyseal dysplasia, matrilin-3 type	OMIM	608728
+MONDO:0012160	spondylometaphyseal dysplasia-cone-rod dystrophy syndrome	OMIM	608940
+MONDO:0012185	spondylometaphyseal dysplasia, A4 type	OMIM	609052
+MONDO:0012206	spondyloepiphyseal dysplasia with metatarsal shortening	OMIM	609162
+MONDO:0012217	Bruck syndrome 2	OMIM	609220
+MONDO:0012219	spondyloepiphyseal dysplasia tarda, autosomal recessive, Leroy-Spranger type	OMIM	609223
+MONDO:0012253	multiple epiphyseal dysplasia, with severe proximal femoral dysplasia	OMIM	609324
+MONDO:0012254	multiple epiphyseal dysplasia, with miniepiphyses	OMIM	609325
+MONDO:0012271	mesoaxial synostotic syndactyly with phalangeal reduction	OMIM	609432
+MONDO:0012274	acromesomelic dysplasia 3	OMIM	609441
+MONDO:0012287	Stickler syndrome, type I, nonsyndromic ocular	OMIM	609508
+MONDO:0012302	parietal foramina 3	OMIM	609566
+MONDO:0012307	familial scaphocephaly syndrome, McGillivray type	OMIM	609579
+MONDO:0012309	parietal foramina 2	OMIM	609597
+MONDO:0012330	talo-patello-scaphoid osteolysis	OMIM	609655
+MONDO:0012351	zygodactyly type 1	OMIM	609815
+MONDO:0012406	hyperparathyroidism 3	OMIM	610071
+MONDO:0012447	synpolydactyly type 3	OMIM	610234
+MONDO:0012495	spondyloepimetaphyseal dysplasia, Genevieve type	OMIM	610442
+MONDO:0012504	camptodactyly-tall stature-scoliosis-hearing loss syndrome	OMIM	610474
+MONDO:0012536	osteogenesis imperfecta type 7	OMIM	610682
+MONDO:0012555	Cornelia de Lange syndrome 3	OMIM	610759
+MONDO:0012581	osteogenesis imperfecta type 8	OMIM	610915
+MONDO:0012591	osteogenesis imperfecta type 5	OMIM	610967
+MONDO:0012592	osteogenesis imperfecta type 11	OMIM	610968
+MONDO:0012626	Meckel syndrome, type 4	OMIM	611134
+MONDO:0012644	asphyxiating thoracic dystrophy 2	OMIM	611263
+MONDO:0012676	autosomal recessive osteopetrosis 4	OMIM	611490
+MONDO:0012679	autosomal recessive osteopetrosis 6	OMIM	611497
+MONDO:0012695	Meckel syndrome, type 5	OMIM	611561
+MONDO:0012713	spondylometaphyseal dysplasia, East African type	OMIM	611702
+MONDO:0012716	spondyloepiphyseal dysplasia, Cantu type	OMIM	611717
+MONDO:0012833	Crouzon syndrome-acanthosis nigricans syndrome	OMIM	612247
+MONDO:0012848	Meckel syndrome, type 6	OMIM	612284
+MONDO:0012850	hypophosphatemic nephrolithiasis/osteoporosis 1	OMIM	612286
+MONDO:0012851	hypophosphatemic nephrolithiasis/osteoporosis 2	OMIM	612287
+MONDO:0012859	autosomal recessive osteopetrosis 7	OMIM	612301
+MONDO:0012873	Ehlers-Danlos syndrome, spondylocheirodysplastic type	OMIM	612350
+MONDO:0012911	pseudohypoparathyroidism type 1C	OMIM	612462
+MONDO:0012912	pseudopseudohypoparathyroidism	OMIM	612463
+MONDO:0012944	chromosome 17P13.3, telomeric, duplication syndrome	OMIM	612576
+MONDO:0012992	pancreatic insufficiency-anemia-hyperostosis syndrome	OMIM	612714
+MONDO:0013014	spondyloepimetaphyseal dysplasia, aggrecan type	OMIM	612813
+MONDO:0013016	leukocyte adhesion deficiency 3	OMIM	612840
+MONDO:0013039	3M syndrome 2	OMIM	612921
+MONDO:0013051	autosomal recessive cutis laxa type 2B	OMIM	612940
+MONDO:0013113	metaphyseal anadysplasia 2	OMIM	613073
+MONDO:0013127	asphyxiating thoracic dystrophy 3	OMIM	613091
+MONDO:0013176	Weill-Marchesani 4 syndrome, recessive	OMIM	613195
+MONDO:0013219	hypophosphatemic rickets, autosomal recessive, 2	OMIM	613312
+MONDO:0013223	autosomal recessive spondylometaphyseal dysplasia, Megarbane type	OMIM	613320
+MONDO:0013228	spondylo-megaepiphyseal-metaphyseal dysplasia	OMIM	613330
+MONDO:0013232	brachydactylous dwarfism, Mseleni type	OMIM	613342
+MONDO:0013233	spondyloepimetaphyseal dysplasia, Handigodu type	OMIM	613343
+MONDO:0013323	cranioectodermal dysplasia 2	OMIM	613610
+MONDO:0013360	brachyolmia, Maroteaux type	OMIM	613678
+MONDO:0013363	chromosome 2q31.1 duplication syndrome	OMIM	613681
+MONDO:0013441	asphyxiating thoracic dystrophy 4	OMIM	613819
+MONDO:0013443	Seckel syndrome 5	OMIM	613823
+MONDO:0013459	osteogenesis imperfecta type 10	OMIM	613848
+MONDO:0013460	osteogenesis imperfecta type 12	OMIM	613849
+MONDO:0013515	osteogenesis imperfecta type 6	OMIM	613982
+MONDO:0013523	Nestor-Guillermo progeria syndrome	OMIM	614008
+MONDO:0013569	short-rib thoracic dysplasia 7 with or without polydactyly	OMIM	614091
+MONDO:0013573	cranioectodermal dysplasia 3	OMIM	614099
+MONDO:0013590	Stickler syndrome, type 4	OMIM	614134
+MONDO:0013591	epiphyseal dysplasia, multiple, 6	OMIM	614135
+MONDO:0013612	geleophysic dysplasia 2	OMIM	614185
+MONDO:0013615	craniosynostosis and dental anomalies	OMIM	614188
+MONDO:0013627	3M syndrome 3	OMIM	614205
+MONDO:0013635	Adams-Oliver syndrome 2	OMIM	614219
+MONDO:0013666	Stickler syndrome, type 5	OMIM	614284
+MONDO:0013717	asphyxiating thoracic dystrophy 5	OMIM	614376
+MONDO:0013719	cranioectodermal dysplasia 4	OMIM	614378
+MONDO:0013740	lethal occipital encephalocele-skeletal dysplasia syndrome	OMIM	614416
+MONDO:0013795	fibrochondrogenesis 2	OMIM	614524
+MONDO:0013815	bent bone dysplasia syndrome 1	OMIM	614592
+MONDO:0013822	acrodysostosis 2 with or without hormone resistance	OMIM	614613
+MONDO:0013864	Cornelia de Lange syndrome 4	OMIM	614701
+MONDO:0013870	TMEM165-congenital disorder of glycosylation	OMIM	614727
+MONDO:0013873	IMAGe syndrome	OMIM	614732
+MONDO:0013889	short stature-optic atrophy-Pelger-HuC+t anomaly syndrome	OMIM	614800
+MONDO:0013894	short stature-onychodysplasia-facial dysmorphism-hypotrichosis syndrome	OMIM	614813
+MONDO:0013895	Adams-Oliver syndrome 3	OMIM	614814
+MONDO:0013899	Weill-Marchesani syndrome 3	OMIM	614819
+MONDO:0013998	MEGF8-related Carpenter syndrome	OMIM	614976
+MONDO:0014029	osteogenesis imperfecta type 14	OMIM	615066
+MONDO:0014031	microcephalic primordial dwarfism, Alazami type	OMIM	615071
+MONDO:0014040	autosomal recessive osteopetrosis 8	OMIM	615085
+MONDO:0014043	microcephalic primordial dwarfism due to ZNF335 deficiency	OMIM	615095
+MONDO:0014061	Steel syndrome	OMIM	615155
+MONDO:0014080	osteosclerotic metaphyseal dysplasia	OMIM	615198
+MONDO:0014086	osteogenesis imperfecta type 15	OMIM	615220
+MONDO:0014087	Smith-McCort dysplasia 2	OMIM	615222
+MONDO:0014124	Adams-Oliver syndrome 4	OMIM	615297
+MONDO:0014128	TCF12-related craniosynostosis	OMIM	615314
+MONDO:0014196	Hartsfield-Bixler-Demyer syndrome	OMIM	615465
+MONDO:0014214	short-rib thoracic dysplasia 8 with or without polydactyly	OMIM	615503
+MONDO:0014284	short-rib thoracic dysplasia 10 with or without polydactyly	OMIM	615630
+MONDO:0014287	short-rib thoracic dysplasia 11 with or without polydactyly	OMIM	615633
+MONDO:0014288	Joubert syndrome 21	OMIM	615636
+MONDO:0014347	Rothmund-Thomson syndrome, type 3	OMIM	615789
+MONDO:0014350	Seckel syndrome 8	OMIM	615807
+MONDO:0014380	colobomatous microphthalmia-rhizomelic dysplasia syndrome	OMIM	615877
+MONDO:0014382	Tatton-Brown-Rahman overgrowth syndrome	OMIM	615879
+MONDO:0014401	tall stature-scoliosis-macrodactyly of the great toes syndrome	OMIM	615923
+MONDO:0014455	cataract-growth hormone deficiency-sensory neuropathy-sensorineural hearing loss-skeletal dysplasia syndrome	OMIM	616007
+MONDO:0014459	Adams-Oliver syndrome 5	OMIM	616028
+MONDO:0014473	microcephaly 13, primary, autosomal recessive	OMIM	616051
+MONDO:0014507	Catel-Manzke syndrome	OMIM	302380
+MONDO:0014507	Catel-Manzke syndrome	OMIM	616145
+MONDO:0014510	fatty acyl-CoA reductase 1 deficiency	OMIM	616154
+MONDO:0014544	osteogenesis imperfecta type 16	OMIM	616229
+MONDO:0014558	autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome	OMIM	616268
+MONDO:0014573	Cole-Carpenter syndrome 2	OMIM	616294
+MONDO:0014575	Singleton-Merten syndrome 2	OMIM	616298
+MONDO:0014577	short-rib thoracic dysplasia 13 with or without polydactyly	OMIM	616300
+MONDO:0014591	autosomal dominant Robinow syndrome 2	OMIM	616331
+MONDO:0014609	cognitive impairment - coarse facies - heart defects - obesity - pulmonary involvement - short stature - skeletal dysplasia syndrome	OMIM	616368
+MONDO:0014658	severe achondroplasia-developmental delay-acanthosis nigricans syndrome	OMIM	616482
+MONDO:0014672	osteogenesis imperfecta type 17	OMIM	616507
+MONDO:0014686	short stature, microcephaly, and endocrine dysfunction	OMIM	616541
+MONDO:0014688	short-rib thoracic dysplasia 14 with polydactyly	OMIM	616546
+MONDO:0014701	spondyloepiphyseal dysplasia, Stanescu type	OMIM	616583
+MONDO:0014703	Adams-Oliver syndrome 6	OMIM	616589
+MONDO:0014704	skeletal overgrowth-craniofacial dysmorphism-hyperelastic skin-white matter lesions syndrome	OMIM	616592
+MONDO:0014722	Roifman syndrome	OMIM	300258
+MONDO:0014722	Roifman syndrome	OMIM	616651
+MONDO:0014743	rhizomelic chondrodysplasia punctata type 5	OMIM	616716
+MONDO:0014748	progressive spondyloepimetaphyseal dysplasia-short stature-short fourth metatarsals-intellectual disability syndrome	OMIM	616723
+MONDO:0014767	Seckel syndrome 9	OMIM	616777
+MONDO:0014801	even-plus syndrome	OMIM	616854
+MONDO:0014819	autosomal dominant Robinow syndrome 3	OMIM	616894
+MONDO:0014821	complex lethal osteochondrodysplasia	OMIM	616897
+MONDO:0014870	NEK9-related lethal skeletal dysplasia	OMIM	617022
+MONDO:0014907	short-rib thoracic dysplasia 15 with polydactyly	OMIM	617088
+MONDO:0014915	short-rib thoracic dysplasia 16 with or without polydactyly	OMIM	617102
+MONDO:0014935	frontometaphyseal dysplasia 2	OMIM	617137
+MONDO:0014944	short stature-brachydactyly-obesity-global developmental delay syndrome	OMIM	617157
+MONDO:0014991	Seckel syndrome 10	OMIM	617253
+MONDO:0015012	mucopolysaccharidosis-plus syndrome	OMIM	617303
+MONDO:0015167	amniotic band syndrome	OMIM	217100
+MONDO:0015177	metaphyseal anadysplasia	OMIM	309645
+MONDO:0016331	infantile systemic hyalinosis	OMIM	236490
+MONDO:0018163	autosomal recessive cutis laxa type 2A	OMIM	219200
+MONDO:0018663	regressive spondylometaphyseal dysplasia	OMIM	618019
+MONDO:0018764	microcephalic primordial dwarfism due to RTTN deficiency	OMIM	614833
+MONDO:0018919	McCune-Albright syndrome	OMIM	174800
+MONDO:0018931	mucolipidosis type III, alpha/beta	OMIM	252600
+MONDO:0019349	Sotos syndrome	OMIM	117550
+MONDO:0019407	microcephalic osteodysplastic dysplasia, Saul-Wilson type	OMIM	618150
+MONDO:0019409	idiopathic juvenile osteoporosis	OMIM	259750
+MONDO:0019666	spondyloepimetaphyseal dysplasia, PAPSS2 type	OMIM	612847
+MONDO:0020603	X-linked chondrodysplasia punctata 2	OMIM	302960
+MONDO:0020667	Antley-Bixler syndrome without genital anomalies or disordered steroidogenesis	OMIM	207410
+MONDO:0020682	Ehlers-Danlos syndrome, spondylodysplastic type, 1	OMIM	130070
+MONDO:0020723	vitamin D-dependent rickets, type 1A	OMIM	264700
+MONDO:0020749	polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy 1	OMIM	221770
+MONDO:0020750	polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy 2	OMIM	618193
+MONDO:0020848	osteopetrosis, autosomal dominant 3	OMIM	618107
+MONDO:0021093	cranioectodermal dysplasia 1	OMIM	218330
+MONDO:0024455	autosomal dominant Robinow syndrome 1	OMIM	180700
+MONDO:0024506	Adams-Oliver syndrome 1	OMIM	100300
+MONDO:0024535	Singleton-Merten syndrome 1	OMIM	182250
+MONDO:0024550	frontometaphyseal dysplasia 1	OMIM	305620
+MONDO:0024570	hyperparathyroidism 4	OMIM	617343
+MONDO:0027451	autosomal recessive cutis laxa type 2D	OMIM	617403
+MONDO:0027462	autosomal recessive cutis laxa type 2C	OMIM	617402
+MONDO:0030019	anauxetic dysplasia 3	OMIM	618853
+MONDO:0030356	short-rib thoracic dysplasia 21 without polydactyly	OMIM	619479
+MONDO:0030487	spondylometaphyseal dysplasia, pagnamenta type	OMIM	619638
+MONDO:0030553	acromesomelic dysplasia 4	OMIM	619636
+MONDO:0031010	odontochondrodysplasia 2 with hearing loss and diabetes	OMIM	619269
+MONDO:0031047	stickler syndrome, IIa 6	OMIM	620022
+MONDO:0032571	spondyloepimetaphyseal dysplasia, Krakow type	OMIM	618162
+MONDO:0032591	hyperparathyroidism, transient neonatal	OMIM	618188
+MONDO:0032684	intrauterine growth retardation, metaphyseal dysplasia, adrenal hypoplasia congenita, genital anomalies, and immunodeficiency	OMIM	618336
+MONDO:0032721	spondyloepiphyseal dysplasia, kondo-fu type	OMIM	618392
+MONDO:0032724	spondyloepimetaphyseal dysplasia with joint laxity, type 3	OMIM	618395
+MONDO:0032800	robinow syndrome, autosomal recessive 2	OMIM	618529
+MONDO:0032835	spondyloepiphyseal dysplasia, nishimura type	OMIM	618618
+MONDO:0032885	spondyloepimetaphyseal dysplasia, Isidor-Toutain type	OMIM	618728
+MONDO:0033485	short-rib thoracic dysplasia 19 with or without polydactyly	OMIM	617895
+MONDO:0036483	short-rib thoracic dysplasia 18 with polydactyly	OMIM	617866
+MONDO:0042975	pseudoachondroplastic dysplasia 2	OMIM	264150
+MONDO:0044206	otospondylomegaepiphyseal dysplasia, autosomal recessive	OMIM	215150
+MONDO:0044312	immunoskeletal dysplasia with neurodevelopmental abnormalities	OMIM	617425
+MONDO:0044328	short-rib thoracic dysplasia 20 with polydactyly	OMIM	617925
+MONDO:0044329	osteogenesis imperfecta, type 18	OMIM	617952
+MONDO:0049223	osteogenesis imperfecta, type 19	OMIM	301014
+MONDO:0054550	avascular necrosis of femoral head, primary, 1	OMIM	608805
+MONDO:0054560	anauxetic dysplasia 1	OMIM	607095
+MONDO:0054561	anauxetic dysplasia 2	OMIM	617396
+MONDO:0054565	short-rib thoracic dysplasia 17 with or without polydactyly	OMIM	617405
+MONDO:0054581	Townes-Brocks syndrome 1	OMIM	107480
+MONDO:0054680	epiphyseal dysplasia, multiple, 7	OMIM	617719
+MONDO:0054722	geleophysic dysplasia 3	OMIM	617809
+MONDO:0060702	spondyloepimetaphyseal dysplasia, di rocco type	OMIM	617974
+MONDO:0060732	tetraamelia syndrome 2	OMIM	618021
+MONDO:0060764	tetraamelia syndrome 1	OMIM	273395
+MONDO:0100253	Roberts-SC phocomelia syndrome	OMIM	268300
+MONDO:0100253	Roberts-SC phocomelia syndrome	OMIM	269000
+MONDO:0100302	LADD syndrome 1	OMIM	149730
+MONDO:0100325	odontochondrodysplasia 1	OMIM	184260
+MONDO:0100435	Schwartz-Jampel syndrome type 1	OMIM	255800
+MONDO:0800043	Stüve-Wiedemann syndrome 1	OMIM	601559
+MONDO:0859203	rhizomelic dysplasia, Ain-Naz type	OMIM	619598
+MONDO:0859226	craniotubular dysplasia, Ikegawa type	OMIM	619727
+MONDO:0859573	bent bone dysplasia syndrome 2	OMIM	620076
+MONDO:0859577	lacrimoauriculodentodigital syndrome 2	OMIM	620192
+MONDO:0859578	lacrimoauriculodentodigital syndrome 3	OMIM	620193
+MONDO:0957262	osteopetrosis, autosomal recessive 9	OMIM	620366
+MONDO:0958006	spondyloepimetaphyseal dysplasia, Guo-Campeau type	OMIM	620663
