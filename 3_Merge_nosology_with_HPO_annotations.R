@@ -1,6 +1,7 @@
 #Trying to merge the Nosology with the HPO annotations file
 #to explore the state of HPO annotations for skeletal dysplasias
 #eg. see how many skeletal dysplasias have no (or very few) HPO annotations
+#needs more work?
 
 library(tidyverse)
 library(here)

@@ -1,4 +1,4 @@
-#This R script adds HGNC gene symbols to the nosology dataframe
+#Add HGNC gene symbols to the nosology 
 #in the process, we also explore some issues with the NOS_Gene column
 
 library(tidyverse)

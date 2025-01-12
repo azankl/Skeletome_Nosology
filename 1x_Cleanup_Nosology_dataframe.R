@@ -1,6 +1,5 @@
 # This script performs some clean up on the Nosology_2023 dataframe,
-# which was created in '1a_Convert AJMG table to Nosology object.R'
-
+# probably outdated, check if anything in here needs keeping
 
 library(tidyverse)
 library(here)

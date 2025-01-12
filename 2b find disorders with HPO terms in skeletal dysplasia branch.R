@@ -1,4 +1,5 @@
 #Find all disorders with HPO terms in the Abnormality of the skeletal system (HP:0000924) branch
+#to see if these are all skeletal dysplasias and should be added to the nosology
 
 library(tidyverse)
 library(here)

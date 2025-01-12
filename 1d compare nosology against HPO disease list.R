@@ -1,6 +1,5 @@
-#This R script compares the Nosology against the genes_to_disease.txt file
-#provided by the HPO Team in their Github releases
-#entries without a match need further investigation
+#Compare the Nosology against the genes_to_disease.txt file provided by the HPO Team 
+#Entries without a match need further investigation
 
 library(tidyverse)
 library(here)
@@ -11,8 +10,13 @@ nosology <- read_rds(here("data/Nosology_2023_HGNC.rds")) |>
   add_column(AZ_Comments = "", .after = "NOS_OMIM") |>
   add_column(PMID = "", .after = "NOS_OMIM")  #for key PubMed articles, especially if not in OMIM
 
-#read genes_to_disease_20250106.tsv file (downloaded and renamed from HPO Github Releases)
-genes_to_disease <- read_tsv(here("raw_data/genes_to_disease_20250106.tsv")) |>
+#create backup before making changes
+write_rds (nosology, here("data/nosology_old.rds"))
+
+#read genes_to_disease.txt file, downloaded and renamed from here:
+#https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2024-12-12/genes_to_disease.txt
+
+genes_to_disease <- read_tsv(here("raw_data/genes_to_disease_2024-12-12.tsv")) |>
   select(c('gene_symbol',disease_id)) |>
   #remove 'OMIM:' prefix
   mutate(disease_id = str_replace(disease_id,"OMIM:",""))
@@ -66,7 +70,7 @@ waldo_nos_dif <- compare(nosology_antijoin_byGene_updated, nosology_antijoin_byG
 nosology_updated <- rows_update(nosology,nosology_antijoin_byGene_updated )
 
 #save the updated nosology object
-write_rds (nosology_updated, here("data/nosology_updated.rds"))
+write_rds (nosology_updated, here("data/nosology.rds"))
 
 
 

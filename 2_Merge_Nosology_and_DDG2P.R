@@ -1,4 +1,6 @@
 #Merge Nosology with DDG2P data
+#needs updating!
+
 #uses the Nosology object created in 'Convert AJMG Table to Nosology object'
 #IMPORTANT: DDG2P_1_12_2021.csv is the last version of DDG2P that used G2Ps older nomenclature that includes functional consequence terms like 'activating'
 #So plan 2 step approach:
