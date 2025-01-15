@@ -3,7 +3,11 @@
 
 library(tidyverse)
 library(here)
-library(limma) #needed for alias2SymbolTable function, also needs up-to-date org.Hs.eg.db package installed
+library(glue)
+
+# needed for alias2SymbolTable function, 
+# also needs up-to-date org.Hs.eg.db package installed
+library(limma) 
 
 
 #read the original nosology dataframe (uncleaned)
@@ -14,16 +18,25 @@ nosology <- read_rds(here("data/Nosology_2023.rds")) |>
 #find rows in nosology where NOS_Gene is empty
 nosology_NoGene <- nosology %>%
   filter(NOS_Gene == "")
+nosology_with_gene <- nosology %>%
+  filter(NOS_Gene != "")
 
 #find rows in nosology where NOS_Gene does not look like a gene symbol
+#(ie. does not consist of only uppercase letters and numbers)
 gene_symbol_pattern <- "^[A-Z0-9]+$"
-nosology_WeirdGene <- nosology %>%
+nosology_complex_Gene <- nosology_with_gene %>%
   filter(!grepl(gene_symbol_pattern, NOS_Gene))
 
 #find rows in nosology where NOS_Gene looks like a gene symbol
-nosology_cleanGene_HGNC <- nosology %>%
+nosology_cleanGene <- nosology %>%
   filter(grepl(gene_symbol_pattern, NOS_Gene))
   
+#check that length of nosology matches the sum of the above subsets
+#print out the calculation and the result
+glue("Length of nosology: {nrow(nosology)}")
+glue("Sum of subsets: {nrow(nosology_NoGene) + nrow(nosology_complex_Gene) + nrow(nosology_cleanGene)}")
+
+
 #add HGNC gene symbols via alias2SymbolTable function from limma package
 #NOTE: use alias2SymbolTable instead of alias2Symbol to avoid errors
 #alias2SymbolTable returns NA for gene symbols that cannot be matched
@@ -35,7 +48,14 @@ nosology <- nosology |>
 nosology_NA_HGNC <- nosology %>%
   filter(is.na(HGNC_symbol))
 
-#find rows in nosology where NOS_GENE and HGNC_symbol do not match
+# find rows with missing HGNC symbols where NOS_Gene looks like a gene symbol
+# (and thus Alias2SymbolTable should have been able to find a match)
+nosology_NA_HGNC_diff <- nosology_NA_HGNC |>
+  filter(grepl(gene_symbol_pattern, NOS_Gene))
+
+
+# find rows in nosology where NOS_GENE and HGNC_symbol do not match
+# i.e. the NOS_Gene was likely not an HGNC symbol
 nosology_HGNC_mismatch <- nosology %>%
   filter(NOS_Gene != HGNC_symbol)
 
