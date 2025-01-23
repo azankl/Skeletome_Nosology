@@ -52,8 +52,9 @@ nosology_complex_gene <- nosology_with_gene %>%
   filter(!grepl(gene_symbol_pattern, NOS_Gene))
 
 # fix entries in nosology_complex_gene using DataEditR
-#nosology_complex_gene_fixed <- data_edit(nosology_complex_gene)
-#saveRDS(nosology_complex_gene_fixed, file = here("data/nosology_complex_gene_fixed.rds"))
+# then comment out not to overwrite the fixed data!
+# nosology_complex_gene_fixed <- data_edit(nosology_complex_gene)
+# saveRDS(nosology_complex_gene_fixed, file = here("data/nosology_complex_gene_fixed.rds"))
 # still need to document the changes I made
 # with some of the diff methods below
 
