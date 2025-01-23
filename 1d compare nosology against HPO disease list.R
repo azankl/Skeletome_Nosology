@@ -7,9 +7,7 @@ library(here)
 
 # read the nosology dataframe with HGNC symbols created in 1c
 nosology <- read_rds(here("data/Nosology_2023_HGNC.rds")) |>
-  add_column(AZ_Comments = "", .after = "NOS_OMIM") |>
-  add_column(PMID = "", .after = "NOS_OMIM") # for key PubMed articles, especially if not in OMIM
-
+  
 # create backup before making changes
 write_rds(nosology, here("data/nosology_old.rds"))
 

@@ -1,0 +1,12 @@
+---
+title: "Curation Notes"
+output: html_document
+date: "2025-01-16"
+---
+
+### CNVs, regulatory variants and other variants that dont alter the sequence of a gene
+
+add '\*' to gene symbol and explain mechanism in comments
+
+for CNVs, list candidate gene(s) if known, put multiple candidate genes in square brackets and separate by ';':\
+e.g [HOXD11;HOXD12;HOXD13]
