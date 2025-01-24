@@ -6,6 +6,7 @@ library(tidyxl)
 library(here)
 library(glue)
 library(DataEditR)
+library(forgts)
 library(waldo)
 library(compareDF)
 library(diffobj)
@@ -38,12 +39,15 @@ nosology <- read_rds(here("data/Nosology_2023.rds")) |>
     .after = "NOS_OMIM"
   ) 
 
-
 # find rows in nosology where NOS_Gene is empty
 nosology_no_gene <- nosology %>%
   filter(NOS_Gene == "")
 nosology_with_gene <- nosology %>%
   filter(NOS_Gene != "")
+# there are 34 entries in the nosology with no gene
+# reviewed nosology_no_gene and found that they really have no gene
+# so no need to fix these
+
 
 # find rows in nosology where NOS_Gene does not look like a gene symbol
 # HGNC gene symbols only consist of uppercase letters, numbers and hyphens
@@ -54,9 +58,25 @@ nosology_complex_gene <- nosology_with_gene %>%
 # fix entries in nosology_complex_gene using DataEditR
 # then comment out not to overwrite the fixed data!
 # nosology_complex_gene_fixed <- data_edit(nosology_complex_gene)
-# saveRDS(nosology_complex_gene_fixed, file = here("data/nosology_complex_gene_fixed.rds"))
-# still need to document the changes I made
-# with some of the diff methods below
+
+# DataEditR tries to guess column_type, which can create problems down the track
+# here, DataEditR guessed that PMID was integer, not character
+# so converting PMID column from integer to character
+# nosology_complex_gene_fixed <- nosology_complex_gene_fixed |>
+#  mutate( PMID = as.character(PMID))
+#  saveRDS(nosology_complex_gene_fixed, file = here("data/nosology_complex_gene_fixed.rds"))
+
+# document the changes I made to nosology_complex_gene_fixed
+compareDF_diff_complex <- compare_df(nosology_complex_gene_fixed, nosology_complex_gene)
+create_output_table(
+  compareDF_diff_complex,
+  output = "xlsx", 
+  file_name = here("data/compareDF_diff_complex.xlsx"))
+forgts(here("data/compareDF_diff_complex.xlsx"))
+
+# and write the changes into the main nosology object
+nosology <- nosology |>
+  rows_update(nosology_complex_gene_fixed)
 
 # Nosology does not list all Fanconi genes
 # fixing that below
@@ -107,6 +127,10 @@ Fanconi <- tribble(
                       )
               )
 
+# no need to document the changes as the code above is very clear
+# just saving the Fanconi object, just in case
+# saveRDS(Fanconi, here("data/Fanconi_fixed.rds"))
+
 # add Fanconi data to nosology
 nosology <- nosology |>
   rows_delete(Fanconi) |> # remove old Fanconi data
@@ -118,9 +142,8 @@ nosology_clean_gene <- nosology %>%
   filter(grepl(gene_symbol_pattern, NOS_Gene))
 
 # check that length of nosology matches the sum of the above subsets
-glue("Length of nosology: {nrow(nosology)}")
-glue("Sum of subsets: {nrow(nosology_no_gene) + nrow(nosology_complex_gene) + nrow(nosology_clean_gene)}")
-
+# glue("Length of nosology: {nrow(nosology)}")
+# glue("Sum of subsets: {nrow(nosology_no_gene) + nrow(nosology_complex_gene) + nrow(nosology_clean_gene)}")
 
 # find rows in nosology where NOS_GENE and HGNC_symbol do not match
 # i.e. the NOS_Gene was likely not an HGNC symbol
@@ -131,69 +154,65 @@ nosology_HGNC_mismatch <- nosology_clean_gene %>%
 # find rows in nosology where HGNCSymbol is NA
 # this includes typos in NOS_Gene, missing gene in NOS_Gene and
 # complex entries with multiple genes in NOS_Gene
-nosology_NA_HGNC <- nosology %>%
-  filter(is.na(HGNC_symbol))
+# nosology_NA_HGNC <- nosology %>%
+#  filter(is.na(HGNC_symbol))
 
 # find rows with missing HGNC symbols where NOS_Gene looks like a gene symbol
 # and thus Alias2SymbolTable should have been able to find a match
 nosology_NA_HGNC_diff <- nosology_clean_gene |>
   filter(is.na(HGNC_symbol))
 
-
 # fix these errors using DataEditR
-nosology_NA_HGNC_diff_fixed <- data_edit(nosology_NA_HGNC_diff)
+# now commented out to avoid overriding the fixed data
+# nosology_NA_HGNC_diff_fixed <- data_edit(nosology_NA_HGNC_diff)
+# saveRDS(nosology_NA_HGNC_diff_fixed, file = here("data/nosology_NA_HGNC_diff_fixed.rds"))
 # there were 7 changes: 5 typos, the HOXD cluster and MAENLI lncRNA
 
 # show differences between original and fixed dataframe
 # using waldo
 nosology_NA_HGNC_diff <- as.data.frame(nosology_NA_HGNC_diff)
-waldo_dif <- compare(
-  nosology_NA_HGNC_diff_fixed,
-  nosology_NA_HGNC_diff
+waldo_NA_HGNC_diff <- compare(
+  nosology_NA_HGNC_diff,
+  nosology_NA_HGNC_diff_fixed
   )
-saveRDS(waldo_dif, file = here("data/waldo_dif.rds"))
+saveRDS(waldo_NA_HGNC_diff, file = here("data/waldo_NA_HGNC_diff.rds"))
 
 # using compareDF
-compareDF_dif <- compare_df(
+compareDF_NA_HGNC_diff <- compare_df(
   nosology_NA_HGNC_diff_fixed,
   nosology_NA_HGNC_diff,
   keep_unchanged_cols = FALSE
 )
-compareDF_dif_html <- create_output_table(compareDF_dif)
-saveRDS(compareDF_dif, file = here("data/compareDF_dif.rds"))
+compareDF_NA_HGNC_diff_html <- create_output_table(compareDF_NA_HGNC_diff)
+saveRDS(compareDF_NA_HGNC_diff, file = here("data/compareDF_NA_HGNC_diff.rds"))
 # try exporting to xls and then reimporting with forgts
 # to get a gt table of the differences
 library(forgts)
-compareDF_xlsx <- create_output_table(
-  compareDF_dif,
+create_output_table(
+  compareDF_NA_HGNC_diff,
   output = "xlsx", 
-  file_name = here("data/compareDF_dif.xlsx"))
-forgts(here("data/compareDF_dif.xlsx"))
+  file_name = here("data/compareDF_NA_HGNC_diff.xlsx"))
+forgts(here("data/compareDF_NA_HGNC_diff.xlsx"))
 # this looks great!
 
 
 # using diffobj
-nosology_NA_HGNC_diff <- as.data.frame(nosology_NA_HGNC_diff)
-diffobj_dif <- diffPrint(
-  nosology_NA_HGNC_diff_fixed,
+# not working, not sure why
+# but other diff methods work
+diffobj_NA_HGNC_diff <- diffPrint(
   nosology_NA_HGNC_diff,
-  mode = "sidebyside"
+  nosology_NA_HGNC_diff_fixed
 )
-saveRDS(diffobj_dif, file = here("data/diffobj_dif.rds"))
+saveRDS(diffobj_NA_HGNC_diff, file = here("data/diffobj_NA_HGNC_diff.rds"))
 
 
-
-
-
-# update main nosology with these changes and save view of differences
-nosology_updated <- nosology %>%
+# update main nosology with these changes
+nosology <- nosology %>%
   rows_update(nosology_NA_HGNC_diff_fixed)
-compareDF_dif_all <- compare_df(nosology_updated, nosology)
-create_output_table(compareDF_dif_all,
-                    file_name = here("data/nosology_diff.html"))
 
 # save the updated nosology object
-write_rds(nosology, here("data/nosology_backup.rds"))
-write_rds(nosology_updated, here("data/nosology.rds"))
+write_rds(nosology, here("data/nosology.rds"))
 
-
+# now that gene column is completely updated
+# we can run some stats on the data
+# ...
