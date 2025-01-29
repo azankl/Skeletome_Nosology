@@ -1,6 +1,8 @@
 # Add HGNC gene symbols to the nosology
 # in the process, we also explore some issues with the NOS_Gene column
 
+library(limma) # needed for alias2SymbolTable function
+# org.Hs.eg.db needs to be installed for limma, make sure its up-to-date
 library(tidyverse)
 library(tidyxl)
 library(here)
@@ -10,8 +12,6 @@ library(forgts)
 library(waldo)
 library(compareDF)
 library(diffobj)
-library(limma) # needed for alias2SymbolTable function
-# org.Hs.eg.db needs to be installed for limma, make sure its up-to-date
 
 
 # read the original nosology dataframe (uncleaned) and
@@ -58,7 +58,6 @@ nosology_complex_gene <- nosology_with_gene %>%
 # fix entries in nosology_complex_gene using DataEditR
 # then comment out not to overwrite the fixed data!
 # nosology_complex_gene_fixed <- data_edit(nosology_complex_gene)
-
 # DataEditR tries to guess column_type, which can create problems down the track
 # here, DataEditR guessed that PMID was integer, not character
 # so converting PMID column from integer to character
@@ -168,6 +167,9 @@ nosology_NA_HGNC_diff <- nosology_clean_gene |>
 # saveRDS(nosology_NA_HGNC_diff_fixed, file = here("data/nosology_NA_HGNC_diff_fixed.rds"))
 # there were 7 changes: 5 typos, the HOXD cluster and MAENLI lncRNA
 
+
+
+
 # show differences between original and fixed dataframe
 # using waldo
 nosology_NA_HGNC_diff <- as.data.frame(nosology_NA_HGNC_diff)
@@ -205,14 +207,69 @@ diffobj_NA_HGNC_diff <- diffPrint(
 )
 saveRDS(diffobj_NA_HGNC_diff, file = here("data/diffobj_NA_HGNC_diff.rds"))
 
-
 # update main nosology with these changes
 nosology <- nosology %>%
   rows_update(nosology_NA_HGNC_diff_fixed)
 
+# some extra changes
+nosology <- nosology |>
+  rows_update(tibble (NOS_ID = "NOS 27-0160", HGNC_symbol = "[2p14-p13.3]") ) |>
+  rows_update(tibble (NOS_ID = "NOS 36-0260", HGNC_symbol = "reg [14q32]") )
+
 # save the updated nosology object
 write_rds(nosology, here("data/nosology.rds"))
 
+
 # now that gene column is completely updated
 # we can run some stats on the data
-# ...
+
+# find entries without a gene in HGNC_symbol column
+# should be the sama as nosology_no_gene above
+new_nosology_no_gene <- nosology %>%
+  filter(is.na(HGNC_symbol))
+# it is: 34 entries with no gene
+new_nosology_with_gene <- nosology %>%
+  filter(!is.na(HGNC_symbol))
+
+# find entries with a single HGNC_symbol
+single_gene_symbol_pattern <- "^[A-Z0-9-]+$"
+new_nosology_single_gene <- new_nosology_with_gene %>%
+  filter(grepl(single_gene_symbol_pattern, HGNC_symbol))
+# this is a good list for PanelAPP etc as it can be easily parsed
+
+# find entries that done match to a single HGNC_symbol
+# those should be the del/dup/reg variants
+new_nosology_complex_gene <- new_nosology_with_gene %>%
+  filter(!grepl(single_gene_symbol_pattern, HGNC_symbol))
+
+# find unique values in HGNC_symbol column using dyplr
+new_nosology_unique_single_genes <- new_nosology_single_gene %>%
+  distinct(HGNC_symbol) |>
+  # sort alphabetically
+  arrange(HGNC_symbol)
+
+# extract gene symbols from HGNC_symbol column from new_nosology_complex_gene
+# requires a more complex regex pattern
+complex_gene_symbol_pattern <- "(?=[A-Z])[A-Z0-9-]*" # at least one uppercase letter
+new_nosology_unique_complex_genes <- new_nosology_complex_gene|>
+  select (HGNC_symbol) |>
+  str_extract_all(complex_gene_symbol_pattern) |>
+  unlist() |>
+  as_tibble() |>
+  rename(HGNC_symbol = value) |>
+  distinct(HGNC_symbol) |>
+  arrange(HGNC_symbol)
+
+
+# combine new_nosology_unique_genes and new_nosology_nonstandard_gene_symbols
+# to get a list of all gene symbols in the nosology
+new_nosology_all_genes <- new_nosology_unique_single_genes |>
+  rows_append(new_nosology_unique_complex_genes) |>
+  distinct(HGNC_symbol) |>
+  arrange(HGNC_symbol)
+
+
+
+
+
+
