@@ -217,7 +217,7 @@ nosology <- nosology |>
   rows_update(tibble (NOS_ID = "NOS 36-0260", HGNC_symbol = "reg [14q32]") )
 
 # save the updated nosology object
-write_rds(nosology, here("data/nosology.rds"))
+write_rds(nosology, here("data/nosology_with_HGNC.rds"))
 
 
 # now that gene column is completely updated

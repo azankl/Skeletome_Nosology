@@ -1,12 +1,13 @@
 # now that the nosology has a cleaned up HGNC symbol column
 # we can run some stats on the data
+# should probably turn this into a Quarto document
 
 
 library(tidyverse)
 library(here)
 
 # read nosology with cleaned up HGNC symbols column
-nosology <- read_rds(here("data/nosology.rds"))
+nosology <- read_rds(here("data/nosology_with_HGNC.rds"))
 
 # find entries without a gene in HGNC_symbol column
 # should be the sama as nosology_no_gene above

@@ -6,25 +6,31 @@ library(here)
 
 
 # read the nosology dataframe with HGNC symbols created in 1c
-nosology <- read_rds(here("data/Nosology_2023_HGNC.rds")) |>
+nosology <- read_rds(here("data/nosology_with_HGNC.rds")) |>
+  # separete rows with multiple OMIM IDs
+  separate_rows(NOS_OMIM, sep=",\\s+") # split at comma plus optional white space
   
-# create backup before making changes
-write_rds(nosology, here("data/nosology_old.rds"))
+# read genes_to_disease.txt file from github
+HPO <- read_tsv("https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/genes_to_disease.txt") |>
+  select(c("gene_symbol", disease_id)) 
 
-# read genes_to_disease.txt file, downloaded and renamed from here:
-# https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2024-12-12/genes_to_disease.txt
+# keep OMIM only (full list includes ORPHA as well)
+HPO_OMIM <- HPO |>
+  filter(str_detect(disease_id, "OMIM")) |>
+  mutate(disease_id = str_replace(disease_id, "OMIM:", "")) # remove 'OMIM:' prefix
 
-genes_to_disease <- read_tsv(here("raw_data/genes_to_disease_2024-12-12.tsv")) |>
-  select(c("gene_symbol", disease_id)) |>
-  # remove 'OMIM:' prefix
-  mutate(disease_id = str_replace(disease_id, "OMIM:", ""))
+# find where nosology and HPO match by OMIM ID
+NOS_HPO_semijoin <- nosology |>
+  semi_join(HPO_OMIM, by = join_by(NOS_OMIM == disease_id, HGNC_symbol == gene_symbol))
+# matches 729 of 821 OMIM IDs in nosology
+
+# create an antijoin to see which genes in the nosology do not have a match in HPO
+NOS_HPO_antijoin <- nosology |>
+ # filter(!is.na(HGNC_symbol)) |>
+  anti_join(HPO_OMIM, by = join_by(NOS_OMIM == disease_id, HGNC_symbol == gene_symbol))
 
 
-# create an antijoin to see which genes in the nosology do not have a match in mim2gene
-nosology_antijoin_by_gene <- nosology |>
-  filter(!is.na(HGNC_symbol)) |>
-  anti_join(genes_to_disease, by = c("HGNC_symbol" = "gene_symbol"))
-
+# ------ stuff below is old, check before using ------
 
 # fix discrepancies found in nosology_antijoin_by_gene
 # we can do this with rows_update as shown below
